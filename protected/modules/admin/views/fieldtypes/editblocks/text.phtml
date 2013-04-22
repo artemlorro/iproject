@@ -1,0 +1,7 @@
+<? if($this->view->prefixName != 'cond_'): ?><div class="margin-bottom"><? endif; ?>
+<input type="text"
+	       name="<?=$this->view->prefixName?><?=$this->view->key?>"
+	       id="<?=$this->view->prefixName?><?=$this->view->key?>"
+	       class="input <? if($this->view->prefixName != 'cond_'): ?>full-width<? endif; ?>"
+	       value="<?=$this->view->value?>">
+<? if($this->view->prefixName != 'cond_'): ?></div><? endif; ?>

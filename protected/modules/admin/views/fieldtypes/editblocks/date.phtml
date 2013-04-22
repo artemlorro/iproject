@@ -1,0 +1,7 @@
+<div class="margin-bottom">
+	<span class="input">
+		<span class="icon-calendar"></span>
+		<input type="text" class="input-unstyled datepicker"
+		       name="edit_<?=$this->view->key?>" value="<?=date('d.m.Y',$this->view->value ? strtotime($this->view->value) : time())?>">
+	</span>
+</div>

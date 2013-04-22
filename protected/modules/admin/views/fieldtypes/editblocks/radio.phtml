@@ -1,0 +1,14 @@
+<div class="margin-bottom">
+	<span class="button-group">
+		<? foreach($this->view->field['values'] as $k => $value): ?>
+		<label for="<?=($this->view->nameBlockType?$this->view->nameBlockType:'edit')?>_<?=$this->view->key?>-<?=$k?>" class="button green-active">
+			<input type="radio"
+			       name="<?=($this->view->nameBlockType?$this->view->nameBlockType:'edit')?>_<?=$this->view->key?>"
+			       id="<?=($this->view->nameBlockType?$this->view->nameBlockType:'edit')?>_<?=$this->view->key?>-<?=$k?>"
+			       value="<?=$k?>"
+					<? if($k == $this->view->value): ?>checked<? endif; ?>>
+			<?=$value?>
+		</label>
+		<? endforeach; ?>
+	</span>
+</div>

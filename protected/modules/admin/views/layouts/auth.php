@@ -1,25 +1,3 @@
-<?php
-$cs=Yii::app()->clientScript;
-$baseUrl=$this->module->assetsUrl;
-$cs->registerCssFile($baseUrl.'/css/reset.css');
-$cs->registerCssFile($baseUrl.'/css/style.css');
-$cs->registerCssFile($baseUrl.'/css/colors.css');
-$cs->registerCssFile($baseUrl.'/css/print.css', 'print');
-$cs->registerCssFile($baseUrl.'/css/480.css', 'only all and (min-width: 480px)');
-$cs->registerCssFile($baseUrl.'/css/768.css', 'only all and (min-width: 768px)');
-$cs->registerCssFile($baseUrl.'/css/992.css', 'only all and (min-width: 992px)');
-$cs->registerCssFile($baseUrl.'/css/1200.css', 'only all and (min-width: 1200px)');
-$cs->registerCssFile($baseUrl.'/css/2x.css', 'only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)');
-$cs->registerCssFile($baseUrl.'/css/styles/agenda.css');
-$cs->registerCssFile($baseUrl.'/css/styles/dashboard.css');
-$cs->registerCssFile($baseUrl.'/css/styles/files.css');
-$cs->registerCssFile($baseUrl.'/css/styles/form.css');
-$cs->registerCssFile($baseUrl.'/css/styles/modal.css');
-$cs->registerCssFile($baseUrl.'/css/styles/progress-slider.css');
-$cs->registerCssFile($baseUrl.'/css/styles/switches.css');
-$cs->registerCssFile($baseUrl.'/css/login.css');
-$cs->registerCssFile($baseUrl.'/js/libs/modernizr.custom.js');
-?>
 <!DOCTYPE html>
 
 <!--[if IEMobile 7]><html class="no-js iem7 oldie linen"><![endif]-->
@@ -42,13 +20,74 @@ $cs->registerCssFile($baseUrl.'/js/libs/modernizr.custom.js');
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="/adm/css/reset.css?v=1">
+	<link rel="stylesheet" href="/adm/css/style.css?v=1">
+	<link rel="stylesheet" href="/adm/css/colors.css?v=1">
+	<link rel="stylesheet" media="print" href="/adm/css/print.css?v=1">
+	<!-- For progressively larger displays -->
+	<link rel="stylesheet" media="only all and (min-width: 480px)" href="/adm/css/480.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 768px)" href="/adm/css/768.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 992px)" href="/adm/css/992.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 1200px)" href="/adm/css/1200.css?v=1">
+	<!-- For Retina displays -->
+	<link rel="stylesheet"
+	      media="only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)"
+	      href="/adm/css/2x.css?v=1">
+
+	<!-- Additional styles -->
+	<link rel="stylesheet" href="/adm/css/styles/form.css?v=1">
+	<link rel="stylesheet" href="/adm/css/styles/switches.css?v=1">
+
+	<!-- Login pages styles -->
+	<link rel="stylesheet" media="screen" href="/adm/css/login.css?v=1">
+
+	<!-- JavaScript at bottom except for Modernizr -->
+	<script src="/adm/js/libs/modernizr.custom.js"></script>
+
+	<!-- For Modern Browsers -->
+	<link rel="shortcut icon" href="/adm/img/favicons/favicon.png">
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="/adm/img/favicons/favicon.ico">
+	<!-- For retina screens -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/adm/img/favicons/apple-touch-icon-retina.png">
+	<!-- For iPad 1-->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/adm/img/favicons/apple-touch-icon-ipad.png">
+	<!-- For iPhone 3G, iPod Touch and Android -->
+	<link rel="apple-touch-icon-precomposed" href="/adm/img/favicons/apple-touch-icon.png">
+
+	<!-- iOS web-app metas -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- Startup image for web apps -->
+	<link rel="apple-touch-startup-image" href="/adm/img/splash/ipad-landscape.png"
+	      media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+	<link rel="apple-touch-startup-image" href="/adm/img/splash/ipad-portrait.png"
+	      media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+	<link rel="apple-touch-startup-image" href="/adm/img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+
 	<!-- Microsoft clear type rendering -->
 	<meta http-equiv="cleartype" content="on">
+
+	<!-- IE9 Pinned Sites: http://msdn.microsoft.com/en-us/library/gg131029.aspx -->
+	<meta name="application-name" content="Developr Admin Skin">
+	<meta name="msapplication-tooltip" content="Cross-platform admin template.">
+	<meta name="msapplication-starturl" content="http://www.display-inline.fr/demo/developr">
+	<!-- These custom tasks are examples, you need to edit them to show actual pages -->
+	<meta name="msapplication-task"
+	      content="name=Agenda;action-uri=http://www.display-inline.fr/demo/developr/agenda.html;icon-uri=http://www.display-inline.fr/demo/developr/img/favicons/favicon.ico">
+	<meta name="msapplication-task"
+	      content="name=My profile;action-uri=http://www.display-inline.fr/demo/developr/profile.html;icon-uri=http://www.display-inline.fr/demo/developr/img/favicons/favicon.ico">
 </head>
 
 <body>
 
 <div id="container">
+
+	<!--	<hgroup id="login-title" class="large-margin-bottom">-->
+	<!--		<h1 class="login-title-image">Admin Panel</h1>-->
+	<!--	</hgroup>-->
 
 	<form method="post" action="" id="form-login">
 		<ul class="inputs black-input large">
@@ -145,6 +184,7 @@ $cs->registerCssFile($baseUrl.'/js/libs/modernizr.custom.js');
 
 				$.ajax('/admin/auth/auth/', {
 					cache: false,
+					dataType: 'json',
 					data:{
 						login:login,
 						password:pass

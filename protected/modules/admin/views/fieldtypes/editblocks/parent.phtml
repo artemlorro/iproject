@@ -1,0 +1,6 @@
+<? if($this->view->prefixName != 'cond_'): ?><div class="margin-bottom"><? endif; ?>
+<select name="<?=$this->view->prefixName?><?=$this->view->key?>" class="select" style="height:400px;">
+	<option value="0"<? if(!$this->view->db_value): ?> selected<? endif; ?>>-</option>
+	<?=$this->view->options?>
+</select>
+<? if($this->view->prefixName != 'cond_'): ?></div><? endif; ?>

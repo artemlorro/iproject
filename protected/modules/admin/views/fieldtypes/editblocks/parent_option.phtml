@@ -1,0 +1,6 @@
+<? if($this->view->dataOption[$this->view->idField] != $this->view->id): ?>
+<option value="<?=$this->view->dataOption[$this->view->idField]?>"<? if($this->view->db_value == $this->view->dataOption[$this->view->idField]): ?> selected<? endif; ?>>
+	<? for($i=0; $i<$this->view->dataOption['lvl']; $i++): ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<? endfor; ?><?if($this->view->dataOption['lvl']):?>-><?endif;?>
+	<?=$this->view->dataOption[$this->view->nameField]?>
+</option>
+<? endif; ?>

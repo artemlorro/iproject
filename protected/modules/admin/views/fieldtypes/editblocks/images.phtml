@@ -1,0 +1,33 @@
+<style>
+	div.imagesBlock div.image { float:left; width: 140px; height:140px; }
+</style>
+<div class="margin-bottom">
+
+<div class="margin-botom" id="button-images-<?=$this->view->key?>">
+	<a id="file-uploader-<?=$this->view->key?>" href="javascript://" class="button green-gradient glossy">Upload</a>
+</div>
+
+<input type="hidden" name="<?=$this->view->key?>_count" id="<?=$this->view->key?>_count" value="<?=(int)@$this->view->field['count']?>">
+
+<div class="imagesBlock margin-top" id="<?=$this->view->key?>_images">
+
+	<? if($this->view->value): ?>
+		<? foreach ($this->view->value as $k => $i): ?>
+			<div class="image">
+				<img name="<?=$this->view->key?><?=$k?>" src="<?=$i['preview']['url']?>" width="<?=$i['preview'][0]?>" height="<?=$i['preview'][1]?>" /><br/>
+				<a href="javascript://" onclick="deleteImage('<?=$this->view->key?>','/admin/content/deleteimage/model/<?=$this->view->MODEL_NAME?>/id/<?=$this->view->id?>/key/<?=$this->view->key?>/file/<?=$i['filename']?>/', this);">удалить</a>
+			</div>
+		<? endforeach; ?>
+	<? endif; ?>
+
+	<script>
+		$(document).ready(function() {
+			createUploadButton('file-uploader-<?=$this->view->key?>', '/admin/content/uploadimage/model/<?=$this->view->MODEL_NAME?>/id/<?=$this->view->id?>/key/<?=$this->view->key?>/', '<?=$this->view->key?>');
+			checkCountImages('<?=$this->view->key?>');
+		});
+	</script>
+
+	<div style="clear:both"></div>
+</div>
+
+</div>

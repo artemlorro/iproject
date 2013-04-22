@@ -1,0 +1,7 @@
+<? if($this->view->prefixName != 'cond_'): ?><div class="margin-bottom"><? endif; ?>
+<select name="<?=$this->view->prefixName?><?=$this->view->key?>" class="select">
+	<? foreach($this->view->field['values'] as $k => $i): ?>
+		<option value="<?=$k?>"<? if($this->view->db_value==$k):?> selected<? endif; ?>><?=$i?></option>
+	<? endforeach; ?>
+</select>
+<? if($this->view->prefixName != 'cond_'): ?></div><? endif; ?>

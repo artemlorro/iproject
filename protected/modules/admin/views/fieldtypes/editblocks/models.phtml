@@ -1,0 +1,82 @@
+<script>
+	var countColumn = 0;
+
+	$(document).ready(function(){
+		countColumn = parseInt($('#models_columns div').length);
+	});
+
+	function addColumn() {
+		var html = '<div><input type="text" name="th['+countColumn+']" value="" onkeyup="updateHead($(this).val(), '+countColumn+')" /><a href="javascript://" class="a_models" onclick="delColumn($(this).parent(), '+countColumn+')">Удалить</a></div>';
+		$('#models_columns div:last').before(html);
+
+		$('#models tr').each(function(i, a){
+			if (i == 0) {
+				var th = '<th id="th'+countColumn+'"></th>';
+				$(a).find('th:last').before(th);
+			} else {
+				var td = '<td><input name="td['+(i-1)+'][]" type="text" value="" /></td>';
+				$(a).find('td:last').before(td);
+			}
+		});
+		countColumn++;
+	}
+
+	function delColumn(parent, col) {
+		var index = $('#models_columns div').index(parent);
+		$(parent).remove();
+		$('#models tr').each(function(i, a){
+			if (i == 0) {
+				$(a).find('th:eq('+index+')').remove();
+			} else {
+				$(a).find('td:eq('+index+')').remove();
+			}
+		});
+		countColumn--;
+	}
+
+	function addRow() {
+		var countRows = $('#models tr').length - 1;
+		var html = '<tr>';
+		for (var i = 0; i<countColumn; i++) {
+			html += '<td><input name="td['+countRows+'][]" type="text" value="" /></td>';
+		}
+		html += '</tr>';
+		$('#models').append(html);
+	}
+
+	function updateHead(name, col) {
+		$('#th' + col).html(name);
+	}
+</script>
+
+<style>
+	.a_models { padding-left: 6px; line-height: 26px; }
+	#models {margin-top:20px;}
+</style>
+
+<div id="models_columns">
+	<? if (isset($this->value['th']) && $this->value['th']) foreach($this->value['th'] as $n => $i): ?>
+		<? if (count($this->value['th']) == $n+1) break; ?>
+		<div><input type="text" name="th[]" value="<?=htmlspecialchars($i)?>" onkeyup="updateHead($(this).val(), <?=$n?>)" /><a href="javascript://" class="a_models" onclick="delColumn($(this).parent(), '<?=$n?>')">Удалить</a></div>
+	<? endforeach; ?>
+	<div><input type="text" name="th[]" value="Стоимость" disabled="disabled" /></div>
+</div>
+<input type="button" value="+" onclick="addColumn();" />
+
+<table id="models" border="1">
+	<tr>
+		<? if (isset($this->value['th']) && $this->value['th']) foreach($this->value['th'] as $n => $i): ?>
+			<? if (count($this->value['th']) == $n+1) break; ?>
+			<th><?=$i?></th>
+		<? endforeach; ?>
+		<th>Стоимость</th>
+	</tr>
+	<? if (isset($this->value['tr']) && $this->value['tr']) foreach($this->value['tr'] as $n => $i): ?>
+		<tr>
+			<? foreach($i as $n2 => $i2): ?>
+			<td><input name="td[<?=$n?>][]" type="text" value="<?=htmlspecialchars($i2)?>" /></td>
+			<? endforeach; ?>
+		</tr>
+	<? endforeach; ?>
+</table>
+<input type="button" value="+" onclick="addRow();" />

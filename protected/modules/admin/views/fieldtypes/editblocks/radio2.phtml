@@ -1,0 +1,9 @@
+<div class="margin-bottom">
+    <select name="<?=$this->prefixName?><?=$this->key?>[]" class="select multiple-as-single easy-multiple-selection check-list" multiple>
+	    <? foreach($this->field['values'] as $k => $value): ?>
+	    <option value="<?=$k?>"<? if(in_array($k, $this->db_value)): ?> selected="selected"<? endif; ?>>
+		    <?=$value?>
+        </option>
+	    <? endforeach; ?>
+    </select>
+</div>

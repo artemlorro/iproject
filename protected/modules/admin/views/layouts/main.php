@@ -1,27 +1,3 @@
-<?php
-$cs=Yii::app()->clientScript;
-$baseUrl=$this->module->assetsUrl;
-$cs->registerCssFile($baseUrl.'/css/reset.css');
-$cs->registerCssFile($baseUrl.'/css/style.css');
-$cs->registerCssFile($baseUrl.'/css/colors.css');
-$cs->registerCssFile($baseUrl.'/css/print.css', 'print');
-$cs->registerCssFile($baseUrl.'/css/480.css', 'only all and (min-width: 480px)');
-$cs->registerCssFile($baseUrl.'/css/768.css', 'only all and (min-width: 768px)');
-$cs->registerCssFile($baseUrl.'/css/992.css', 'only all and (min-width: 992px)');
-$cs->registerCssFile($baseUrl.'/css/1200.css', 'only all and (min-width: 1200px)');
-$cs->registerCssFile($baseUrl.'/css/2x.css', 'only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)');
-$cs->registerCssFile($baseUrl.'/css/styles/agenda.css');
-$cs->registerCssFile($baseUrl.'/css/styles/dashboard.css');
-$cs->registerCssFile($baseUrl.'/css/styles/files.css');
-$cs->registerCssFile($baseUrl.'/css/styles/form.css');
-$cs->registerCssFile($baseUrl.'/css/styles/modal.css');
-$cs->registerCssFile($baseUrl.'/css/styles/progress-slider.css');
-$cs->registerCssFile($baseUrl.'/css/styles/switches.css');
-$cs->registerCssFile($baseUrl.'/css/styles/table.css');
-$cs->registerCssFile($baseUrl.'/js/libs/glDatePicker/developr.css');
-$cs->registerCssFile($baseUrl.'/adm/js/libs/CLEditor/jquery.cleditor.css');
-$cs->registerCssFile($baseUrl.'/adm/js/libs/modernizr.custom.js');
-?>
 <!DOCTYPE html>
 
 <!--[if IEMobile 7]><html class="no-js iem7 oldie"><![endif]-->
@@ -43,12 +19,60 @@ $cs->registerCssFile($baseUrl.'/adm/js/libs/modernizr.custom.js');
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+	<!-- For all browsers -->
+	<link rel="stylesheet" href="/adm/css/reset.css?v=1">
+	<link rel="stylesheet" href="/adm/css/style.css?v=1">
+	<link rel="stylesheet" href="/adm/css/colors.css?v=1">
+	<link rel="stylesheet" media="print" href="/adm/css/print.css?v=1">
+	<!-- For progressively larger displays -->
+	<link rel="stylesheet" media="only all and (min-width: 480px)" href="/adm/css/480.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 768px)" href="/adm/css/768.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 992px)" href="/adm/css/992.css?v=1">
+	<link rel="stylesheet" media="only all and (min-width: 1200px)" href="/adm/css/1200.css?v=1">
+	<!-- For Retina displays -->
+	<link rel="stylesheet" media="only all and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)" href="/adm/css/2x.css?v=1">
+
 	<!-- Webfonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+
+	<!-- Additional styles -->
+	<link rel="stylesheet" href="/adm/css/styles/agenda.css?v=1">
+	<link rel="stylesheet" href="/adm/css/styles/dashboard.css?v=1">
+	<link rel="stylesheet" href="/adm/css/styles/files.css?v=1">
+	<link rel="stylesheet" href="/adm/css/styles/form.css?v=1">
+	<link rel="stylesheet" href="/adm/css/styles/modal.css?v=1">
+	<link rel="stylesheet" href="/adm/css/styles/progress-slider.css?v=1">
+	<link rel="stylesheet" href="/adm/css/styles/switches.css?v=1">
+	<link rel="stylesheet" href="/adm/css/styles/table.css?v=1">
+
+	<!-- glDatePicker -->
+	<link rel="stylesheet" href="/adm/js/libs/glDatePicker/developr.css?v=1">
+
+	<!-- CLEditor -->
+	<link rel="stylesheet" href="/adm/js/libs/CLEditor/jquery.cleditor.css">
+
+	<!-- JavaScript at bottom except for Modernizr -->
+	<script src="/adm/js/libs/modernizr.custom.js"></script>
+
+	<!-- For Modern Browsers -->
+	<link rel="shortcut icon" href="/adm/img/favicons/favicon.png">
+	<!-- For everything else -->
+	<link rel="shortcut icon" href="/adm/img/favicons/favicon.ico">
+	<!-- For retina screens -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/adm/img/favicons/apple-touch-icon-retina.png">
+	<!-- For iPad 1-->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/adm/img/favicons/apple-touch-icon-ipad.png">
+	<!-- For iPhone 3G, iPod Touch and Android -->
+	<link rel="apple-touch-icon-precomposed" href="/adm/img/favicons/apple-touch-icon.png">
 
 	<!-- iOS web-app metas -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+	<!-- Startup image for web apps -->
+	<link rel="apple-touch-startup-image" href="/adm/img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+	<link rel="apple-touch-startup-image" href="/adm/img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+	<link rel="apple-touch-startup-image" href="/adm/img/splash/iphone.png" media="screen and (max-device-width: 320px)">
 
 	<!-- Scripts -->
 	<script src="/adm/js/libs/jquery-1.7.2.min.js"></script>
@@ -92,34 +116,35 @@ $cs->registerCssFile($baseUrl.'/adm/js/libs/modernizr.custom.js');
 
 		<!-- By default, this section is made for 4 icons, see the doc to learn how to change this, in "basic markup explained" -->
 		<ul id="access" class="children-tooltip">
-			<li><a href="/admin/help/" title="Инструкция"><span class="icon-question"></span></a></li>
+			<li>
+<!--				<a href="/admin/help/" title="Инструкция"><span class="icon-question"></span></a>-->
+			</li>
 			<li></li>
 			<li></li>
 			<li><a class="confirm with-tooltip" href="/admin/?logout=1" title="Выйти"><span class="icon-extract"></span></a></li>
 		</ul>
 
 		<section class="navigable">
+			<? if ($this->view->IS_ADMIN): ?>
 			<ul class="big-menu">
-				<? if ($this->view->IS_ADMIN): ?>
-					<li><a href="/admin/content/edit/model/glo/id/1/<?=rand(1,999)?>" <? if('glo'==$this->MODEL_NAME): ?>class="navigable-current current"<? endif; ?>>Общие настройки</a></li>
-					<li><a href="/admin/orders/view/model/order/<?=rand(1,999)?>" <? if('order'==$this->MODEL_NAME): ?>class="navigable-current current"<? endif; ?>>Заказы</a></li>
-				<? endif; ?>
+				<li><a href="/admin/content/edit/model/glo/id/1/<?=rand(1,999)?>" <? if('glo'==$this->view->MODEL_NAME): ?>class="navigable-current current"<? endif; ?>>Общие настройки</a></li>
 
-				<? foreach($this->menu as $model => $value): if ($this->MANAGER && !in_array($model, $this->managersMenu[$this->MANAGER->role])) continue; ?>
+				<? foreach($this->view->menu as $model => $value): ?>
 					<? if (is_array($value)): ?>
 						<li class="with-right-arrow">
 							<span><?=$value['name']?></span>
 							<ul class="big-menu">
 								<? foreach($value['values'] as $k => $v): ?>
-									<li><a href="/admin/content/view/model/<?=$k?>/<?=rand(111,999)?>" title="<?=$v?>" <? if($k==$this->MODEL_NAME): ?>class="navigable-current current"<? endif; ?>><?=$v?></a></li>
+									<li><a href="/admin/content/view/model/<?=$k?>/<?=rand(111,999)?>" title="<?=$v?>" <? if($k==$this->view->MODEL_NAME): ?>class="navigable-current current"<? endif; ?>><?=$v?></a></li>
 								<? endforeach; ?>
 							</ul>
 						</li>
 					<? else: ?>
-						<li><a href="/admin/content/view/model/<?=$model?>/<?=rand(111,999)?>" title="<?=$value?>" <? if($model==$this->MODEL_NAME): ?>class="navigable-current current"<? endif; ?>><?=$value?></a></li>
+						<li><a href="/admin/content/view/model/<?=$model?>/<?=rand(111,999)?>" title="<?=$value?>" <? if($model==$this->view->MODEL_NAME): ?>class="navigable-current current"<? endif; ?>><?=$value?></a></li>
 					<? endif; ?>
 				<? endforeach; ?>
 			</ul>
+			<? endif; ?>
 		</section>
 
 	</div>
@@ -167,6 +192,9 @@ $cs->registerCssFile($baseUrl.'/adm/js/libs/modernizr.custom.js');
 
 <!-- Form Plugin -->
 <script type="text/javascript" src="/adm/js/libs/jquery.form.js"></script>
+
+<!-- Tablesorter -->
+<!--<script src="/adm/js/libs/jquery.tablesorter.min.js"></script>-->
 
 <!-- Ajax Upload -->
 <script type="text/javascript" src="/adm/js/libs/ajax-upload/ajaxupload.js"></script>

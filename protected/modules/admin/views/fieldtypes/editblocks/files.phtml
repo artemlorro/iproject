@@ -1,0 +1,24 @@
+<div id="<?=$this->view->key?>_swfupload-control" class="swfupload-control">
+	<input type="button" id="<?=$this->view->key?>_button" />
+	<p id="<?=$this->view->key?>_queuestatus"></p>
+	<ol id="<?=$this->view->key?>_log" class="swflog"></ol>
+</div>
+<input type="hidden" name="edit_<?=$this->view->key?>" id="edit_<?=$this->view->key?>" value="<?=$this->view->value?>">
+<input type="hidden" name="<?=$this->view->key?>_count" id="<?=$this->view->key?>_count" value="<?=(int)@$this->view->field['count']?>">
+<div class="filesBlock" id="<?=$this->view->key?>_files">
+
+	<? if($this->view->value): ?>
+		<? foreach ($this->view->value as $k => $i): ?>
+		<div class="file">
+			<?=$i['name']?> (<?=number_format($i['size']/1000, 2, ".", " ")?>Кб)&nbsp;&nbsp;<a href="/admin/content/getfile/model/<?=$this->view->MODEL_NAME?>/id/<?=$this->view->id?>/key/<?=$this->view->key?>/file/<?=$i['filename']?>/" target="_blank">скачать</a>&nbsp;|
+			<a href="##" onclick="deleteFile('<?=$this->view->key?>','/admin/content/delete-file/model/<?=$this->view->MODEL_NAME?>/id/<?=$this->view->id?>/key/<?=$this->view->key?>/file/<?=$i['filename']?>/', this);">удалить</a>
+		</div>
+		<? endforeach; ?>
+	<? endif; ?>
+
+	<script>
+		swfFileUploaderInit('<?=$this->view->key?>','/admin/content/upload-file/model/<?=$this->view->MODEL_NAME?>/id/<?=$this->view->id?>/key/<?=$this->view->key?>/');
+	</script>
+
+	<div class="clear"></div>
+</div>
