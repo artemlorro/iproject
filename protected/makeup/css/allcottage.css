@@ -1,0 +1,58 @@
+.bg_cottage {
+	background:#2d944c url(../images/allcottage/domiki.png) no-repeat right;
+}
+
+.description {
+	background:url(../images/domiki_fon.png);
+	height:175px;
+}
+
+input.choice_make {
+	background:url(../images/allcottage/choice_but_cottage.png) repeat-x;
+}
+
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; background:url(../images/slider_prigress_cottage.png) repeat-x; }
+
+.choice_form {
+	width:239px;
+}
+
+.sub_cottage {
+	border:1px solid #2d944c;
+	background:url(../images/allcottage/quiz_submit_button.png);
+}
+
+#block1 {
+	float:left;
+	width:150px;
+}
+
+#block2 {
+	float:left;
+	width:215px;
+}
+
+#block3 {
+	float:left;
+	width:165px;
+}
+
+#block4 {
+	float:left;
+	width:200px;
+}
+
+#block5 {
+	float:left;
+	width:190px;
+}
+
+#block6 {
+	float:left;
+	width:160px;
+}
+
+#block7 {
+	float:left;
+	width:180px;
+}

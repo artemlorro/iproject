@@ -1,0 +1,57 @@
+.bg_home {
+	background:#b67c41 url(../images/home/home.png) no-repeat right;
+}
+
+.h1home {
+	letter-spacing:-5px;
+}
+
+.object .photo {
+	padding:17px 20px 0 20px;
+}
+
+.description {
+	background:url(../images/domiki_fon.png);
+	height:175px;
+}
+
+input.choice_make {
+	background:url(../images/home/choice_home_but.png) repeat-x;
+}
+
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; background:url(../images/home/slider_progress.png) repeat-x; }
+
+.sub_home {
+	border:1px solid #b67c41;
+	background:url(../images/home/quiz_submit_home.png);
+}
+
+.choice_form {
+	width:239px;
+}
+
+#checkboxes label.home_check {
+	margin:0 7px 0 3px;
+}
+
+#block1 {	float:left;	width:155px; }
+
+#block2 {	float:left; width:195px; }
+
+#block3 {	float:left;	width:150px; }
+
+#block4 {	float:left;	width:205px; }
+
+#block5 {	float:left;	width:185px; }
+
+#block6 {	float:left;	width:175px; }
+
+#block7 {	float:left;	width:185px; }
+
+#table_object {
+	background:#efe4d7; 
+}
+
+#table_object .table_block4 {
+	background:#DEC19C;
+}
