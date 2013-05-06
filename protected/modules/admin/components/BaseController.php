@@ -38,7 +38,9 @@ class BaseController extends CController
     public function menu()
     {
         $menu = array(
-            'news' => 'Новости',
+            'branch' => 'Направления',
+            'news' => 'Новости компании',
+            'bnews' => 'Новости рынка',
         );
         $this->view->menu = $menu;
     }

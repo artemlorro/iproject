@@ -1,31 +1,69 @@
 <?php
 
 /**
- * This is the model class for table "news".
- *
- * The followings are the available columns in table 'news':
  * @property string $id
- * @property string $dt
+ * @property string $skey
  * @property string $name
  * @property string $ann
  * @property string $text
  * @property string $preview
  * @property integer $onoff
+ * @method published()
+ * @method recently()
  */
 class News extends CActiveRecord
 {
 	public $searchFields = array();
-	public $tableName = 'Новости';
+	public $tableName = 'Новости компании';
 	public $fields = array(
 		'skey' => array('type' => 'skey', 'name' => 'Ключ (сам генерируется)', 'skiplist' => true),
 		'dt' => array('type' => 'datetime', 'name' => 'Дата новости'),
 		'name' => array('type' => 'text', 'name' => 'Наименование'),
 		'preview' => array('type' => 'images', 'name' => 'Превью', 'skiplist' => true,
-			'count' => 1, 'dirname' => 'files/news', 'w' => 200),
+			'count' => 1, 'dirname' => 'files/news', 'w' => 135),
 		'ann' => array('type' => 'editor', 'name' => 'Аннотация', 'skiplist' => true),
 		'text' => array('type' => 'editor', 'name' => 'Текст новости', 'skiplist' => true),
 		'onoff' => array('type' => 'values', 'name' => 'Отображать страницу', 'values' => array(0 => 'Нет', 1 => 'Да')),
 	);
+
+	public function getAnn()
+	{
+		return $this->ann;
+	}
+
+	public function getDt()
+	{
+		return $this->dt;
+	}
+
+	public function getName()
+	{
+		return $this->name;
+	}
+
+	public function getOnoff()
+	{
+		return $this->onoff;
+	}
+
+	public function getPreview()
+	{
+		$imgType = new ImagesInfo();
+		$value = $imgType->getValue($this->preview, $this->fields['preview']);
+		return $value ? current($value) : false;
+	}
+
+	public function getText()
+	{
+		return $this->text;
+	}
+
+	public function url()
+	{
+		return '/news/view/' . $this->skey;
+	}
+
+
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -37,21 +75,13 @@ class News extends CActiveRecord
 		return parent::model($className);
 	}
 
-	/**
-	 * @return string the associated database table name
-	 */
 	public function tableName()
 	{
 		return 'news';
 	}
 
-	/**
-	 * @return array validation rules for model attributes.
-	 */
 	public function rules()
 	{
-		// NOTE: you should only define rules for those attributes that
-		// will receive user inputs.
 		return array(
 			array('onoff', 'numerical', 'integerOnly'=>true),
 			array('name', 'length', 'max'=>256),
@@ -62,55 +92,26 @@ class News extends CActiveRecord
 		);
 	}
 
-	/**
-	 * @return array relational rules.
-	 */
 	public function relations()
 	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
-		return array(
-		);
+		return array();
 	}
 
-	/**
-	 * @return array customized attribute labels (name=>label)
-	 */
 	public function attributeLabels()
 	{
-		return array(
-			'id' => 'ID',
-			'dt' => 'Dt',
-			'skey' => 'Skey',
-			'name' => 'Name',
-			'ann' => 'Ann',
-			'text' => 'Text',
-			'preview' => 'Preview',
-			'onoff' => 'Onoff',
-		);
+		return array();
 	}
 
-	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
-	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
-	 */
-	public function search()
+	public function scopes()
 	{
-		// Warning: Please modify the following code to remove attributes that
-		// should not be searched.
-
-		$criteria=new CDbCriteria;
-
-		$criteria->compare('id',$this->id,true);
-		$criteria->compare('dt',$this->dt,true);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('ann',$this->ann,true);
-		$criteria->compare('text',$this->text,true);
-		$criteria->compare('preview',$this->preview,true);
-		$criteria->compare('onoff',$this->onoff);
-
-		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
-		));
+		return array(
+			'published' => array(
+				'condition' => 'onoff = 1',
+			),
+			'recently' => array(
+				'order' => 'dt DESC',
+				'limit' => 6,
+			),
+		);
 	}
 }

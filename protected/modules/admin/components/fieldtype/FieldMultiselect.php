@@ -2,27 +2,27 @@
 
 class FieldMultiselect extends FieldAbstract
 {
-	/**
-	 * @var A_Model_Mapper_EntityMapper
-	 */
-	protected $_mapper;
-	
+	protected $model = null;
+
 	public function getValue ($value, $param, $id = 0)
 	{
-		$this->_mapper = $param['mapper'];
-
 		$dbTable = $param['data']['dbTable'];
 		$pkField = $param['data']['pkField'];
 		$skField = $param['data']['skField'];
 
-		$select = $this->_mapper->getGateway()->select()->from(array('t' => $this->_mapper->getTableName()));
-		$select->setIntegrityCheck(false);
-		$select->joinLeft(array($dbTable => $dbTable), $dbTable . '.' . $skField . ' = t.id', array());
-		$select->where($dbTable . '.' . $pkField . ' = ?', $id);
-		$data = $this->_mapper->getGateway()->fetchAll($select);
+		$modelClass = $param['modelClass'];
+		$model = new $modelClass();
+
+		$data = Yii::app()->db->createCommand()
+			->select('id, name')
+			->from($model->tableName() . ' t')
+			->join($dbTable . ' j', 't.id=j.' . $skField)
+			->where('j.'.$pkField.'=:id', array(':id'=>$id))
+			->queryAll();
+
 		$values = array();
-		foreach ($data->toArray() as $d) {
-			$values[] = $d[$this->_mapper->nameField];
+		foreach ($data as $d) {
+			$values[] = $d['name'];
 		}
 
 		return implode(', ', $values);
@@ -30,16 +30,20 @@ class FieldMultiselect extends FieldAbstract
 	
 	function getEditBlock ($key, $db_data, $param, $prefix = "edit_")
 	{
-		$this->_mapper = $param['mapper'];
+		$modelClass = $param['modelClass'];
+		$model = $this->model = new $modelClass();
+
 		$dbTable = $param['data']['dbTable'];
 		$pkField = $param['data']['pkField'];
 		$skField = $param['data']['skField'];
 
-		$select = $this->_mapper->getGateway()->select()->from(array('t' => $this->_mapper->getTableName()));
-		$select->setIntegrityCheck(false);
-		$select->joinLeft(array($dbTable => $dbTable), $dbTable . '.' . $skField . ' = t.id', array());
-		$select->where($dbTable . '.' . $pkField . ' = ?', $db_data['id']);
-		$data = $this->_mapper->getGateway()->fetchAll($select);
+		$data = Yii::app()->db->createCommand()
+			->select('id, name')
+			->from($model->tableName() . ' t')
+			->join($dbTable . ' j', 't.id=j.' . $skField)
+			->where('j.'.$pkField.'=:id', array(':id'=>$db_data['id']))
+			->queryAll();
+
 		$values = array();
 		foreach ($data as $d) {
 			$values[] = $d['id'];
@@ -51,7 +55,7 @@ class FieldMultiselect extends FieldAbstract
 		$this->view->prefixName = $prefix;
 		
 		$parentField = false;
-		foreach ($this->_mapper->fields as $k => $f) {
+		foreach ($model->fields as $k => $f) {
 			if ($f['type'] == 'parent') {
 				$parentField = $k; break;
 			}
@@ -66,50 +70,54 @@ class FieldMultiselect extends FieldAbstract
 	function parseOption (&$options, $parentField = false, $parent_id = 0, $lvl = 0)
 	{
 		$idField = $this->view->idField = 'id';
-		$this->view->nameField = $this->_mapper->nameField;
-		
-		$select = $this->_mapper->getGateway()->select()->order($this->_mapper->nameField);
-		if ($parentField) $select->where("$parentField = ?", $parent_id);
-		$data = $this->_mapper->getGateway()->fetchAll($select);		
+		$this->view->nameField = 'name';
+
+		$data = Yii::app()->db->createCommand()
+			->select('id, name')
+			->from($this->model->tableName() . ' t')
+			->order('t.name')
+			->queryAll();
+
+		// на будущее
+//		if ($parentField) $select->where("$parentField = ?", $parent_id);
 
 		if ($data) foreach ($data as $i) {
-			$i = $i->toArray();
 			$i['lvl'] = $lvl;
 			$this->view->dataOption = $i;
 			$options .= $this->render('editblocks/multiselect_option.phtml');
 
-			if (!$parentField) continue;
-			
-			$select = $this->_mapper->getGateway()->select();
-			$select->reset('order')->from($this->_mapper->getTableName(), array('sum' => new Zend_Db_Expr('count(id)')));
-			$count = current(current($this->_mapper->getGateway()->fetchRow($select)));
-
-			if ($count) {
-				$this->parseOption($options, $parentField, $i[$idField], $lvl + 1);
-			}
+//			if (!$parentField) continue;
+//
+//			$select = $this->_mapper->getGateway()->select();
+//			$select->reset('order')->from($this->_mapper->getTableName(), array('sum' => new Zend_Db_Expr('count(id)')));
+//			$count = current(current($this->_mapper->getGateway()->fetchRow($select)));
+//
+//			if ($count) {
+//				$this->parseOption($options, $parentField, $i[$idField], $lvl + 1);
+//			}
 		}
 	}
 
 	function saveData($key, $param, $id)
 	{
 		$data = isset($_REQUEST['edit_' . $key]) ? $_REQUEST['edit_' . $key] : false;
-		/**
-		 * @var A_Model_Mapper_EntityMapper $mapper
-		 */
-		$mapper = $param['mapper'];
+
+		$modelClass = $param['modelClass'];
+		$model = $this->model = new $modelClass();
+
 		$dbTable = $param['data']['dbTable'];
 		$pkField = $param['data']['pkField'];
 		$skField = $param['data']['skField'];
 
 		$deleteSql = 'delete from ' . $dbTable . ' where ' . $pkField . ' = ' . $id;
-		$mapper->getGateway()->getAdapter()->query($deleteSql);
+		Yii::app()->db->createCommand($deleteSql)->execute();
 
 		if ($data) {
 			$insertSql = 'insert into ' . $dbTable . ' ('.$pkField.', '.$skField.') values ';
 			foreach ($data as $k => $d) {
-				$insertSql .= ($k ? ',' : '') . '('.$id.', '.(int)$d.')';
+				if ((int)$d) $insertSql .= ($k ? ',' : '') . '('.$id.', '.(int)$d.')';
 			}
-			$mapper->getGateway()->getAdapter()->query($insertSql);
+			Yii::app()->db->createCommand($insertSql)->execute();
 		}
 
 		return $data;

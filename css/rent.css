@@ -1,0 +1,73 @@
+.bg_home {
+	background:#377597 url(../images/rent/rent.png) no-repeat right;
+}
+
+.h1home {
+	letter-spacing:-5px;
+}
+
+/*#headline_block ul.useful_info_nav li {
+	border-bottom: 1px solid #e5b176;
+}*/
+
+#headline_block ul.useful_info_nav li:hover {
+	background: #71aecf;
+}
+
+#headline_block ul.useful_info_nav {
+	background:#377597;
+}
+
+.object .photo {
+	padding:17px 20px 0 20px;
+}
+
+.description {
+	background:url(../images/domiki_fon.png);
+	height:175px;
+}
+
+input.choice_make {
+	background:url(../images/rent/choice_rent_but.png) repeat-x;
+}
+
+.ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 0; 
+	background:url(../images/rent/slider_progress.png) repeat-x; }
+
+.sub_home {
+	border:1px solid #377597;
+	background:url(../images/rent/quiz_submit_rent.png);
+}
+
+.choice_form {
+	width:239px;
+}
+
+#checkboxes label.home_check {
+	margin:0 7px 0 3px;
+}
+
+#table_object .table_block4 {
+	background:#DEC19C;
+}
+
+#table_object {
+	background: #efe4d7;
+}
+
+#table_object .table_block4 a {
+	color:#333536;
+	border-bottom:1px dashed #333536;
+}
+
+.flags_col {
+	width:109px;
+	height:50px;
+	top:95px;
+}
+
+.flag_st {
+	width:111px;
+	height: 45px;
+	margin-top: 7px;
+}

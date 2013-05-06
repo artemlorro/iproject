@@ -50,11 +50,10 @@ class ContentController extends BaseController
 				$this->orderField = $this->order = $key;
 			}
 			if ($field['type'] == 'parent') {
-				$field['mapper'] = $this->_mapper;
 				$this->searchFields[$key] = 0;
 			}
 			if ($field['type'] == 'select' || $field['type'] == 'multiselect') {
-				$field['model'] = new $field['modelClass']();
+//				$field['model'] = new $field['modelClass']();
 			}
 		}
 
@@ -335,7 +334,7 @@ class ContentController extends BaseController
 	{
 		$sql = "select CONVERT(REPLACE(" . $fieldName . ",'" . $value . $separator . "',''), signed) as i
 				from " . $tableName . " where " . $fieldName . " like '" . $value . "%' and id <> " . $id . " order by i desc limit 1";
-		$max = Yii::app()->db->createCommand($sql)->queryRow($sql);
+		$max = Yii::app()->db->createCommand($sql)->queryRow();
 
 		$newValue = $value;
 		if ($max) {

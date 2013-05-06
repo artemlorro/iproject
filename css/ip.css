@@ -1,0 +1,55 @@
+.bg_home {
+	background:#ff740e url(../images/ipoteka/ip.png) no-repeat right;
+}
+
+.h1home {
+	letter-spacing:-5px;
+}
+
+.object .photo {
+	padding:17px 20px 0 20px;
+}
+
+.description {
+	background:url(../images/domiki_fon.png);
+	height:175px;
+}
+
+
+.sub_home {
+	border:1px solid #377597;
+	background:url(../images/rent/quiz_submit_rent.png);
+}
+
+.choice_form {
+	width:239px;
+}
+
+#checkboxes label.home_check {
+	margin:0 7px 0 3px;
+}
+
+#table_object .table_block4 {
+	background:#DEC19C;
+}
+
+#table_object {
+	background: #efe4d7;
+}
+
+#table_object .table_block4 a {
+	color:#333536;
+	border-bottom:1px dashed #333536;
+}
+
+.flags_col {
+	width:109px;
+	height:50px;
+	top:95px;
+}
+
+.flag_st {
+	width:111px;
+	height: 45px;
+	margin-top: 7px;
+}
