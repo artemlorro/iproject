@@ -4,6 +4,8 @@
  * @property integer $id
  * @property string $cid
  * @property string $name
+ * @property integer $onoff
+ * @method published()
  */
 class Branch extends CActiveRecord
 {
@@ -12,7 +14,20 @@ class Branch extends CActiveRecord
 	public $fields = array(
 		'cid' => array('type' => 'text', 'name' => 'CRM ID'),
 		'name' => array('type' => 'text', 'name' => 'Наименование'),
+		'onoff' => array('type' => 'values', 'name' => 'Отображать страницу', 'values' => array(0 => 'Нет', 1 => 'Да')),
 	);
+
+	public function getName()
+	{
+		return $this->name;
+	}
+
+	public function getOnoff()
+	{
+		return $this->onoff;
+	}
+
+
 
 	/**
 	 * Returns the static model of the specified AR class.
@@ -48,5 +63,15 @@ class Branch extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array();
+	}
+
+	public function scopes()
+	{
+		return array(
+			'published' => array(
+				'condition' => 'onoff = 1',
+				'order' => 'name asc',
+			),
+		);
 	}
 }

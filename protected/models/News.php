@@ -60,7 +60,7 @@ class News extends CActiveRecord
 
 	public function url()
 	{
-		return '/news/view/' . $this->skey;
+		return '/news/' . $this->skey;
 	}
 
 
@@ -88,7 +88,7 @@ class News extends CActiveRecord
 			array('dt, ann, text, preview', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, dt, name, ann, text, preview, onoff', 'safe', 'on'=>'search'),
+			array('id, dt, skey, name, ann, text, preview, onoff', 'safe', 'on'=>'search'),
 		);
 	}
 

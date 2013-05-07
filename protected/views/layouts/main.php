@@ -15,7 +15,6 @@
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.tools.min.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.fancybox-1.3.4.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/dropkick.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui-1.9.2.custom.min.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/dropkick.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/main.js"></script>
@@ -26,35 +25,24 @@
 <div id="header">
 	<div id="top_menu">
 		<div id="top_menu_line">
-			<div id="top_menu_line1"></div>
-			<div id="top_menu_line2"></div>
-			<div id="top_menu_line3"></div>
-			<div id="top_menu_line4"></div>
-			<div id="top_menu_line5"></div>
-			<div id="top_menu_line6"></div>
-			<div id="top_menu_line7"></div>
-			<!--<div id="top_menu_line8"></div>-->
-			<div id="top_menu_line9"></div>
-			<div id="top_menu_line10"></div>
+			<? foreach($view->top_menu as $k => $i): $k=$k>=7?$k+1:$k;?>
+			<div id="top_menu_line<?=$k+1?>"></div>
+			<? endforeach; ?>
 		</div>
 		<div id="top_menu_content">
-			<div id="top_menu1"><a class="top_menu_link1" href="#">Новостройки</a></div>
-			<div id="top_menu2"><a class="top_menu_link2" href="#">Вторичный рынок</a></div>
-			<div id="top_menu3"><a class="top_menu_link3" href="#">Аренда</a></div>
-			<div id="top_menu4"><a class="top_menu_link4" href="#">Элитная</a></div>
-			<div id="top_menu5"><a class="top_menu_link5" href="#">Коммерческая</a></div>
-			<div id="top_menu6"><a class="top_menu_link6" href="#">Коттеджи</a></div>
-			<div id="top_menu7"><a class="top_menu_link7" href="#">Загородная</a></div>
-			<!--<div id="top_menu8"><a class="top_menu_link8" href="#">Зарубежная</a></div> -->
-			<div id="top_menu9"><a class="top_menu_link9" href="#">Ипотека</a></div>
-			<div id="top_menu10"><a class="top_menu_link10" href="#">Другие услуги
-					<img src="/images/strelka_menu.png" alt=""></a>
-				<ul class="top_menu_nav">
-					<li><a href="#">Другая услуга1</a></li>
-					<li><a href="#">Другая услуга2</a></li>
-					<li><a href="#">Другая услуга3</a></li>
-				</ul>
-			</div>
+			<? foreach($view->top_menu as $k => $i): $k=$k>=7?$k+1:$k; $childs = $i->getChilds(); ?>
+				<div id="top_menu<?=$k+1?>">
+					<a class="top_menu_link<?=$k+1?>" href="<?=$i->getUrl()?>"><?=$i->getName()?>
+						<? if(count($childs)): ?><img src="images/strelka_menu.png" alt=""><? endif; ?></a>
+					<? if(count($childs)): ?>
+					<ul class="top_menu_nav">
+						<? foreach($childs as $c): ?>
+						<li><a href="<?=$c->getUrl() ?>"><?=$c->getName() ?></a></li>
+						<? endforeach; ?>
+					</ul>
+					<? endif; ?>
+				</div>
+			<? endforeach; ?>
 		</div>
 	</div>
 	<div id="info_line">
@@ -138,12 +126,11 @@
 		<div id="video_but"><a href="#"><img src="/images/vid_strelka.png" />Посмотрите видео</a></div>
 		<ul class="menu_main">
 			<li class="first"><a href="#">Офисы на карте</a></li>
-			<li><a href="#">О компании</a></li>
-			<li><a href="#">Услуги</a></li>
-			<li><a href="#">Карьера</a></li>
-			<li><a href="#">Пресс-центр</a></li>
-			<li><a href="#">Блог</a></li>
-			<li><a href="#">Контакты</a></li>
+			<li><a href="/page/o_kompanii">О компании</a></li>
+			<li><a href="/page/o_kompanii">Услуги</a></li>
+			<li><a href="/page/o_kompanii">Карьера</a></li>
+			<li><a href="/page/o_kompanii">Пресс-центр</a></li>
+			<li><a href="/page/o_kompanii">Контакты</a></li>
 		</ul>
 	</div>
 </div>
@@ -191,30 +178,24 @@
 	<div id="subfooter_bottom">
 		<div id="footer_bottom">
 			<ul class="footer_menu">
-				<li class="first_sin_border"><a href="#">Новостройки</a></li>
-				<li><a href="#">Вторичный рынок</a></li>
-				<li><a href="#">Аренда</a></li>
-				<li><a href="#">Элитная</a></li>
-				<li><a href="#">Коммерческая</a></li>
+				<? foreach ($view->bottom_menu[0] as $k => $i): ?>
+				<li <? if(!$k): ?>class="first_sin_border"<? endif; ?>><a href="<?=$i->getUrl()?>"><?=$i->getName()?></a></li>
+				<? endforeach; ?>
 			</ul>
 			<ul class="footer_menu">
-				<li class="first_sin_border"><a href="#">Коттеджи</a></li>
-				<li><a href="#">Загородная</a></li>
-				<li><a href="#">Зарубежная</a></li>
-				<li><a href="#">Ипотека</a></li>
-				<li><a href="#">Другие услуги</a></li>
+				<? foreach ($view->bottom_menu[1] as $k => $i): ?>
+					<li <? if(!$k): ?>class="first_sin_border"<? endif; ?>><a href="<?=$i->getUrl()?>"><?=$i->getName()?></a></li>
+				<? endforeach; ?>
 			</ul>
 			<ul class="footer_menu">
-				<li class="first_sin_border"><a href="#">О компании</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Новости</a></li>
-				<li><a href="#">Вакансии</a></li>
+				<? foreach ($view->bottom_menu[2] as $k => $i): ?>
+					<li <? if(!$k): ?>class="first_sin_border"<? endif; ?>><a href="<?=$i->getUrl()?>"><?=$i->getName()?></a></li>
+				<? endforeach; ?>
 			</ul>
 			<ul class="footer_menu">
-				<li class="first_sin_border"><a href="#">Пресс-центр</a></li>
-				<li><a href="#">FAQ</a></li>
-				<li><a href="#">Блог / Форум</a></li>
-				<li><a href="#">Контакты</a></li>
+				<? foreach ($view->bottom_menu[3] as $k => $i): ?>
+					<li <? if(!$k): ?>class="first_sin_border"<? endif; ?>><a href="<?=$i->getUrl()?>"><?=$i->getName()?></a></li>
+				<? endforeach; ?>
 			</ul>
 			<div id="info_footer">
 				<div class="phone_foot_style"><?=$view->glo->getHeaderPhone1Code()?> <?=$view->glo->getHeaderPhone1()?></div>
@@ -229,9 +210,9 @@
 			</div>
 			<div id="social_block">
 				<div id="social_buttons">
-					<a class="social_but vk" href="#"></a>
-					<a class="social_but fb" href="#"></a>
-					<a class="social_but tw" href="#"></a>
+					<a class="social_but vk" href="<?=$view->glo->getUrlVk()?>"></a>
+					<a class="social_but fb" href="<?=$view->glo->getUrlFb()?>"></a>
+					<a class="social_but tw" href="<?=$view->glo->getUrlTw()?>"></a>
 				</div>
 				<div id="search">
 					<input class="search_text" type="text" name="search" value="Найти" />

@@ -31,6 +31,15 @@ class NewsController extends FrontController
 
 	public function actionView()
 	{
+		$skey = $this->_getParam('skey');
+		if (!$skey) {
+			// todo 404 page
+		}
+		$news = News::model()->find('skey=:skey', array('skey' => $skey));
+		if (!$news) {
+			// todo 404 page
+		}
+		$this->view->page = $news;
 		$this->render('view');
 	}
 

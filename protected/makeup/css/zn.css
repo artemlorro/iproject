@@ -51,22 +51,65 @@ input.choice_make {
 }
 
 .choice_form {
+	padding-top: 5px;
 	width:239px;
 }
 
-#checkboxes label.home_check {
+.checkboxes {
+	width:210px;
+	margin:5px auto 15px auto;
+}
+
+#checkboxes_zn label.home_check {
 	margin:0 7px 0 3px;
 }
 
 #table_object .table_block4 {
-	background:#DEC19C;
+	background:#c6e179;
 }
 
 #table_object {
-	background: #efe4d7;
+	background: #e3f2b9;
 }
 
 #table_object .table_block4 a {
 	color:#333536;
 	border-bottom:1px dashed #333536;
+}
+
+.left_border_but {
+	width:3px;
+	height: 37px;
+	float:left;
+	background: url(../images/zn/lb_but.png) no-repeat;
+}
+
+.link_zn_but {
+	display:block;
+	font-family:DINCyr-Bold;
+	width:185px;
+	height:37px;
+	float:left;
+	background: url(../images/zn/but_bg.png) repeat-x;
+}
+
+.link_zn_but a {
+	display: block;
+	width:185px;
+	height:37px;
+	font-size: 18px;
+	color:#fff;
+	padding:10px 0 0 10px;
+}
+
+.right_border_but {
+	width:3px;
+	height: 37px;
+	float:left;
+	background: url(../images/zn/rb_but.png) no-repeat;
+}
+
+span.zn_price {
+	color:#8eb129;
+	margin:0 10px;
 }

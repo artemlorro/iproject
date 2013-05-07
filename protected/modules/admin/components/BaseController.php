@@ -39,8 +39,32 @@ class BaseController extends CController
     {
         $menu = array(
             'branch' => 'Направления',
-            'news' => 'Новости компании',
-            'bnews' => 'Новости рынка',
+            'page' => 'Страницы',
+	        'nedv' => array('name' => 'Объекты недвижимости',
+		        'values' => array(
+			        'obj_secondary' => 'Вторичная недвижимость',
+		        )),
+	        'news' => array('name' => 'Новости',
+		        'values' => array(
+                    'bnews' => 'Новости компании',
+                    'news' => 'Новости рынка',
+		        )),
+	        'menu' => array('name' => 'Меню сайта',
+		        'values' => array(
+	                'top_menu' => 'Верхнее меню',
+	                'bottom_menu' => 'Нижнее меню',
+		        )),
+	        'metro' => array('name' => 'Метро',
+		        'values' => array(
+			        'metro_line' => 'Линии метро',
+			        'metro_station' => 'Станции метро',
+		        )),
+	        'distinct' => 'Районы',
+	        'ground_status' => 'Статусы участков земли',
+	        'building_type' => 'Типы домов',
+	        'lavatory_type' => 'Типы санузла',
+	        'pay_type' => 'Типы оплаты',
+
         );
         $this->view->menu = $menu;
     }

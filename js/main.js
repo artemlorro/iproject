@@ -48,6 +48,8 @@ jQuery(document).ready(function($){
 	$("ul.tabs").tabs("div.panes > div", {current: 'active'});
 	$(".map_tabs ul").tabs("div.panes > div", {current: 'active'});
 	$("ul.tabs").tabs("div.panel > div", {current: 'active'});
+
+	$(".tabs_side_search").tabs("div.panes_side_search > div", {current: 'active'});
 	
 	$("ul.tabs_select").tabs("div.panes", {effect: 'ajax', history: true, onClick:function(){
 		checkWidth();
@@ -61,17 +63,17 @@ jQuery(document).ready(function($){
 		}
 	});
 
-	if( $('#content_news .panel').length ) {
-		$("#left_side_bar").tabs("#content_news .panel", {effect: 'ajax', history: true, onClick:function(){
-			checkWidth();
-		}});
-	}
+//	if( $('#content_news .panel').length ) {
+//		$("#left_side_bar").tabs("#content_news .panel", {effect: 'ajax', history: true, onClick:function(){
+//			checkWidth();
+//		}});
+//	}
 
-	if( $("#content_vacancy .panel").length ) {
-		$("#left_side_bar").tabs("#content_vacancy .panel", {effect: 'ajax', history: true, onClick:function(){
-			checkWidth();
-		}});
-	}
+//	if( $("#content_vacancy .panel").length ) {
+//		$("#left_side_bar").tabs("#content_vacancy .panel", {effect: 'ajax', history: true, onClick:function(){
+//			checkWidth();
+//		}});
+//	}
 // dropkick attachment
 	$('.dropdown').dropkick();
 
@@ -106,7 +108,7 @@ jQuery(document).ready(function($){
 			$(".director").show();
 			$(".director980").hide();
 			$(".right_ind_info_block").insertAfter(".ind_articles");
-			$("#responsive_style").attr("href", "/css/medium_responsive.css");
+			$("#responsive_style").attr("href", "css/medium_responsive.css");
 		}
 		
 		else {
@@ -118,7 +120,7 @@ jQuery(document).ready(function($){
 			$(".director_photo").show();
 			$(".director").show();
 			$(".director980").hide();
-			$("#responsive_style").attr("href", "/css/medium_responsive.css");
+			$("#responsive_style").attr("href", "css/medium_responsive.css");
 		}
 	}
 	
@@ -130,6 +132,7 @@ jQuery(document).ready(function($){
 	$("#consultation_link2").fancybox();
 	$("#consultation_link3").fancybox();
 
+	$(".choice_links .city_region_choice").fancybox();
 	$(".choice_links .region_choice").fancybox();
 	$(".choice_links .metro_choice").fancybox();
 	$(".choice_links .house_choice").fancybox();
@@ -184,15 +187,33 @@ jQuery(document).ready(function($){
 		$(".advanced_search").toggle();
 		var link = $(this);
 		if( link.html().match(/Расширенный/) ) {
-			link.html('Простой поиск <img src="images/choice_search_up.png" alt=""/>');
+			link.html('Простой поиск <img src="images/choice_search_up.png" alt="">');
 		} else {
-			link.html('Расширенный поиск <img src="images/choice_search.png" alt=""/>');
+			link.html('Расширенный поиск <img src="images/choice_search.png" alt="">');
 		}
 		return false;
 	});
 
 // sidesearch options choice 
-	$("#search_option_home li").click(function() {
+	$("#search_option_home1 li").click(function() {
+		$(this).siblings().removeClass("current_option");
+		$(this).addClass("current_option");
+		$("#object_type").attr("value", $(this).attr('obj-type') );
+	});
+
+	$("#search_option_home2 li").click(function() {
+		$(this).siblings().removeClass("current_option");
+		$(this).addClass("current_option");
+		$("#object_type").attr("value", $(this).attr('obj-type') );
+	});
+
+	$("#search_option_rent li").click(function() {
+		$(this).siblings().removeClass("current_option");
+		$(this).addClass("current_option");
+		$("#object_type").attr("value", $(this).attr('obj-type') );
+	});
+
+	$("#search_option_rent2 li").click(function() {
 		$(this).siblings().removeClass("current_option");
 		$(this).addClass("current_option");
 		$("#object_type").attr("value", $(this).attr('obj-type') );
@@ -210,5 +231,16 @@ jQuery(document).ready(function($){
 		$("#object_type").attr("value", $(this).attr('search-opt') );
 	});
 	
+
+	$("#table_object .table_block4").click( function(){
+		$("#table_object .table_block4 a").toggle();
+		var priceSort = $(this);
+		if( priceSort.html().match(/от/) ) {
+			priceSort.html('<a>Цена до</a><img src="images/arrow_price_up.png" alt="">');
+		} else {
+			priceSort.html('<a>Цена от</a><img src="images/arrow_price.png" alt="">');
+		}
+		return false;
+	});
 
 });

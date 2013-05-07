@@ -1,12 +1,7 @@
 <?php /* @var $this Controller */ $view = $this->view; ?>
 <div id="main">
 	<div id="page_title_line"><div id="news_main_title"><h1>Новости</h1></div><a class="rss" href="#"></a></div>
-	<ul id="left_side_bar" class="side_bar_style">
-		<li ><a class="current" href="ajax/news1.html">Новостройки</a></li>
-		<li><a href="ajax/news2.html">Вторичный рынок</a></li>
-		<li><a  href="ajax/news3.html">Аренда</a></li>
-	</ul>
-	<div id="content_news">
+	<div id="content_news" style="padding-left:0;">
 		<div id="line_month">
 			<select name="dropdown" class="dropdown" onchange="location.href='/news/?year=' + $(this).val();">
 				<? for($y = date('Y'); $y >= 2013; $y--): ?>
@@ -44,7 +39,7 @@
 					<? if($k+1 != count($this->view->list)): ?><div class="separator_line"></div><? endif; ?>
 				<? endforeach; ?>
 				<? else: ?>
-					<p>Новостей в данный промежуток времени не найдено.</p>
+					<div style="margin:20px 5px;">Новостей с этом месяце не найдено.</div>
 				<? endif; ?>
 			</div>
 		</div>

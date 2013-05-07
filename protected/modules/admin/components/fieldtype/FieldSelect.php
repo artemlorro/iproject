@@ -2,24 +2,30 @@
 
 class FieldSelect extends FieldAbstract
 {
-	/**
-	 * @var A_Model_Mapper_EntityMapper
-	 */
-	protected $_mapper;
+	protected $model = null;
 	
 	function getValue ($value, $param, $id = 0)
 	{
 		if (!$value) return '-';
-		$this->_mapper = $param['mapper'];
-		$row = $this->_mapper->find($value);
-		return $row ? $row->{$this->_mapper->nameField} : '';
+
+		$modelClass = $param['modelClass'];
+		$model = new $modelClass();
+
+		$data = Yii::app()->db->createCommand()
+			->select('id, name')
+			->from($model->tableName())
+			->where('id=:id', array(':id'=>$value))
+			->queryRow();
+
+		return isset($data['name']) ? $data['name'] : '-';
 	}
 	
 	function getEditBlock ($key, $db_data, $param, $prefix = "edit_")
 	{
 		$db_value = $db_data && isset($db_data[$key]) ? $db_data[$key] : '';
 
-		$this->_mapper = $param['mapper'];
+		$modelClass = $param['modelClass'];
+		$model = $this->model = new $modelClass();
 
 		$this->view->key = $key;
 		$this->view->db_value = (int)$db_value;
@@ -27,7 +33,7 @@ class FieldSelect extends FieldAbstract
 		$this->view->prefixName = $prefix;
 		
 		$parentField = false;
-		foreach ($this->_mapper->fields as $k => $f) {
+		foreach ($this->model->fields as $k => $f) {
 			if ($f['type'] == 'parent') {
 				$parentField = $k; break;
 			}
@@ -42,27 +48,25 @@ class FieldSelect extends FieldAbstract
 	function parseOption (&$options, $parentField = false, $parent_id = 0, $lvl = 0)
 	{
 		$idField = $this->view->idField = 'id';
-		$this->view->nameField = $this->_mapper->nameField;
-		
-		$select = $this->_mapper->getGateway()->select()->order($this->_mapper->nameField);
-		if ($parentField) $select->where("$parentField = ?", $parent_id);
-		$data = $this->_mapper->getGateway()->fetchAll($select);		
+		$this->view->nameField = 'name';
+
+		$command = Yii::app()->db->createCommand()
+			->select('id, name')
+			->from($this->model->tableName())
+			->order('name');
+
+		if ($parentField) $command->where($parentField . '=:id', array(':id'=>$parent_id));
+
+		$data = $command->queryAll();
 
 		if ($data) foreach ($data as $i) {
-			$i = $i->toArray();
 			$i['lvl'] = $lvl;
 			$this->view->dataOption = $i;
 			$options .= $this->render('editblocks/select_option.phtml');
 
 			if (!$parentField) continue;
-			
-			$select = $this->_mapper->getGateway()->select();
-			$select->reset('order')->from($this->_mapper->getTableName(), array('sum' => new Zend_Db_Expr('count(id)')));
-			$count = current(current($this->_mapper->getGateway()->fetchRow($select)));
 
-			if ($count) {
-				$this->parseOption($options, $parentField, $i[$idField], $lvl + 1);
-			}
+			$this->parseOption($options, $parentField, $i[$idField], $lvl + 1);
 		}
 	}
 }

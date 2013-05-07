@@ -886,9 +886,13 @@ span.price_normal {
 	border-bottom:1px solid #c2c2c2;
 }
 
-#choice_form_home {
+#choice_form_home1 {
 	padding-top:16px;
 	/*height:284px;*/
+}
+
+#choice_form_home2 {
+	padding:16px 0;
 }
 
 #choice_form_cottage {
@@ -913,17 +917,24 @@ span.price_normal {
 	margin-bottom:10px;
 }
 
-#choice_form_home ul.search_option {
+#choice_form_home1 ul.search_option, #choice_form_home2 ul.search_option {
 	width:210px;
 	height:26px;
 	margin:0 auto 15px;
 }
 
 #choice_form_rent ul.search_option {
-	width:230px;
+	width:220px;
 	height:26px;
 	margin:0 auto 15px auto;
 	padding-top:10px;
+}
+
+#choice_form_rent2 ul.search_option {
+	width:220px;
+	height:26px;
+	margin:0 auto 15px auto;
+	padding:10px 0;
 }
 
 #catalog ul.search_option_gradient {
@@ -934,28 +945,34 @@ span.price_normal {
 	text-align: center;
 }
 
-#choice_form_rent ul.search_option li {
-	margin-right:3px;
+#choice_form_rent ul.search_option li, #choice_form_rent2 ul.search_option li {
 	height:26px;
-	width:66px;
+	width:63px;
 	display:block;
 	float:left;
 	text-align:center;
 	cursor:pointer;
 	margin-bottom:10px;
-	background:url(../images/rent/choice_opt70.png) no-repeat;
 	font-family:Arial;
 	font-size:13px;
 	color:#3b4048;
 	padding-top:5px;
 }
 
-#choice_form_rent ul.search_option li.last + .current_option {
+#choice_form_rent ul.search_option li.last.current_option, #choice_form_rent2 ul.search_option li.last.current_option {
 	width:85px;
 	background:url(../images/rent/choice_opt85.png) no-repeat;
 }
 
-#choice_form_home ul.search_option li {
+#choice_form_rent ul.search_option li.current_option, #choice_form_rent2 ul.search_option li.current_option {
+	background:url(../images/rent/choice_opt70.png) no-repeat;
+}
+
+#choice_form_rent ul.search_option li.last, #choice_form_rent2 ul.search_option li.last {
+	width:85px;
+}
+
+#choice_form_home1 ul.search_option li, #choice_form_home2 ul.search_option li {
 	margin-right:2px;
 	height:26px;
 	width:83px;
@@ -971,7 +988,7 @@ span.price_normal {
 	padding-top:5px;
 }
 
-#search_option_home li {
+#search_option_home1 li, #search_option_home2 li {
 	width:84px;
 	height:26px;
 }
@@ -983,7 +1000,7 @@ span.price_normal {
 	cursor: pointer;
 }
 
-#choice_form_home ul.search_option  li.current_option {
+#choice_form_home1 ul.search_option  li.current_option, #choice_form_home2 ul.search_option  li.current_option {
 	background:none;
 	text-align:center;
 	background:url(../images/opt.png) no-repeat;
@@ -1045,11 +1062,17 @@ span.news-text {
 }
 
 .select_block {
-	overflow:hidden;
+	height: 60px;
+	overflow:visible;
 }
 
 .select_block .type_comment {
 	margin-left:10px;
+	text-align: left;
+}
+
+.select_block select {
+	width: 180px;
 }
 
 .check_home {
@@ -1115,7 +1138,7 @@ input.choice_make {
 	margin-bottom: 25px;
 }
 
-#price_label, #floor_label, #kitchen_space_label, #square_label, #square_all_label, #square_house_label, #square_grounds_label, #living_space_label {
+#price_label, #price_label2, #floor_label, #kitchen_space_label, #square_label, #square_all_label, #square_house_label, #square_grounds_label, #living_space_label {
 	position:relative;
 	height:20px;
 }
@@ -1564,9 +1587,25 @@ span.pos {
 	outline:none;
 	border:0;
 }
+
+.zn_margin {
+	margin-bottom: 15px;
+}
+
+#choice_form_rent2 {
+	padding-bottom: 15px;
+}
+
+#choice_form_zn .select_block, #choice_form_zn2 .select_block {
+	height: 80px;
+}
+
+#choice_form_zn2 {
+	padding-bottom: 15px;
+}
 /*UI Slider*/
 
-#slider-range, #slider-floor-range, #slider-square-range, #slider-kitchen_space-range, #slider-square_all-range, #slider-square_house-range, #slider-square_grounds-range, #slider-living_space-range {
+#slider-range, #slider-range2, #slider-floor-range, #slider-square-range, #slider-kitchen_space-range, #slider-square_all-range, #slider-square_house-range, #slider-square_grounds-range, #slider-living_space-range {
 	background:url(../images/slider_bar.png) no-repeat;
 	height:20px;
 	margin-top:15px;
@@ -1665,7 +1704,7 @@ h3.sidebar_header {
 	height:29px;
 	width:242px;
 	background: url(../images/back_to_search_ar.png);
-	margin:35px 0 55px 0;
+	/*margin:35px 0 80px 0;*/
 	position:relative;
 }
 
@@ -1681,7 +1720,7 @@ h3.sidebar_header {
 #search_results {
 	font-family: DINCyr-Bold;
 	font-size: 26px;
-	margin:35px 25px 35px 0;
+	margin:35px 25px 20px 0;
 	height:45px;
 	color:#3e454f;
 	/*width:1000px;*/
@@ -1725,6 +1764,7 @@ h3.sidebar_header {
 }
 
 #table_object .table_block4 img {
+	margin-bottom: 2px;
 	margin-left:3px;
 }
 
@@ -2793,6 +2833,7 @@ a.link_blue14 {
 
 .top_obj_info_line {
 	height:30px;
+	width: 970px;
 }
 
 .obj_price {
@@ -2802,15 +2843,17 @@ a.link_blue14 {
 	float:left;
 }
 
-span.home_price {
-	color:#b67c41;
-	margin:0 10px;
-}
-
 .obj_num {
 	font-weight: bold;
 	font-size: 14px;
 	float: left;
+	padding:2px 0 0 20px;
+}
+
+.obj_views {
+	font-weight: bold;
+	font-size: 14px;
+	float: right;
 	padding:2px 0 0 20px;
 }
 
@@ -2953,38 +2996,6 @@ span.home_price {
 	height:37px;
 }
 
-.left_border_but {
-	width:3px;
-	height: 37px;
-	float:left;
-	background: url(../images/home/lb_but.png) no-repeat;
-}
-
-.link_home_but {
-	display:block;
-	font-family:DINCyr-Bold;
-	width:185px;
-	height:37px;
-	float:left;
-	background: url(../images/home/but_bg.png) repeat-x;
-}
-
-.link_home_but a {
-	display: block;
-	width:185px;
-	height:37px;
-	font-size: 18px;
-	color:#fff;
-	padding:10px 0 0 10px;
-}
-
-.right_border_but {
-	width:3px;
-	height: 37px;
-	float:left;
-	background: url(../images/home/rb_but.png) no-repeat;
-}
-
 .comment_block {
 	width:620px;
 	padding-left: 30px;
@@ -3027,7 +3038,7 @@ span.home_price {
 
 .scrollable_obj {
 	/*width:1000px;*/
-	height:190px;
+	height:170px;
 }
 
 #scroll_wrap {
@@ -3036,7 +3047,7 @@ span.home_price {
 }
 
 .scrollable {
-	margin:25px 0 20px 0;
+	margin:10px 0 20px 0;
     position:relative;
     overflow:hidden;
     width: 910px;
@@ -3063,12 +3074,16 @@ span.home_price {
 }
 
 a.browse {
-    margin:25px 0 0 0;
+    margin:10px 0 0 0;
     display:block;
     width:29px;
     height:133px;
     float:left;
     cursor:pointer;
+}
+
+.news_index li {
+	cursor: pointer;
 }
 
 a.right { background-position: 0 -30px; clear:right; margin-right: 0px; background:url(../images/right_scrol.png) no-repeat;}

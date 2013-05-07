@@ -11,6 +11,9 @@
  * @property string $main_ceo_sub
  * @property string $main_ceo_img
  * @property string $main_ceo_fio
+ * @property string $url_vk
+ * @property string $url_fb
+ * @property string $url_tw
  */
 class Glo extends CActiveRecord
 {
@@ -28,6 +31,9 @@ class Glo extends CActiveRecord
 		'main_ceo_fio' => array('type' => 'text', 'name' => 'Главная страница - ФИО ген. директора'),
 		'main_ceo_img' => array('type' => 'images', 'name' => 'Главная страница - фото ген. директора', 'skiplist' => true,
 			'count' => 1, 'dirname' => 'files/main', 'w' => 185, 'h' => 195),
+		'url_vk' => array('type' => 'text', 'name' => 'URL Vkontakte'),
+		'url_fb' => array('type' => 'text', 'name' => 'URL Facebook'),
+		'url_tw' => array('type' => 'text', 'name' => 'URL Twitter'),
 	);
 
 	public function getHeaderPhone1()
@@ -79,6 +85,23 @@ class Glo extends CActiveRecord
 		$value = $imgType->getValue($this->main_slider_images, $this->fields['main_slider_images']);
 		return $value;
 	}
+
+	public function getUrlFb()
+	{
+		return $this->url_fb;
+	}
+
+	public function getUrlTw()
+	{
+		return $this->url_tw;
+	}
+
+	public function getUrlVk()
+	{
+		return $this->url_vk;
+	}
+
+
 
 
 	/**

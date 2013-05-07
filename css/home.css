@@ -70,3 +70,40 @@ input.choice_make {
 	color:#333536;
 	border-bottom:1px dashed #333536;
 }
+
+.left_border_but {
+	width:3px;
+	height: 37px;
+	float:left;
+	background: url(../images/home/lb_but.png) no-repeat;
+}
+
+.link_home_but {
+	display:block;
+	font-family:DINCyr-Bold;
+	width:185px;
+	height:37px;
+	float:left;
+	background: url(../images/home/but_bg.png) repeat-x;
+}
+
+.link_home_but a {
+	display: block;
+	width:185px;
+	height:37px;
+	font-size: 18px;
+	color:#fff;
+	padding:10px 0 0 10px;
+}
+
+.right_border_but {
+	width:3px;
+	height: 37px;
+	float:left;
+	background: url(../images/home/rb_but.png) no-repeat;
+}
+
+span.home_price {
+	color:#b67c41;
+	margin:0 10px;
+}

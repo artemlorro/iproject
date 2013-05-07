@@ -48,11 +48,11 @@ input.choice_make {
 }
 
 #table_object .table_block4 {
-	background:#DEC19C;
+	background:#78A7C0;
 }
 
 #table_object {
-	background: #efe4d7;
+	background: #BFD6E2;
 }
 
 #table_object .table_block4 a {
@@ -70,4 +70,36 @@ input.choice_make {
 	width:111px;
 	height: 45px;
 	margin-top: 7px;
+}
+
+.left_border_but {
+	width:3px;
+	height: 37px;
+	float:left;
+	background: url(../images/rent/lb_but.png) no-repeat;
+}
+
+.link_rent_but {
+	display:block;
+	font-family:DINCyr-Bold;
+	width:185px;
+	height:37px;
+	float:left;
+	background: url(../images/rent/but_bg.png) repeat-x;
+}
+
+.link_rent_but a {
+	display: block;
+	width:185px;
+	height:37px;
+	font-size: 18px;
+	color:#fff;
+	padding:10px 0 0 10px;
+}
+
+.right_border_but {
+	width:3px;
+	height: 37px;
+	float:left;
+	background: url(../images/rent/rb_but.png) no-repeat;
 }

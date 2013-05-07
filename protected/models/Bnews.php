@@ -61,11 +61,11 @@ class Bnews extends CActiveRecord
 		return $this->text;
 	}
 
-	public function findAllByBranch($branch_id)
+	public function findAllByBranch($branch_id, $condition = '')
 	{
 		$sql = 'select bnews.* from bnews
 			join bnews_branches bb on bb.bnews_id = bnews.id
-			where bb.branch_id = ' . $branch_id;
+			where bnews.onoff = 1 and bb.branch_id = ' . $branch_id . ($condition ? ' and ' . $condition : '');
 		$result = array();
 		$a = Yii::app()->db->createCommand($sql)->queryAll();
 		foreach ($a as $i) {
@@ -80,7 +80,7 @@ class Bnews extends CActiveRecord
 
 	public function url()
 	{
-		return '/bnews/view/' . $this->skey;
+		return '/bnews/' . $this->skey;
 	}
 
 

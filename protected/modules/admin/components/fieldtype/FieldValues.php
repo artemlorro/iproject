@@ -14,6 +14,7 @@ class FieldValues extends FieldAbstract
 		$this->view->key = $key;
 		$this->view->db_value = (int) $db_value;
 		$this->view->field = $param;
+		$this->view->prefixName = $prefix;
 
 		return $this->render('editblocks/' . $param['type'] . '.phtml');
 	}

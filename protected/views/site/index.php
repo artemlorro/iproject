@@ -189,7 +189,7 @@
 			</ul>
 			<div class="panel">
 				<div class="news_panel">
-					<? foreach($view->last_news as $i): ?>
+					<? foreach($view->last_bnews as $i): ?>
 						<div>
 							<span class="date"><?=date('d.m.Y', strtotime($i->getDt()))?></span>
 							<a href="<?=$i->url() ?>"><?=$i->getName() ?></a>
@@ -197,7 +197,7 @@
 					<? endforeach; ?>
 				</div>
 				<div class="news_panel">
-					<? foreach($view->last_bnews as $i): ?>
+					<? foreach($view->last_news as $i): ?>
 						<div>
 							<span class="date"><?=date('d.m.Y', strtotime($i->getDt()))?></span>
 							<a href="<?=$i->url() ?>"><?=$i->getName() ?></a>

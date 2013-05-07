@@ -32,8 +32,8 @@ class ContentController extends BaseController
 		$this->fields = $this->view->fields = $this->model->fields;
 
 		$this->initDefaultParam();
-//		$this->initSearchFields();
-//
+		$this->initSearchFields();
+
 		$this->view->urlQueryString = $this->_getUrlQuery();
 	}
 
@@ -85,7 +85,7 @@ class ContentController extends BaseController
 		$searchBlocks = array();
 		foreach ($this->model->searchFields as $key) {
 			$value = isset($this->searchFields[$key]) ? $this->searchFields[$key] : '';
-			$fieldTypeObject = $this->_getFieldTypeObject($this->fields[$key]['type']);
+			$fieldTypeObject = $this->_getFieldTypeObject($this->model->fields[$key]['type']);
 			$searchBlocks[$key] = $fieldTypeObject->getEditBlock($key, $value, $this->fields[$key], "cond_");
 		}
 
@@ -174,10 +174,19 @@ class ContentController extends BaseController
 
 		if (!$id || !$type) return false;
 
-		$select = $this->_selectSql();
-		$select->order($this->order);
-		$data = $this->_mapper->getGateway()->fetchAll($select);
-		$dataKeys = $this->_getKeysArray($data);
+		$command = Yii::app()->db->createCommand()
+			->select('id')
+			->from($this->model->tableName() . ' t')
+			->order($this->order);
+
+		foreach ($this->searchFields as $key => $value) {
+			$command->where($key.' = :'.$key, array(':'.$key => $value));
+		}
+
+		$dataKeys = array();
+		foreach ($command->queryAll() as $row) {
+			$dataKeys[] = $row['id'];
+		}
 
 		$key = array_search($id, $dataKeys);
 
@@ -207,6 +216,8 @@ class ContentController extends BaseController
 				array_push($dataKeys, $temp);
 				break;
 		}
+
+		$dataKeys = array_values($dataKeys);
 
 		foreach ($dataKeys as $i => $id) {
 			$a = $this->_entityClass;
@@ -356,6 +367,7 @@ class ContentController extends BaseController
 		$command = Yii::app()->db->createCommand()
 			->select('*')
 			->from($this->model->tableName() . ' t')
+			->order($order)
 			->limit($limit, $offset);
 
 		foreach ($this->searchFields as $key => $value) {

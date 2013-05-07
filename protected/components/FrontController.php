@@ -32,7 +32,15 @@ class FrontController extends CController
 		parent::init();
 		$this->view = new FrontView();
 		$this->__session = Yii::app()->session;
+
 		$this->glo = $this->view->glo = Glo::model()->findByPk(1);
+
+		$this->view->top_menu = TopMenu::model()->published()->firstLevel()->findAll();
+		$bottom_menu = array();
+		foreach (BottomMenu::model()->published()->findAll() as $i) {
+			$bottom_menu[$i->col][] = $i;
+		}
+		$this->view->bottom_menu = $bottom_menu;
 	}
 
 	public function _getParam($name, $default = null)

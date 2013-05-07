@@ -62,7 +62,7 @@ select, option {
   -moz-transition: border-color .5s;
   -o-transition: border-color .5s;
   transition: border-color .5s;
-  width: auto !important;
+/*  width: auto !important;*/
 }
   
 

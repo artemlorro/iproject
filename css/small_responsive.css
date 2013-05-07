@@ -426,3 +426,12 @@ a.metro_station img {
 ul.top_menu_nav {
 	width:129px;
 }
+
+.back_objects {
+	margin: 35px 0 30px 0;
+
+}
+
+.back_object {
+	margin:35px 0 80px 0;
+}

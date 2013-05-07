@@ -53,6 +53,8 @@ return array(
             'showScriptName'=>false,
             'caseSensitive'=>false,
 			'rules'=>array(
+				'<_c:(news|bnews)>' => '<_c>/index',
+				'<_c:(page|news|bnews)>/<skey>' => '<_c>/view',
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',

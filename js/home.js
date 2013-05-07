@@ -13,6 +13,19 @@ jQuery(document).ready(function($){
 		}
 	});
 
+	$( "#slider-range2" ).slider({
+		range: true,
+		min: 0.5,
+		max: 20,
+		values: [ 5.5, 15 ],
+		slide: function( event, ui ) {
+			$( "#price_label2 span.min" ).html(ui.values[ 0 ]);
+			$( "#price_label2 span.max" ).html(ui.values[ 1 ]);
+			$( "#price_min2" ).val(ui.values[ 0 ]);
+			$( "#price_max2" ).val(ui.values[ 1 ]);
+		}
+	});
+
 	$( "#slider-kitchen_space-range" ).slider({
 		range: true,
 		min: 1,
@@ -68,6 +81,8 @@ jQuery(document).ready(function($){
 
 	$( "#price_label span.min" ).html('5.5');
 	$( "#price_label span.max" ).html('15');
+	$( "#price_label2 span.min" ).html('5.5');
+	$( "#price_label2 span.max" ).html('15');
 	$( "#square_label span.min" ).html('50');
 	$( "#square_label span.max" ).html('90');
 	$( "#kitchen_space_label span.min" ).html('1');

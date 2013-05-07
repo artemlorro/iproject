@@ -251,6 +251,14 @@ ul.menu_main { width: 1000px; }
 	float:left;
 }
 
+.back_objects {
+	margin: 35px 0 15px 0;
+
+}
+
+.back_object {
+	margin:35px 0 80px 0;
+}
 
 /*.office_side_info {
 	height:95px; 
