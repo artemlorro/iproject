@@ -2,7 +2,9 @@
 
 // change the following paths if necessary
 $yii=dirname(__FILE__).'/../library/yii/yii.php';
-$config=dirname(__FILE__).'/protected/config/main.php';
+//$config=dirname(__FILE__).'/protected/config/main.php';
+require dirname(__FILE__).'/protected/components/SiteDispatcher.php';
+$config=dirname(__FILE__).'/'.SiteDispatcher::getConfigPath();
 
 // remove the following lines when in production mode
 defined('YII_DEBUG') or define('YII_DEBUG',true);

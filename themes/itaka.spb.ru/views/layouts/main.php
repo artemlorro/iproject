@@ -4,21 +4,21 @@
 <head>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" >
-	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/reset.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/jquery.fancybox.css" type="text/css"/>
-	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/dropkick.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/index.css" type="text/css" />
-	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" type="text/css">
-	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/all.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/reset.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/jquery.fancybox.css" type="text/css"/>
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/dropkick.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/index.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/ie.css" type="text/css">
+	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/all.css" type="text/css">
 	<link id="responsive_style" rel="stylesheet" type="text/css">
 	<!--<link rel="stylesheet" href="jquery.ui.slider.css" type="text/css"/> -->
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.tools.min.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.fancybox-1.3.4.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery-ui-1.9.2.custom.min.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/dropkick.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/main.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/index.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery.fancybox-1.3.4.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/dropkick.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/main.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/index.js"></script>
 </head>
 <body>
 <div id="wrap">
@@ -33,7 +33,7 @@
 			<? foreach($view->top_menu as $k => $i): $k=$k>=7?$k+1:$k; $childs = $i->getChilds(); ?>
 				<div id="top_menu<?=$k+1?>">
 					<a class="top_menu_link<?=$k+1?>" href="<?=$i->getUrl()?>"><?=$i->getName()?>
-						<? if(count($childs)): ?><img src="images/strelka_menu.png" alt=""><? endif; ?></a>
+						<? if(count($childs)): ?><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/strelka_menu.png" alt=""><? endif; ?></a>
 					<? if(count($childs)): ?>
 					<ul class="top_menu_nav">
 						<? foreach($childs as $c): ?>
@@ -47,7 +47,7 @@
 	</div>
 	<div id="info_line">
 		<div id="logo">
-			<a href="/"><img src="/images/logo.png" alt="АН ИТАКА"></a>
+			<a href="/"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/logo.png" alt="АН ИТАКА"></a>
 		</div>
 		<div id="services" class="home_serv"> Профессиональные <br /> риэлторы!</div>
 		<div class="phone">
@@ -73,10 +73,10 @@
 			<div id="log_in"><a>Вход</a></div>
 		</div>
 		<div id="consultant_online">
-			<div id="consultant_photo"><a id="consultation_link1" href="#consultation"><img src="/images/home/users/konsyltant.png" /></a></div>
+			<div id="consultant_photo"><a id="consultation_link1" href="#consultation"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/home/users/konsyltant.png" /></a></div>
 			<div id="online_consultant">
 				<div id="consultant"><a id="consultation_link2" href="#consultation">Консультант</a></div>
-				<div id="online_image"><a id="consultation_link3" href="#consultation"><img src="/images/online.png" /></a></div>
+				<div id="online_image"><a id="consultation_link3" href="#consultation"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/online.png" /></a></div>
 			</div>
 		</div>
 	</div>
@@ -101,15 +101,15 @@
 					</div>
 					<div class="end_dialog">
 						<div>Чат закончен. Оцените работу консультанта</div>
-						<img src="/images/dialog_star.png" alt="">
-						<img src="/images/dialog_star.png" alt="">
-						<img src="/images/dialog_star.png" alt="">
-						<img src="/images/dialog_star.png" alt="">
-						<img src="/images/dialog_star.png" alt="">
+						<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/dialog_star.png" alt="">
+						<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/dialog_star.png" alt="">
+						<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/dialog_star.png" alt="">
+						<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/dialog_star.png" alt="">
+						<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/dialog_star.png" alt="">
 					</div>
 				</div>
 				<div class="dialog_agent_block">
-					<img src="/images/user/consultant1.png" alt=""><br>
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/user/consultant1.png" alt=""><br>
 					<span>Маргарита<br>Барова-Бирюкова</span>
 				</div>
 				<div class="dialog_type_block">
@@ -123,7 +123,7 @@
 	</div>
 
 	<div id="menu">
-		<div id="video_but"><a href="#"><img src="/images/vid_strelka.png" />Посмотрите видео</a></div>
+		<div id="video_but"><a href="#"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/vid_strelka.png" />Посмотрите видео</a></div>
 		<ul class="menu_main">
 			<li class="first"><a href="#">Офисы на карте</a></li>
 			<li><a href="/page/o_kompanii">О компании</a></li>
@@ -140,7 +140,7 @@
 <div id="footer">
 	<? if ($view->show_subfooter_top): ?>
 	<div id="subfooter_title">
-		<div id="footer_title"><img src="/images/7.png" alt="7 причин для выбора нашей компании" /></div>
+		<div id="footer_title"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/7.png" alt="7 причин для выбора нашей компании" /></div>
 	</div>
 	<div id="subfooter_top">
 		<div id="footer_top">
@@ -149,7 +149,7 @@
 				<span class="block_name">на рынке <br> недвижимости</span>
 			</div>
 			<div id="ind_block2">
-				<img class="block_image" src="/images/icon_key.png" alt="все услуги по недвижимости" /><br />
+				<img class="block_image" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/icon_key.png" alt="все услуги по недвижимости" /><br />
 				<span class="block_name">все услуги <br> по недвижимости</span>
 			</div>
 			<div id="ind_block3">
@@ -157,19 +157,19 @@
 				<span class="block_name">в Северо-западном <br> регионе</span>
 			</div>
 			<div id="ind_block4">
-				<img class="block_image" src="/images/icon_case.png" alt="профессиональные риэлторы" /><br />
+				<img class="block_image" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/icon_case.png" alt="профессиональные риэлторы" /><br />
 				<span class="block_name">профессиональные <br> риэлторы</span>
 			</div>
 			<div id="ind_block5">
-				<img class="block_image" src="/images/icon05.png" alt="высокие стандарты качества" /><br />
+				<img class="block_image" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/icon05.png" alt="высокие стандарты качества" /><br />
 				<span class="block_name">высокий <br> стандарт качества</span>
 			</div>
 			<div id="ind_block6">
-				<img class="block_image" src="/images/icon_notebook.png" alt="Единая информационная система" /><br />
+				<img class="block_image" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/icon_notebook.png" alt="Единая информационная система" /><br />
 				<span class="block_name">единая<br> информационная <br>система</span>
 			</div>
 			<div id="ind_block7">
-				<img class="block_image" src="/images/icon04.png" alt="актуальная база объектов" /><br />
+				<img class="block_image" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/icon04.png" alt="актуальная база объектов" /><br />
 				<span class="block_name">актуальная <br> база объектов</span>
 			</div>
 		</div>

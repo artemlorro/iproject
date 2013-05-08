@@ -72,9 +72,9 @@
 		<div id="specobjects">
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/kn_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/kn_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Коттедж в коттеджном поселке "Грибово"</a>
@@ -83,9 +83,9 @@
 			</div>
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/ns_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/ns_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Жилой комплекс "Поэма на трех озерах"</a>
@@ -94,9 +94,9 @@
 			</div>
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/ar_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/ar_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Коттедж в коттеджном поселке "Грибово"</a>
@@ -105,9 +105,9 @@
 			</div>
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/zhil_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/zhil_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Коттедж в коттеджном поселке "Грибово"</a>
@@ -116,9 +116,9 @@
 			</div>
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/ip_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/ip_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Коттедж в коттеджном поселке "Грибово"</a>
@@ -127,9 +127,9 @@
 			</div>
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/el_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/el_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Коттедж в коттеджном поселке "Грибово"</a>
@@ -138,9 +138,9 @@
 			</div>
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/cot_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/cot_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Коттедж в коттеджном поселке "Грибово"</a>
@@ -149,9 +149,9 @@
 			</div>
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/zag_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/zag_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Коттедж в коттеджном поселке "Грибово"</a>
@@ -160,9 +160,9 @@
 			</div>
 			<div class="specobj">
 				<div class="specobj_photo">
-					<img src="/images/objects/specobj1.png" alt="">
+					<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/objects/specobj1.png" alt="">
 					<a href="#"></a>
-					<img class="specobj_type" src="/images/zar_specobj.png" alt="">
+					<img class="specobj_type" src="<?php echo Yii::app()->theme->baseUrl; ?>/images/zar_specobj.png" alt="">
 				</div>
 				<div class="specobj_info">
 					<a class="object_name" href="#">Коттедж в коттеджном поселке "Грибово"</a>
@@ -227,7 +227,7 @@
 		<div  id="article_left" class="ind_article">
 			<div class="title_article">Агентство недвижимости «Итака»: покупка,продажа и аренда недвижимости. </div>
 			<div class="img_article">
-				<img src="/images/article/article1.png" alt="">
+				<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/article/article1.png" alt="">
 				<a href="#">Читать далее</a>
 			</div>
 			<div class="text_article">
@@ -238,7 +238,7 @@
 		<div id="article_right" class="ind_article">
 			<div class="title_article">Агентство недвижимости «Итака»: покупка,продажа и аренда недвижимости. </div>
 			<div class="img_article">
-				<img src="/images/article/article2.png" alt="">
+				<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/article/article2.png" alt="">
 				<a href="#">Читать далее</a>
 			</div>
 			<div class="text_article">
@@ -251,7 +251,7 @@
 	<div class="right_ind_info_block">
 		<div id="bl_ind_left" class="small_ind_block">
 			<div class="title">Лучший сотрудник</div>
-			<img src="/images/user/best1.png" alt="">
+			<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/user/best1.png" alt="">
 			<div class="name">Петрова Анна Ивановна</div>
 		</div>
 		<div id="bl_ind_right" class="small_ind_block">

@@ -108,7 +108,7 @@ jQuery(document).ready(function($){
 			$(".director").show();
 			$(".director980").hide();
 			$(".right_ind_info_block").insertAfter(".ind_articles");
-			$("#responsive_style").attr("href", "css/medium_responsive.css");
+			$("#responsive_style").attr("href", "/themes/itaka.spb.ru/css/medium_responsive.css");
 		}
 		
 		else {
@@ -120,7 +120,7 @@ jQuery(document).ready(function($){
 			$(".director_photo").show();
 			$(".director").show();
 			$(".director980").hide();
-			$("#responsive_style").attr("href", "css/medium_responsive.css");
+			$("#responsive_style").attr("href", "/themes/itaka.spb.ru/css/medium_responsive.css");
 		}
 	}
 	
