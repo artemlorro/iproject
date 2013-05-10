@@ -6,6 +6,7 @@ return array(
 			'itaka.spb.ru',
 			'www.itaka.spb.ru',
 			'itaka.greenminds.ru',
+			'itaka.agoora.ru',
 		),
 	),
 	'mywebsite.com' => array(

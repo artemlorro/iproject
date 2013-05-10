@@ -68,7 +68,7 @@ class ImagesInfo
 //		if (class_exists('Imagick')) {
 			$image = new Imagick($filePath);
 //			$image->resizeimage($this->version()->width, $this->version()->height, imagick::FILTER_BESSEL, 1, $save_proportion);
-			$image->thumbnailImage($weight, $height, true, false);
+			$image->thumbnailImage($weight, $height, true, !$maintain_ratio);
 			$image->writeImages($newFile, true);
 //		}
 //		else {

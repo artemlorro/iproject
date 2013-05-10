@@ -10,6 +10,7 @@
  * @property integer $qty_to_sale
  * @property float $price
  * @property string $address
+ * @property string $metro
  * @property string $train_station
  * @property float $s_total
  * @property float $s_live
@@ -26,6 +27,7 @@
  * @property integer $district_id
  * @property integer $itaka_only
  * @property integer $lavatory_type_id
+ * @method published()
  */
 class ObjSecondary extends CActiveRecord
 {
@@ -39,6 +41,7 @@ class ObjSecondary extends CActiveRecord
 		'qty_to_sale' => array('type' => 'text', 'name' => 'Количество комнат на продажу', 'skiplist' => true),
 		'price' => array('type' => 'text', 'name' => 'Цена'),
 		'address' => array('type' => 'text', 'name' => 'Адрес'),
+		'metro' =>  array('type' => 'text', 'name' => 'Ближайшие станции метро (формат: metro_id1,min1,min2; metro_id2,min1,min2)', 'skiplist' => true),
 		'train_station' => array('type' => 'text', 'name' => 'Название ближайшей станции Электрички', 'skiplist' => true),
 		's_total' => array('type' => 'text', 'name' => 'Общая площадь Объекта', 'skiplist' => true),
 		's_live' => array('type' => 'text', 'name' => 'Жилая площадь Объекта', 'skiplist' => true),
@@ -51,7 +54,11 @@ class ObjSecondary extends CActiveRecord
 		'has_balcony' => array('type' => 'values', 'name' => 'Наличие балкона', 'values' => array(0 => 'Нет', 1 => 'Да'), 'skiplist' => true),
 		'has_lift' => array('type' => 'values', 'name' => 'Наличие лифта', 'values' => array(0 => 'Нет', 1 => 'Да'), 'skiplist' => true),
 		'adv_text' => array('type' => 'text', 'name' => 'Общая строка в рекламу', 'skiplist' => true),
-		'images' => array('type' => 'images', 'name' => 'Фото', 'skiplist' => true),
+		'images' => array('type' => 'images', 'name' => 'Фото', 'skiplist' => true,
+			'count' => 20, 'dirname' => 'files/photos', 'w' => 700, 'h' => 500,
+			'tmb' => array('w' => 201, 'h' => 132),
+			'tmb2' => array('w' => 132, 'h' => 132, 'maintain_ratio' => false)
+		),
 		'district_id' => array('type' => 'select', 'name' => 'Район', 'modelClass' => 'Distinct', 'skiplist' => true),
 		'itaka_only' => array('type' => 'values', 'name' => 'Только в ИТАКА', 'values' => array(0 => 'Нет', 1 => 'Да'), 'skiplist' => true),
 		'lavatory_type_id' => array('type' => 'select', 'name' => 'Тип санузла', 'modelClass' => 'LavatoryType', 'skiplist' => true),
@@ -115,7 +122,9 @@ class ObjSecondary extends CActiveRecord
 
 	public function getImages()
 	{
-		return $this->images;
+		$imgType = new ImagesInfo();
+		$value = $imgType->getValue($this->images, $this->fields['images']);
+		return $value ? $value : false;
 	}
 
 	public function getIsActive()
@@ -183,7 +192,19 @@ class ObjSecondary extends CActiveRecord
 		return $this->type;
 	}
 
-
+	public function getMetro()
+	{
+		$result = array();
+		if ($this->metro) foreach(explode(';', $this->metro) as $i) {
+			list ($metro_id, $min_auto, $min_people) = explode(',', $i);
+			$a = new strClass();
+			$a->metro = MetroStation::model()->findByPk(trim($metro_id));
+			$a->min_auto = trim($min_auto);
+			$a->min_people = trim($min_people);
+			$result[] = $a;
+		}
+		return $result;
+	}
 
 
 
@@ -215,5 +236,14 @@ class ObjSecondary extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array();
+	}
+
+	public function scopes()
+	{
+		return array(
+			'published' => array(
+				'condition' => 'is_active = 1',
+			),
+		);
 	}
 }
