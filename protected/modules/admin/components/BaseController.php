@@ -64,7 +64,10 @@ class BaseController extends CController
 	        'building_type' => 'Типы домов',
 	        'lavatory_type' => 'Типы санузла',
 	        'pay_type' => 'Типы оплаты',
-
+	        'office' => 'Офисы',
+	        'position' => 'Должности агентов',
+	        'agent' => 'Агенты',
+	        'agent_info' => 'Агенты по должностям',
         );
         $this->view->menu = $menu;
     }
