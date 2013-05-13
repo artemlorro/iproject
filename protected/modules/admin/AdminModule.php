@@ -1,9 +1,9 @@
 <?php
-
+//модуль панели управления сайтом
 class AdminModule extends CWebModule
 {
-    public $login;
-    public $password;
+    public $login;//логин
+    public $password;//пароль
 
 	private $_assetsUrl;
 

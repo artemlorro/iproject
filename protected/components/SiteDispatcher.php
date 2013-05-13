@@ -26,7 +26,8 @@ class SiteDispatcher
 		return $res;
 	}
 
-	public static function getConfigPath()
+	//получаем директурию с конфигом
+        public static function getConfigPath()
 	{
 		$arSites = self::getAvailableConfigs();
 
