@@ -1,5 +1,14 @@
 <?php
 
+if (!function_exists('dump')) {
+	function dump()
+	{
+		echo '<pre style="background: #000;color: #0f0;padding: 10px;">';
+		var_dump(func_get_args());
+		echo '</pre>';
+	}
+}
+
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
 

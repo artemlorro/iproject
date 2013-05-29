@@ -5,26 +5,29 @@
  */
 class FrontController extends AController
 {
+
 	/**
 	 * @var Glo
 	 */
 	public $glo = null;
 
 	public $view = null;
+	/** @var CWebUser */
+	public $user = null;
 
 	protected $__session;
 
-	public $layout='//layouts/main';
+	public $layout = '//layouts/main';
 	/**
 	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
 	 */
-	public $menu=array();
+	public $menu = array();
 	/**
 	 * @var array the breadcrumbs of the current page. The value of this property will
 	 * be assigned to {@link CBreadcrumbs::links}. Please refer to {@link CBreadcrumbs::links}
 	 * for more details on how to specify this property.
 	 */
-	public $breadcrumbs=array();
+	public $breadcrumbs = array();
 
 
 	public function init()
@@ -41,6 +44,22 @@ class FrontController extends AController
 			$bottom_menu[$i->col][] = $i;
 		}
 		$this->view->bottom_menu = $bottom_menu;
+
+		// @todo пока завигачик авторизацию сюда, потом будет отдельная форма уберем туда
+		$auth_email = $this->_getParam('auth_email');
+		$auth_password = $this->_getParam('auth_password');
+		if ($auth_email && $auth_password) {
+			// Аутентифицируем пользователя по email и паролю
+			$identity = new UserIdentity($auth_email, $auth_password);
+			if ($identity->authenticate())
+				Yii::app()->user->login($identity);
+			else
+				echo $identity->errorMessage;
+		}
+//		Yii::app()->user->logout();
+		// END
+
+		$this->user = Yii::app()->user;
 	}
 
 	public function _getParam($name, $default = null)

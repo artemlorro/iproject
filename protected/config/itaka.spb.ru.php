@@ -19,6 +19,7 @@ return CMap::mergeArray(
 			'news' => 'application.sites.common.controllers.NewsController',
 			'bnews' => 'application.sites.common.controllers.BnewsController',
 			'secondary' => 'application.sites.common.controllers.SecondaryController',
+			'agent' => 'application.sites.common.controllers.AgentController',
 		),
 
 		'components'=>array(
