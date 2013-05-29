@@ -1,5 +1,5 @@
 <?php
-
+//контроллер для работы с контентом в админке сайта
 class ContentController extends BaseController
 {
 	protected $_entityClass;
@@ -23,7 +23,8 @@ class ContentController extends BaseController
 
 		$this->modelName = $this->view->MODEL_NAME = $this->_getParam('model', false);
 
-		if (!$this->modelName) {
+		//если не указана модель данных, то работать отказываемся
+                if (!$this->modelName) {
 			return false;
 		}
 
@@ -45,7 +46,8 @@ class ContentController extends BaseController
 		$this->orderField = $this->view->idField;
 		$this->order = $this->view->idField . ' desc';
 
-		foreach ($this->fields as $key => &$field) {
+		//перебираем все поля модели
+                foreach ($this->fields as $key => &$field) {
 			if ($field['type'] == 'order') {
 				$this->orderField = $this->order = $key;
 			}
@@ -61,9 +63,11 @@ class ContentController extends BaseController
 		$this->view->order = $this->order;
 	}
 
-	protected function initSearchFields()
+	//добавим поля поиска
+        protected function initSearchFields()
 	{
-		foreach($_REQUEST as $key => $value) {
+		//переберём все поля по которым случился поиск
+                foreach($_REQUEST as $key => $value) {
 			if (strpos($key, 'cond_') !== false && trim($value)) {
 				$this->searchFields[str_replace('cond_', '', $key)] = $value;
 			}
@@ -83,6 +87,7 @@ class ContentController extends BaseController
 		$this->view->collection = $this->_getAll($this->order, $limit, $offset);
 
 		$searchBlocks = array();
+                //переберём все поля по которым можно искать в текущей моделе
 		foreach ($this->model->searchFields as $key) {
 			$value = isset($this->searchFields[$key]) ? $this->searchFields[$key] : '';
 			$fieldTypeObject = $this->_getFieldTypeObject($this->model->fields[$key]['type']);
@@ -103,7 +108,8 @@ class ContentController extends BaseController
 
 		$data = $id ? $this->_getRow($id) : null;
 
-		if (!$id) {
+		//у записи есть ID? если нет, то сохраним и получим его
+                if (!$id) {
 			$obj = new $this->model;
 			$obj->save();
 			$id = $this->view->id = $obj->id;
@@ -111,7 +117,8 @@ class ContentController extends BaseController
 			exit();
 		}
 
-		$editBlocks = array();
+		//строим массив всех блоков, которыми можно редактировать запись в БД
+                $editBlocks = array();
 		foreach ($this->fields as $key => $field) {
 			$fieldTypeObject = $this->_getFieldTypeObject($field['type']);
 			$editBlocks[$key] = $fieldTypeObject->getEditBlock($key, $data, $field);

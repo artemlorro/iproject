@@ -1,5 +1,5 @@
 <?php
-
+//контроллер для отображения новостей по направлениям недвижимости
 class BnewsController extends FrontController
 {
 	public function actions()
@@ -12,7 +12,9 @@ class BnewsController extends FrontController
 		$branch = (int) $this->_getParam('branch');
 
 		$params = array('order' => 'dt DESC');
-		if (!$month) {
+                
+		//месяц был задан?
+                if (!$month) {
 			$params['limit'] = 20;
 			$dt_from = mktime(0, 0, 0, 1, 1, $year);
 			$dt_to = strtotime('+1 year', $dt_from);
@@ -22,8 +24,9 @@ class BnewsController extends FrontController
 		}
 		$params['condition'] = "dt >= '" . date('Y-m-d H:i:s', $dt_from) . "' and dt < '" . date('Y-m-d H:i:s', $dt_to) . "'";
 
-		if ($branch) {
-			$list = Bnews::model()->findAllByBranch($branch, $params['condition']);
+		//направление было задано?
+                if ($branch) {
+                        $list = Bnews::model()->findAllByBranch($branch, $params['condition']);
 		} else {
 			$list = Bnews::model()->published()->findAll($params);
 		}
@@ -40,10 +43,12 @@ class BnewsController extends FrontController
 	public function actionView()
 	{
 		$skey = $this->_getParam('skey');
-		if (!$skey) {
+		//если не получили ЧПУ-ключ страницы
+                if (!$skey) {
 			// todo 404 page
 		}
 		$news = Bnews::model()->find('skey=:skey', array('skey' => $skey));
+                //страница с указанным ЧПУ найдена?
 		if (!$news) {
 			// todo 404 page
 		}

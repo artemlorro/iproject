@@ -33,14 +33,22 @@ class FrontController extends AController
 	public function init()
 	{
 		parent::init();
-		$this->view = new FrontView();
-		$this->__session = Yii::app()->session;
+		
+                $this->view = new FrontView();
+		
+                //получаем сессию
+                $this->__session = Yii::app()->session;
 
-		$this->glo = $this->view->glo = Glo::model()->findByPk(1);
+		//получачем общие параметры сайта
+                $this->glo = $this->view->glo = Glo::model()->findByPk(1);
 
-		$this->view->top_menu = TopMenu::model()->published()->firstLevel()->findAll();
-		$bottom_menu = array();
-		foreach (BottomMenu::model()->published()->findAll() as $i) {
+		//получаем информацию о верхнем меню
+                $this->view->top_menu = TopMenu::model()->published()->firstLevel()->findAll();
+                
+		//получает информацию о нижнем меню
+                $bottom_menu = array();
+		//перебираем все активныне пункты нижнего меню
+                foreach (BottomMenu::model()->published()->findAll() as $i) {
 			$bottom_menu[$i->col][] = $i;
 		}
 		$this->view->bottom_menu = $bottom_menu;
@@ -64,6 +72,6 @@ class FrontController extends AController
 
 	public function _getParam($name, $default = null)
 	{
-		return isset($_REQUEST[$name]) ? $_REQUEST[$name] : $default;
+                return isset($_REQUEST[$name]) ? $_REQUEST[$name] : $default;
 	}
 }

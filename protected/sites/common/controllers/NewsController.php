@@ -1,5 +1,5 @@
 <?php
-
+//контроллер для отображения новостей
 class NewsController extends FrontController
 {
 	public function actions()
@@ -32,10 +32,12 @@ class NewsController extends FrontController
 	public function actionView()
 	{
 		$skey = $this->_getParam('skey');
+                //если не получили ЧПУ-ключ страницы
 		if (!$skey) {
 			// todo 404 page
 		}
 		$news = News::model()->find('skey=:skey', array('skey' => $skey));
+                //страница с указанным ЧПУ найдена?
 		if (!$news) {
 			// todo 404 page
 		}

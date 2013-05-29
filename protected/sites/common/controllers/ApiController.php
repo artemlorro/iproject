@@ -1,5 +1,5 @@
 <?php
-
+//класс для приёма сообщений из CRM. Увы, но уже неактуален
 class ApiController extends CController
 {
     protected $_data;

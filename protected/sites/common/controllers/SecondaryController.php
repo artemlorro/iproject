@@ -10,7 +10,8 @@ class SecondaryController extends FrontController
 		$page = $this->_getParam('page', 1);
 		$limit = 20;
 
-		$objects = ObjSecondary::model()->published()->findAll(array(
+		//получаем список объектов вторичной недвижимости
+                $objects = ObjSecondary::model()->published()->findAll(array(
 			'limit' => $limit,
 			'offset' => ($page - 1)*$limit,
 		));
@@ -22,10 +23,12 @@ class SecondaryController extends FrontController
 	public function actionView()
 	{
 		$skey = $this->_getParam('skey');
+                //если не получили ЧПУ-ключ страницы
 		if (!$skey) {
 			// todo 404 page
 		}
 		$Page = Page::model()->find('skey=:skey', array('skey' => $skey));
+                //страница с указанным ЧПУ найдена?
 		if (!$Page) {
 			// todo 404 page
 		}
