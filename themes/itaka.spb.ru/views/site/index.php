@@ -23,37 +23,7 @@
 		<div class="letter"><a id="letter_link" href="#letter_to_ceo">Письмо генеральному</a></div>
 		<div style="display:none">
 			<div id="letter_to_ceo" class="mod">
-				<form id="letter_top" action="">
-					<div class="letter_top">Письмо генеральному директору</div>
-					<div id="letter1" class="letter_block">
-						<div class="inp_label">Как вас зовут?</div>
-						<div class="inp_style"><input type="text" id="letter_name"></div>
-					</div>
-					<div id="letter2" class="letter_block">
-						<div class="inp_label">Ваша почта</div>
-						<div class="inp_style"><input type="text" id="letter_email"></div>
-					</div>
-					<div id="letter3" class="letter_block">
-						<div class="inp_label">Ваш телефон</div>
-						<div class="inp_style"><input type="text" id="letter_email"></div>
-					</div>
-					<div id="letter4">
-						<div class="inp_label">По какому вы вопросу?</div>
-						<select class="dropdown">
-							<option>Жалоба</option>
-							<option>Благодарность</option>
-							<option>Предложение</option>
-						</select>
-					</div>
-					<div id="letter5" class="letter_text_block">
-						<div class="inp_label">Ваше сообщение:</div>
-						<div class="textarea_style"><textarea></textarea></div>
-					</div>
-					<div id="letter_but" class="button_style">
-						<input id="letter_button" type="submit" value="Отправить">
-						<a id="letter_sent_link" href="#letter_sent"></a>
-					</div>
-				</form>
+                <? $ceoLetter = new CeoLetterForm(); $this->renderPartial('/mail/ceo', array('model'=>$ceoLetter)) ?>
 			</div>
 			<div style="display:none">
 				<div id="letter_sent" class="mod">

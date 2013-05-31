@@ -4378,3 +4378,6 @@ input.inp_big {
 	width:200px;
 	height: 20px;
 }
+.errorMessage {
+    color:#f00;
+}

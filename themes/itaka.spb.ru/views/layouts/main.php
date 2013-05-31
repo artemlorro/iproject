@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/dk_theme_obj.css" type="text/css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/home.css" type="text/css" >
 	<link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/all.css" type="text/css">
-	<link id="responsive_style" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/medium_responsive.css" type="text/css">
+	<!--<link id="responsive_style" rel="stylesheet" type="text/css"> -->
 	<!--<link rel="stylesheet" href="jquery.ui.slider.css" type="text/css"/> -->
 	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/js/jquery.tools.min.js"></script>
