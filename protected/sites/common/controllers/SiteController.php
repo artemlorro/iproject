@@ -11,7 +11,11 @@ class SiteController extends FrontController
 		$this->view->last_bnews = Bnews::model()->published()->recently()->findAll();
 		$this->view->show_subfooter_top = true;
         $articles = Article::model()->published()->recently()->findAll();
-		$this->render('index', array('articles'=>$articles));
+        $quiz = Quiz::model()->mainpage()->find();
+		$this->render('index', array(
+            'articles'=>$articles,
+            'quiz'=>$quiz
+        ));
 	}
 
 	/**

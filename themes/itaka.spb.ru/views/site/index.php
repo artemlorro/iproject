@@ -231,17 +231,11 @@ $bu = Yii::app()->request->baseUrl;
 			<div class="name">Петрова Анна Ивановна</div>
 		</div>
 		<div id="bl_ind_right" class="small_ind_block">
-			<div class="title">Опрос</div>
-			<form>
-				<p>Кто должен стать тренером сборной России после Евро-2012?</p>
-				<div class="quiz_ind">
-					<input class="quiz_points" type="radio" name="answer" value="a1" checked><label>иностранный специалист</label><br />
-					<input class="quiz_points" type="radio" name="answer" value="a2">российский тренер <br />
-					<input class="quiz_points" type="radio" name="answer" value="a3">Сергей Фурсенко<br />
-					<input class="quiz_points" type="radio" name="answer" value="a3">оставьте Адвоката!
-					<input class="submit" type="submit" value="Голосовать">
-				</div>
-			</form>
+            <? if(isset($quiz)): ?>
+            <div id="main-quiz">
+                <? $this->renderPartial('/quiz/results', array('quiz'=>$quiz, 'voted'=>false)) ?>
+            </div>
+            <? endif ?>
 		</div>
 	</div>
 </div>
