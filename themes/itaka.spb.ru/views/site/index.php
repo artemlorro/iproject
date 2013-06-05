@@ -1,4 +1,6 @@
-<?php /* @var $this Controller */ $view = $this->view; ?>
+<?php /* @var $this Controller */ $view = $this->view;
+$bu = Yii::app()->request->baseUrl;
+?>
 <div id="main">
 	<div class="index_gallery">
 		<a class="backward"></a>
@@ -195,28 +197,32 @@
 	</div>
 	<div class="ind_articles">
 		<div  id="article_left" class="ind_article">
-			<div class="title_article">Агентство недвижимости «Итака»: покупка,продажа и аренда недвижимости. </div>
+            <? if(isset($articles[0])): ?>
+            <? $article=$articles[0] ?>
+			<div class="title_article"><?= $article->name ?></div>
 			<div class="img_article">
-				<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/article/article1.png" alt="">
-				<a href="#">Читать далее</a>
+                <? $image = $article->getPreview(); echo CHtml::image($bu.$image['url'], $article->name) ?>
+				<a href="<?= $article->url() ?>">Читать далее</a>
 			</div>
 			<div class="text_article">
-				<p>Петербургское риэлторское агентство «Итака» основано в ноябре 1993 года и на сегодняшний день является одним из крупнейших агентств недвижимости региона. Специализация агентства - аренда и продажа недвижимости в </p>
-				<p>Санкт-Петербурге и в Концертном зале «Карнавал» Аничкова дворца состоялось праздничное</p>
+				<?= $article->announce ?>
 			</div>
+            <? endif ?>
 		</div>
 		<div id="article_right" class="ind_article">
-			<div class="title_article">Агентство недвижимости «Итака»: покупка,продажа и аренда недвижимости. </div>
-			<div class="img_article">
-				<img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/article/article2.png" alt="">
-				<a href="#">Читать далее</a>
-			</div>
-			<div class="text_article">
-				<p>Петербургское риэлторское агентство «Итака» основано в ноябре 1993 года и на сегодняшний день является одним из крупнейших агентств недвижимости региона. Специализация агентства - аренда и продажа недвижимости в </p>
-				<p>Санкт-Петербурге и в Концертном зале «Карнавал» Аничкова дворца состоялось праздничное</p>
-			</div>
+            <? if(isset($articles[1])): ?>
+            <? $article=$articles[1] ?>
+            <div class="title_article"><?= $article->name ?></div>
+            <div class="img_article">
+                <? $image = $article->getPreview(); echo CHtml::image($bu.$image['url'], $article->name) ?>
+                <a href="<?= $article->url() ?>">Читать далее</a>
+            </div>
+            <div class="text_article">
+                <?= $article->announce ?>
+            </div>
+            <? endif ?>
 		</div>
-		<div class="link_all_articles"><a class="all_articles">Все статьи</a></div>
+		<div class="link_all_articles"><a class="all_articles" href="<?= Yii::app()->createUrl('articles') ?>">Все статьи</a></div>
 	</div>
 	<div class="right_ind_info_block">
 		<div id="bl_ind_left" class="small_ind_block">
