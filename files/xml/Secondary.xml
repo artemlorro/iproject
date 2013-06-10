@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <request objectid="1-04463" cnt_rooms_total="2" price="2350000" address="188332, Российская Федерация, обл Ленинградская, р-н Гатчинский, пгт Сиверский, пр-кт Героев, д. 36, кв. х" train_station="Сиверская" s_total="47,2" s_live="25" s_kitchen="9" buildingtypeid="fada1baa-5518-e211-a323-005056af1ab2" floor="2" cnt_floor="5" has_phone="1" has_balcony="0" lavatorytypeid="100000007" adv_text="евроремонт. солнечная,светлая. 8-911-269-27-18" is_delete="0" is_active="0" type="0" has_lift="0" districtid="b6091714-9501-e211-b262-000c29e0836a">
+    <metro>
+      <station stationid="3a47600f-e02b-e211-bc8a-005056af1ab2">
+        <time type="1" value="90" />
+      </station>
+      <station stationid="4c42c9ef-e02b-e211-bc8a-005056af1ab2" />
+    </metro>
+    <images />
+  </request>
+  <request objectid="141912" cnt_rooms_total="2" price="3600000" address="194358, Российская Федерация, г Санкт-Петербург, ул Симонова, д. 12/9, кв. 408" s_total="43,8" s_live="26,8" s_kitchen="6,2" buildingtypeid="e8da1baa-5518-e211-a323-005056af1ab2" floor="4" cnt_floor="9" has_phone="1" has_balcony="0" lavatorytypeid="100000006" adv_text="Прямая продажа, квартира свободная, до  метро&quot;пр.Просвещения&quot;, 5 мин.пешком, чистая парадная, развитая инфраструктура. Торг" is_delete="0" is_active="0" type="0" has_lift="1" districtid="446a7d57-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="14f27856-e02b-e211-bc8a-005056af1ab2">
+        <time type="0" value="5" />
+      </station>
+    </metro>
+    <images>
+      <img filename="141912-1.jpg" />
+      <img filename="141912-2.jpg" />
+      <img filename="141912-3.jpg" />
+      <img filename="141912-4.jpg" />
+      <img filename="141912-5.jpg" />
+      <img filename="141912-6.jpg" />
+      <img filename="141912-7.jpg" />
+      <img filename="141912-8.jpg" />
+      <img filename="141912-9.jpg" />
+    </images>
+  </request>
+  <request objectid="1-04466" cnt_rooms_total="1" price="4800000" address="Российская Федерация, г Санкт-Петербург, ул Бутлерова, д. 11" s_total="52" s_live="24" s_kitchen="12" buildingtypeid="f0da1baa-5518-e211-a323-005056af1ab2" floor="10" cnt_floor="16" has_phone="1" has_balcony="0" lavatorytypeid="100000006" adv_text="Продается отличная 1к.кв в жилом комплексе Академпарк. Дом уже построен,  Ключи летом. Окна на озеро и зеленую зону. Отличная отделка,  кафель, ламинат.Переуступка" is_delete="0" is_active="0" type="0" has_lift="1" districtid="c0e68561-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="8e72f2a0-df2b-e211-bc8a-005056af1ab2">
+        <time type="0" value="5" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="1-04467" cnt_rooms_total="2" price="6600000" address="198207, Российская Федерация, г Санкт-Петербург, пр-кт Дачный, д. 4" s_total="66" s_live="37" s_kitchen="11" buildingtypeid="12db1baa-5518-e211-a323-005056af1ab2" floor="8" cnt_floor="9" has_phone="1" has_balcony="0" lavatorytypeid="100000006" adv_text="Отличная квартира в шаговой доступности от метро, вся инфраструктура. Удачная планировка, лоджия, кладовка. Встроенная кухня. первая продажа, в собственности более 3 лет. Огороженная территория" is_delete="0" is_active="0" type="0" has_lift="1" districtid="13341969-911e-e211-a323-005056af1ab2">
+    <metro>
+      <station stationid="cda4086f-f918-e211-a323-005056af1ab2">
+        <time type="0" value="5" />
+      </station>
+    </metro>
+    <images>
+      <img filename="1-04467-1.jpg" />
+    </images>
+  </request>
+  <request objectid="1-04471" cnt_rooms_total="3" price="5100000" address="193168, Российская Федерация, г Санкт-Петербург, ул Подвойского, д. 17, корп. 1, кв. 5" s_total="74,7" s_live="45" s_kitchen="9,5" buildingtypeid="fada1baa-5518-e211-a323-005056af1ab2" floor="1" cnt_floor="9" has_phone="1" has_balcony="0" lavatorytypeid="100000006" adv_text="Уютная двусторонняя квартира с просторным холлом в районе с развитой инфраструктурой, окна на улицу и во двор. Метро в шаговой доступности. Рядом парки, торговые комплексы, мед.учреждения, школы и детские сады. В квартире произведена замена стояков, батарей отопления, окна оборудованы по финской технологии. Имеются гардеробная и шкаф. Прямая продажа." is_delete="0" is_active="0" type="0" has_lift="1" districtid="df3b6825-722a-e211-a323-005056af1ab2">
+    <metro>
+      <station stationid="c9c78864-722a-e211-a323-005056af1ab2">
+        <time type="0" value="10" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="1-04470" cnt_rooms_total="4" price="7300000" address="191025, Российская Федерация, г Санкт-Петербург, ул Марата, д. 25, кв. 23" s_total="86" s_live="86" s_kitchen="8" buildingtypeid="02db1baa-5518-e211-a323-005056af1ab2" floor="2" cnt_floor="4" has_phone="1" lavatorytypeid="100000003" adv_text="Здание находится в престижном месте города. Высокий 1этаж настоящий бельэтаж. Такая квартира может представлять интерес  под жилье, под минигостиницу , салон и под офисное помещение. Шаговая доступность от 7станций метро: Владимирская, Достоевская, Маяковская, пл. Восстания, Лиговский пр. Звенигородская, Пушкинская придает особую привлекательность объекту!   Рядом музей Достоевского, знаменитые Пять углов!&#xD;&#xA;Дом расположен на против  музея Арктики, в 2минутах ходьбы до ст. М. Владимирская. Вход со двора, 6 окон выходят во двор. Наличие одной несущей стены позволяет сделать перепланировку. Лестница чистая, ухоженная, парковка во дворе. Квартира теплая в нормальном состоянии, можно заехать и жить, документы готовы." is_delete="0" is_active="0" type="0" has_lift="0" districtid="9072bbdf-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="68462fef-df2b-e211-bc8a-005056af1ab2">
+        <time type="0" value="5" />
+      </station>
+    </metro>
+    <images>
+      <img filename="1-04470-1.jpg" />
+      <img filename="1-04470-2.jpg" />
+      <img filename="1-04470-3.jpg" />
+      <img filename="1-04470-4.jpg" />
+      <img filename="1-04470-5.jpg" />
+      <img filename="1-04470-6.jpg" />
+    </images>
+  </request>
+  <request objectid="1-04472" cnt_rooms_total="3" price="2650000" address="188490, Российская Федерация, обл Ленинградская, р-н Кингисеппский, г Ивангород, ш Кингисеппское, д. 24, кв. 39" train_station="Ивангород" s_total="73" s_live="47" s_kitchen="8" buildingtypeid="ecda1baa-5518-e211-a323-005056af1ab2" floor="8" cnt_floor="9" has_phone="1" has_balcony="0" lavatorytypeid="100000006" adv_text="3к.кв. в центре города, в хорошем состоянии. Рядом детский сад и школа. Развитая инфраструктура. Агент Ирина, тел: 89062625958" is_delete="0" is_active="0" type="0" has_lift="1" districtid="b7091714-9501-e211-b262-000c29e0836a">
+    <metro />
+    <images>
+      <img filename="1-04472-1.jpg" />
+    </images>
+  </request>
+  <request objectid="1-04473" cnt_rooms_total="3" price="6050000" address="195427, Российская Федерация, г Санкт-Петербург, ул Веденеева, д. 4, кв. 55" s_total="62" s_live="40,6" s_kitchen="8" buildingtypeid="ecda1baa-5518-e211-a323-005056af1ab2" floor="4" cnt_floor="12" has_phone="1" has_balcony="0" lavatorytypeid="100000006" adv_text="ПП евро более 3-х лет" is_delete="0" is_active="0" type="0" has_lift="1" districtid="c0e68561-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="be77ffac-df2b-e211-bc8a-005056af1ab2">
+        <time type="1" value="10" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="1-04474" cnt_rooms_total="2" price="1850000" address="188410, Российская Федерация, обл Ленинградская, р-н Волосовский, г Волосово, ул Зеленая, д. 14, кв. 53" s_total="55,6" s_live="32,6" s_kitchen="8,1" buildingtypeid="fada1baa-5518-e211-a323-005056af1ab2" floor="3" cnt_floor="5" has_phone="0" has_balcony="0" lavatorytypeid="100000006" adv_text="65 км от СПБ (Кр.Село) в районном центре г. Волосово, вся инфраструктура: (почта, банки, школы, садики, церковь, ДК,больницы, магазины) продается 2 комнатная квартира на 3/5эт. панельного дома общей площадью-56.7 кв.м, комнаты раздельные 15,5+17.1, большая прихожая-9, кухня-8,1, лоджия-1,1, СУР, Дом находится рядом с зеленым парком. Прямая продажа, документы готовы. 8-911-182-10-09, Виталий." is_delete="0" is_active="0" type="0" has_lift="0" districtid="b2091714-9501-e211-b262-000c29e0836a">
+    <metro>
+      <station stationid="0c08ec41-1c2b-e211-bc8a-005056af1ab2">
+        <time type="1" value="60" />
+      </station>
+    </metro>
+    <images>
+      <img filename="1-04474-1.jpg" />
+      <img filename="1-04474-2.jpg" />
+      <img filename="1-04474-3.jpg" />
+      <img filename="1-04474-4.jpg" />
+      <img filename="1-04474-5.jpg" />
+      <img filename="1-04474-6.jpg" />
+      <img filename="1-04474-7.jpg" />
+      <img filename="1-04474-8.jpg" />
+    </images>
+  </request>
+  <request objectid="1-04475" cnt_rooms_total="1" price="4200000" address="193315, Российская Федерация, г Санкт-Петербург, пр-кт Большевиков, д. 38, корп. 2, кв. 92" s_total="54" s_live="32" s_kitchen="18" buildingtypeid="ecda1baa-5518-e211-a323-005056af1ab2" floor="6" cnt_floor="9" has_phone="1" has_balcony="0" lavatorytypeid="100000007" adv_text="ПП МЕБ ТЕХН менее 3лет, 2-х комнатная квартира, агент Екатерина" is_delete="0" is_active="0" type="0" has_lift="0" districtid="df3b6825-722a-e211-a323-005056af1ab2">
+    <metro>
+      <station stationid="c9c78864-722a-e211-a323-005056af1ab2">
+        <time type="1" value="5" />
+      </station>
+    </metro>
+    <images>
+      <img filename="1-04475-1.jpg" />
+    </images>
+  </request>
+</data>

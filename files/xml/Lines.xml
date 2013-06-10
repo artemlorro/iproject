@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <request is_delete="0" lineid="93343e26-3d40-e211-bc8a-005056af1ab2" name="100 км" />
+  <request is_delete="0" lineid="94343e26-3d40-e211-bc8a-005056af1ab2" name="101 км" />
+  <request is_delete="0" lineid="0b98fb03-f250-e211-9d16-005056af1ab2" name="101 км (после Радофинниково)" />
+  <request is_delete="0" lineid="1644492e-3d40-e211-bc8a-005056af1ab2" name="104 км" />
+  <request is_delete="0" lineid="1744492e-3d40-e211-bc8a-005056af1ab2" name="106 км" />
+  <request is_delete="0" lineid="5b921744-f450-e211-9d16-005056af1ab2" name="11 км" />
+  <request is_delete="0" lineid="aea9f443-f550-e211-9d16-005056af1ab2" name="115 км" />
+  <request is_delete="0" lineid="b5c14041-f350-e211-9d16-005056af1ab2" name="117 км" />
+  <request is_delete="0" lineid="afa9f443-f550-e211-9d16-005056af1ab2" name="119 км" />
+  <request is_delete="0" lineid="ed6c463d-fd50-e211-9d16-005056af1ab2" name="12 км" />
+  <request is_delete="0" lineid="98345951-f350-e211-9d16-005056af1ab2" name="125 км" />
+  <request is_delete="0" lineid="883a6036-3d40-e211-bc8a-005056af1ab2" name="13 км" />
+  <request is_delete="0" lineid="729b5e98-f650-e211-9d16-005056af1ab2" name="130 км" />
+  <request is_delete="0" lineid="5d788660-fd50-e211-9d16-005056af1ab2" name="134 км" />
+  <request is_delete="0" lineid="7fbfb167-fd50-e211-9d16-005056af1ab2" name="138 км" />
+  <request is_delete="0" lineid="0b88a7a0-f650-e211-9d16-005056af1ab2" name="144 км" />
+  <request is_delete="0" lineid="893a6036-3d40-e211-bc8a-005056af1ab2" name="148 км" />
+  <request is_delete="0" lineid="4d649941-3d40-e211-bc8a-005056af1ab2" name="152 км" />
+  <request is_delete="0" lineid="a2a722bd-f650-e211-9d16-005056af1ab2" name="157 км" />
+  <request is_delete="0" lineid="31dd417d-fd50-e211-9d16-005056af1ab2" name="165 км" />
+  <request is_delete="0" lineid="2edd417d-fd50-e211-9d16-005056af1ab2" name="168 км" />
+  <request is_delete="0" lineid="9494aaca-fd50-e211-9d16-005056af1ab2" name="176 км" />
+  <request is_delete="0" lineid="05e12390-3b40-e211-bc8a-005056af1ab2" name="19 км" />
+  <request is_delete="0" lineid="27b45fd4-fd50-e211-9d16-005056af1ab2" name="192 км" />
+  <request is_delete="0" lineid="2ceadbdb-fd50-e211-9d16-005056af1ab2" name="199 км" />
+  <request is_delete="0" lineid="2a495c2e-fd50-e211-9d16-005056af1ab2" name="2 км" />
+  <request is_delete="0" lineid="08e12390-3b40-e211-bc8a-005056af1ab2" name="21 км" />
+  <request is_delete="0" lineid="28b2ee43-446c-e211-b5eb-0050568db126" name="229 км" />
+  <request is_delete="0" lineid="16d4e7af-fd50-e211-9d16-005056af1ab2" name="24 км" />
+  <request is_delete="0" lineid="57b5b799-3b40-e211-bc8a-005056af1ab2" name="29 км" />
+  <request is_delete="0" lineid="dd5c9c66-f550-e211-9d16-005056af1ab2" name="3 км" />
+  <request is_delete="0" lineid="78397749-3d40-e211-bc8a-005056af1ab2" name="34 км" />
+  <request is_delete="0" lineid="c9aaa950-3d40-e211-bc8a-005056af1ab2" name="36 км" />
+  <request is_delete="0" lineid="70501a01-fb50-e211-9d16-005056af1ab2" name="37 км" />
+  <request is_delete="0" lineid="cbb1ed58-fd50-e211-9d16-005056af1ab2" name="38 км" />
+  <request is_delete="0" lineid="58693c59-3d40-e211-bc8a-005056af1ab2" name="39 км" />
+  <request is_delete="0" lineid="51921744-f450-e211-9d16-005056af1ab2" name="4 км" />
+  <request is_delete="0" lineid="25329863-3d40-e211-bc8a-005056af1ab2" name="40 км" />
+  <request is_delete="0" lineid="26329863-3d40-e211-bc8a-005056af1ab2" name="42 км" />
+  <request is_delete="0" lineid="7a3be26c-3d40-e211-bc8a-005056af1ab2" name="44 км" />
+  <request is_delete="0" lineid="857eaf1c-f450-e211-9d16-005056af1ab2" name="45 км" />
+  <request is_delete="0" lineid="06ea0f74-3d40-e211-bc8a-005056af1ab2" name="46 км" />
+  <request is_delete="0" lineid="cc4d867a-3d40-e211-bc8a-005056af1ab2" name="47 км" />
+  <request is_delete="0" lineid="6333ee82-3d40-e211-bc8a-005056af1ab2" name="48 км" />
+  <request is_delete="0" lineid="58b5b799-3b40-e211-bc8a-005056af1ab2" name="5 км" />
+  <request is_delete="0" lineid="6433ee82-3d40-e211-bc8a-005056af1ab2" name="51 км" />
+  <request is_delete="0" lineid="eafb52af-f550-e211-9d16-005056af1ab2" name="52 км" />
+  <request is_delete="0" lineid="b26f6a8a-3d40-e211-bc8a-005056af1ab2" name="53 км" />
+  <request is_delete="0" lineid="b46f6a8a-3d40-e211-bc8a-005056af1ab2" name="54 км" />
+  <request is_delete="0" lineid="bbdc04b6-f550-e211-9d16-005056af1ab2" name="55 км" />
+  <request is_delete="0" lineid="919f298c-fd50-e211-9d16-005056af1ab2" name="59 км" />
+  <request is_delete="0" lineid="5a921744-f450-e211-9d16-005056af1ab2" name="6 км" />
+  <request is_delete="0" lineid="22fa413d-f150-e211-9d16-005056af1ab2" name="63 км" />
+  <request is_delete="0" lineid="63853691-3d40-e211-bc8a-005056af1ab2" name="67 км" />
+  <request is_delete="0" lineid="03a09583-ef50-e211-9d16-005056af1ab2" name="68 км" />
+  <request is_delete="0" lineid="1defcea7-3d40-e211-bc8a-005056af1ab2" name="69 км" />
+  <request is_delete="0" lineid="2a9424ed-f350-e211-9d16-005056af1ab2" name="7 км" />
+  <request is_delete="0" lineid="ed6904dd-f750-e211-9d16-005056af1ab2" name="70 км" />
+  <request is_delete="0" lineid="ee6904dd-f750-e211-9d16-005056af1ab2" name="72 км" />
+  <request is_delete="0" lineid="4638cceb-f450-e211-9d16-005056af1ab2" name="75 км" />
+  <request is_delete="0" lineid="f7432f8e-ef50-e211-9d16-005056af1ab2" name="75 км (Карьер)" />
+  <request is_delete="0" lineid="1eefcea7-3d40-e211-bc8a-005056af1ab2" name="77 км" />
+  <request is_delete="0" lineid="3d3cc90d-fc50-e211-9d16-005056af1ab2" name="78 км" />
+  <request is_delete="0" lineid="04a09583-ef50-e211-9d16-005056af1ab2" name="80 км" />
+  <request is_delete="0" lineid="b70fbbd6-f550-e211-9d16-005056af1ab2" name="83 км" />
+  <request is_delete="0" lineid="44c745f8-f750-e211-9d16-005056af1ab2" name="86 км" />
+  <request is_delete="0" lineid="407c4edc-f150-e211-9d16-005056af1ab2" name="90 км" />
+  <request is_delete="0" lineid="417c4edc-f150-e211-9d16-005056af1ab2" name="92 км" />
+  <request is_delete="0" lineid="a33390af-3d40-e211-bc8a-005056af1ab2" name="93 км" />
+  <request is_delete="0" lineid="a43390af-3d40-e211-bc8a-005056af1ab2" name="95 км" />
+  <request is_delete="0" lineid="2deadbdb-fd50-e211-9d16-005056af1ab2" name="Аккахарью" />
+  <request is_delete="0" lineid="7a9876a1-3b40-e211-bc8a-005056af1ab2" name="Александровская" />
+  <request is_delete="0" lineid="9594aaca-fd50-e211-9d16-005056af1ab2" name="Алхо" />
+  <request is_delete="0" lineid="4d32ecb7-3d40-e211-bc8a-005056af1ab2" name="Андреево" />
+  <request is_delete="0" lineid="82eb4da3-f050-e211-9d16-005056af1ab2" name="Антропшино" />
+  <request is_delete="0" lineid="24fca3b2-f450-e211-9d16-005056af1ab2" name="Апраксин" />
+  <request is_delete="0" lineid="aab26faa-3b40-e211-bc8a-005056af1ab2" name="Аэропорт" />
+  <request is_delete="0" lineid="9c745c6a-f650-e211-9d16-005056af1ab2" name="Бабино" />
+  <request is_delete="0" lineid="24bfbbbf-3d40-e211-bc8a-005056af1ab2" name="Бабино 2" />
+  <request is_delete="0" lineid="c50671b4-3b40-e211-bc8a-005056af1ab2" name="Балтийский вокзал" />
+  <request is_delete="0" lineid="ecb60e33-f750-e211-9d16-005056af1ab2" name="Белоостров" />
+  <request is_delete="0" lineid="25bfbbbf-3d40-e211-bc8a-005056af1ab2" name="Бернгардовка" />
+  <request is_delete="0" lineid="fc4b8bc7-3d40-e211-bc8a-005056af1ab2" name="Болотницкая" />
+  <request is_delete="0" lineid="36bfccb3-f650-e211-9d16-005056af1ab2" name="Большая Вишера" />
+  <request is_delete="0" lineid="46160546-ef50-e211-9d16-005056af1ab2" name="Большая Ижора" />
+  <request is_delete="0" lineid="52fe9718-f850-e211-9d16-005056af1ab2" name="Бор" />
+  <request is_delete="0" lineid="fd4b8bc7-3d40-e211-bc8a-005056af1ab2" name="Борисова Грива" />
+  <request is_delete="0" lineid="c60671b4-3b40-e211-bc8a-005056af1ab2" name="Боровая" />
+  <request is_delete="0" lineid="c88b0b84-fd50-e211-9d16-005056af1ab2" name="Боровинка" />
+  <request is_delete="0" lineid="8630f7bb-fd50-e211-9d16-005056af1ab2" name="Бородинское" />
+  <request is_delete="0" lineid="255ce1bb-3b40-e211-bc8a-005056af1ab2" name="Броневая" />
+  <request is_delete="0" lineid="611f5f13-ef50-e211-9d16-005056af1ab2" name="Бронка" />
+  <request is_delete="0" lineid="bd6819df-f550-e211-9d16-005056af1ab2" name="Будогощь" />
+  <request is_delete="0" lineid="83dad274-fd50-e211-9d16-005056af1ab2" name="Бусловская" />
+  <request is_delete="0" lineid="93a940cf-3d40-e211-bc8a-005056af1ab2" name="Ваганово" />
+  <request is_delete="0" lineid="94a940cf-3d40-e211-bc8a-005056af1ab2" name="Васкелово" />
+  <request is_delete="0" lineid="c08e5c9c-ee50-e211-9d16-005056af1ab2" name="Веймарн" />
+  <request is_delete="0" lineid="c904d8f3-ec50-e211-9d16-005056af1ab2" name="Верево" />
+  <request is_delete="0" lineid="7bf3adae-f750-e211-9d16-005056af1ab2" name="Верхнечеркасово" />
+  <request is_delete="0" lineid="c9bc6c1a-fd50-e211-9d16-005056af1ab2" name="Вещево" />
+  <request is_delete="0" lineid="265ce1bb-3b40-e211-bc8a-005056af1ab2" name="Витебский вокзал" />
+  <request is_delete="0" lineid="69e9d5c2-3b40-e211-bc8a-005056af1ab2" name="Воздухоплавательный Парк" />
+  <request is_delete="0" lineid="eeb28e4b-fd50-e211-9d16-005056af1ab2" name="Возрождение" />
+  <request is_delete="0" lineid="914a3429-f550-e211-9d16-005056af1ab2" name="Войбокало" />
+  <request is_delete="0" lineid="20294739-ee50-e211-9d16-005056af1ab2" name="Войсковицы" />
+  <request is_delete="0" lineid="3c6dac59-ee50-e211-9d16-005056af1ab2" name="Волосово" />
+  <request is_delete="0" lineid="0ce1fd8f-f650-e211-9d16-005056af1ab2" name="Волхов мост" />
+  <request is_delete="0" lineid="0be1fd8f-f650-e211-9d16-005056af1ab2" name="Волхово" />
+  <request is_delete="0" lineid="a44ebad8-3d40-e211-bc8a-005056af1ab2" name="Волхов-Пристань" />
+  <request is_delete="0" lineid="59914a58-f550-e211-9d16-005056af1ab2" name="Волховстрой 1" />
+  <request is_delete="0" lineid="74af2e8c-ee50-e211-9d16-005056af1ab2" name="Вруда" />
+  <request is_delete="0" lineid="a54ebad8-3d40-e211-bc8a-005056af1ab2" name="Всеволожская" />
+  <request is_delete="0" lineid="4c12dfb6-f750-e211-9d16-005056af1ab2" name="Выборг" />
+  <request is_delete="0" lineid="9333a935-f150-e211-9d16-005056af1ab2" name="Вырица" />
+  <request is_delete="0" lineid="fabe7397-f750-e211-9d16-005056af1ab2" name="Гаврилово" />
+  <request is_delete="0" lineid="c4cb6331-ed50-e211-9d16-005056af1ab2" name="Гатчина Балтийская" />
+  <request is_delete="0" lineid="558af125-ed50-e211-9d16-005056af1ab2" name="Гатчина Варшавская" />
+  <request is_delete="0" lineid="568af125-ed50-e211-9d16-005056af1ab2" name="Гатчина Товарная" />
+  <request is_delete="0" lineid="97313644-fd50-e211-9d16-005056af1ab2" name="Гвардейское" />
+  <request is_delete="0" lineid="05599302-ee50-e211-9d16-005056af1ab2" name="Генерала Омельченко" />
+  <request is_delete="0" lineid="0b9649e0-3d40-e211-bc8a-005056af1ab2" name="Георгиевская" />
+  <request is_delete="0" lineid="0c9649e0-3d40-e211-bc8a-005056af1ab2" name="Глажево" />
+  <request is_delete="0" lineid="227973ca-3b40-e211-bc8a-005056af1ab2" name="Горелово" />
+  <request is_delete="0" lineid="581ed7ed-f650-e211-9d16-005056af1ab2" name="Горская" />
+  <request is_delete="0" lineid="847eaf1c-f450-e211-9d16-005056af1ab2" name="Горы" />
+  <request is_delete="0" lineid="3aa6d675-f750-e211-9d16-005056af1ab2" name="Горьковское" />
+  <request is_delete="0" lineid="924b534d-f450-e211-9d16-005056af1ab2" name="Грибное" />
+  <request is_delete="0" lineid="603c32e7-3d40-e211-bc8a-005056af1ab2" name="Громово" />
+  <request is_delete="0" lineid="613c32e7-3d40-e211-bc8a-005056af1ab2" name="Грузино" />
+  <request is_delete="0" lineid="9d1003ad-f650-e211-9d16-005056af1ab2" name="Гряды" />
+  <request is_delete="0" lineid="237973ca-3b40-e211-bc8a-005056af1ab2" name="Дачное" />
+  <request is_delete="0" lineid="8d7d6bd2-3b40-e211-bc8a-005056af1ab2" name="Девяткино" />
+  <request is_delete="0" lineid="8e7d6bd2-3b40-e211-bc8a-005056af1ab2" name="Детское Село" />
+  <request is_delete="0" lineid="acfd4e1d-f750-e211-9d16-005056af1ab2" name="Дибуны" />
+  <request is_delete="0" lineid="310a5a75-ed50-e211-9d16-005056af1ab2" name="Дивенская" />
+  <request is_delete="0" lineid="5f42831a-ef50-e211-9d16-005056af1ab2" name="Дубочки" />
+  <request is_delete="0" lineid="9c1003ad-f650-e211-9d16-005056af1ab2" name="Дубцы" />
+  <request is_delete="0" lineid="8a895dee-3d40-e211-bc8a-005056af1ab2" name="Дунай" />
+  <request is_delete="0" lineid="4c32ecb7-3d40-e211-bc8a-005056af1ab2" name="Ёглино" />
+  <request is_delete="0" lineid="22294739-ee50-e211-9d16-005056af1ab2" name="Елизаветино" />
+  <request is_delete="0" lineid="50fe9718-f850-e211-9d16-005056af1ab2" name="Ермилово" />
+  <request is_delete="0" lineid="e9fb52af-f550-e211-9d16-005056af1ab2" name="Жарок" />
+  <request is_delete="0" lineid="934a3429-f550-e211-9d16-005056af1ab2" name="Жихарево" />
+  <request is_delete="0" lineid="3137acd9-3b40-e211-bc8a-005056af1ab2" name="Заневский Пост" />
+  <request is_delete="0" lineid="cb694ef6-3d40-e211-bc8a-005056af1ab2" name="Зареченская" />
+  <request is_delete="0" lineid="25e6c48a-f750-e211-9d16-005056af1ab2" name="Заходское" />
+  <request is_delete="0" lineid="3237acd9-3b40-e211-bc8a-005056af1ab2" name="Зеленогорск" />
+  <request is_delete="0" lineid="384490c3-ee50-e211-9d16-005056af1ab2" name="Ивангород" />
+  <request is_delete="0" lineid="a80f7de0-3b40-e211-bc8a-005056af1ab2" name="Ивановская" />
+  <request is_delete="0" lineid="a90f7de0-3b40-e211-bc8a-005056af1ab2" name="Ижорский Завод" />
+  <request is_delete="0" lineid="b46fdbe8-3b40-e211-bc8a-005056af1ab2" name="Ижоры" />
+  <request is_delete="0" lineid="8730f7bb-fd50-e211-9d16-005056af1ab2" name="Инкиля" />
+  <request is_delete="0" lineid="cc694ef6-3d40-e211-bc8a-005056af1ab2" name="Ириновка" />
+  <request is_delete="0" lineid="3f0d69fd-3d40-e211-bc8a-005056af1ab2" name="Ирса" />
+  <request is_delete="0" lineid="4c394ce3-fd50-e211-9d16-005056af1ab2" name="Ихала" />
+  <request is_delete="0" lineid="dd8103ee-fb50-e211-9d16-005056af1ab2" name="Кавголово" />
+  <request is_delete="0" lineid="f594f65d-ef50-e211-9d16-005056af1ab2" name="Калище" />
+  <request is_delete="0" lineid="ccb1ed58-fd50-e211-9d16-005056af1ab2" name="Каменногорск" />
+  <request is_delete="0" lineid="eb5a7e82-f750-e211-9d16-005056af1ab2" name="Каннельярви" />
+  <request is_delete="0" lineid="400d69fd-3d40-e211-bc8a-005056af1ab2" name="Капитолово" />
+  <request is_delete="0" lineid="0d3f675e-ed50-e211-9d16-005056af1ab2" name="Карташевская" />
+  <request is_delete="0" lineid="29495c2e-fd50-e211-9d16-005056af1ab2" name="Кархусуо" />
+  <request is_delete="0" lineid="1acfee04-3e40-e211-bc8a-005056af1ab2" name="Кастенская" />
+  <request is_delete="0" lineid="fd8b1e5f-f050-e211-9d16-005056af1ab2" name="Кересть" />
+  <request is_delete="0" lineid="15d4e7af-fd50-e211-9d16-005056af1ab2" name="Кивиоя" />
+  <request is_delete="0" lineid="ceedba4c-ee50-e211-9d16-005056af1ab2" name="Кикерино" />
+  <request is_delete="0" lineid="87e83ea6-ee50-e211-9d16-005056af1ab2" name="Кингисепп" />
+  <request is_delete="0" lineid="26e6c48a-f750-e211-9d16-005056af1ab2" name="Кирилловское" />
+  <request is_delete="0" lineid="1bcfee04-3e40-e211-bc8a-005056af1ab2" name="Кириши" />
+  <request is_delete="0" lineid="9111132d-3e40-e211-bc8a-005056af1ab2" name="Кирпичный Завод" />
+  <request is_delete="0" lineid="83eb4da3-f050-e211-9d16-005056af1ab2" name="Кобралово" />
+  <request is_delete="0" lineid="9211132d-3e40-e211-bc8a-005056af1ab2" name="Ковалёво" />
+  <request is_delete="0" lineid="b56fdbe8-3b40-e211-bc8a-005056af1ab2" name="Колпино" />
+  <request is_delete="0" lineid="0769c0f0-3b40-e211-bc8a-005056af1ab2" name="Комарово" />
+  <request is_delete="0" lineid="a9f3a4e7-ec50-e211-9d16-005056af1ab2" name="Кондакопшино" />
+  <request is_delete="0" lineid="01733149-3e40-e211-bc8a-005056af1ab2" name="Корнево" />
+  <request is_delete="0" lineid="2471496e-fd50-e211-9d16-005056af1ab2" name="Кравцово" />
+  <request is_delete="0" lineid="9f9f2e73-ef50-e211-9d16-005056af1ab2" name="Красная горка" />
+  <request is_delete="0" lineid="820ae92e-f150-e211-9d16-005056af1ab2" name="Красница" />
+  <request is_delete="0" lineid="0969c0f0-3b40-e211-bc8a-005056af1ab2" name="Красное Село" />
+  <request is_delete="0" lineid="a09f2e73-ef50-e211-9d16-005056af1ab2" name="Краснофлотск" />
+  <request is_delete="0" lineid="ebc968f7-3b40-e211-bc8a-005056af1ab2" name="Красные Зори" />
+  <request is_delete="0" lineid="c98b0b84-fd50-e211-9d16-005056af1ab2" name="Красный Сокол" />
+  <request is_delete="0" lineid="5f1f5f13-ef50-e211-9d16-005056af1ab2" name="Кронштадтская колония" />
+  <request is_delete="0" lineid="02733149-3e40-e211-bc8a-005056af1ab2" name="Кузнечное" />
+  <request is_delete="0" lineid="d20de250-3e40-e211-bc8a-005056af1ab2" name="Кузьмолово" />
+  <request is_delete="0" lineid="242d1cfd-fd50-e211-9d16-005056af1ab2" name="Куоккиниэми" />
+  <request is_delete="0" lineid="823a0006-f850-e211-9d16-005056af1ab2" name="Куолемаярви" />
+  <request is_delete="0" lineid="ecc968f7-3b40-e211-bc8a-005056af1ab2" name="Купчино" />
+  <request is_delete="0" lineid="fb83cefd-3b40-e211-bc8a-005056af1ab2" name="Курорт" />
+  <request is_delete="0" lineid="fc83cefd-3b40-e211-bc8a-005056af1ab2" name="Кушелевка" />
+  <request is_delete="0" lineid="78c60b04-3c40-e211-bc8a-005056af1ab2" name="Лаврики" />
+  <request is_delete="0" lineid="79c60b04-3c40-e211-bc8a-005056af1ab2" name="Ладожский вокзал" />
+  <request is_delete="0" lineid="d803d459-3e40-e211-bc8a-005056af1ab2" name="Ладожское озеро" />
+  <request is_delete="0" lineid="7cf3adae-f750-e211-9d16-005056af1ab2" name="Лазаревка" />
+  <request is_delete="0" lineid="99762d6f-ed50-e211-9d16-005056af1ab2" name="Лампово" />
+  <request is_delete="0" lineid="441ca10a-3c40-e211-bc8a-005056af1ab2" name="Ланская" />
+  <request is_delete="0" lineid="81b13aeb-fd50-e211-9d16-005056af1ab2" name="Лахденпохья" />
+  <request is_delete="0" lineid="451ca10a-3c40-e211-bc8a-005056af1ab2" name="Лахта" />
+  <request is_delete="0" lineid="1a0e26a5-f750-e211-9d16-005056af1ab2" name="Лебедевка" />
+  <request is_delete="0" lineid="d0551057-ef50-e211-9d16-005056af1ab2" name="Лебяжье" />
+  <request is_delete="0" lineid="f5316d11-3c40-e211-bc8a-005056af1ab2" name="Левашово" />
+  <request is_delete="0" lineid="f9be7397-f750-e211-9d16-005056af1ab2" name="Лейпясуо" />
+  <request is_delete="0" lineid="d903d459-3e40-e211-bc8a-005056af1ab2" name="Лемболово" />
+  <request is_delete="0" lineid="f6316d11-3c40-e211-bc8a-005056af1ab2" name="Ленинский Проспект" />
+  <request is_delete="0" lineid="263b9b92-fd50-e211-9d16-005056af1ab2" name="Лесогорск" />
+  <request is_delete="0" lineid="d2a0f617-3c40-e211-bc8a-005056af1ab2" name="Лигово" />
+  <request is_delete="0" lineid="d3a0f617-3c40-e211-bc8a-005056af1ab2" name="Лисий Нос" />
+  <request is_delete="0" lineid="7fa9bb5f-b96a-e211-b5eb-0050568db126" name="Лодейное поле" />
+  <request is_delete="0" lineid="c3569b60-3e40-e211-bc8a-005056af1ab2" name="Лосево" />
+  <request is_delete="0" lineid="c1258c29-3f40-e211-bc8a-005056af1ab2" name="Луга 1" />
+  <request is_delete="0" lineid="2571496e-fd50-e211-9d16-005056af1ab2" name="Лужайка" />
+  <request is_delete="0" lineid="fe8e5820-f050-e211-9d16-005056af1ab2" name="Лустовка" />
+  <request is_delete="0" lineid="f1ed6758-f650-e211-9d16-005056af1ab2" name="Любань" />
+  <request is_delete="0" lineid="a4a722bd-f650-e211-9d16-005056af1ab2" name="Малая Вишера" />
+  <request is_delete="0" lineid="0c8c7c79-f550-e211-9d16-005056af1ab2" name="Малукса" />
+  <request is_delete="0" lineid="3fd1cb29-ee50-e211-9d16-005056af1ab2" name="Мариенбург" />
+  <request is_delete="0" lineid="b6019f1e-3c40-e211-bc8a-005056af1ab2" name="Мартышкино" />
+  <request is_delete="0" lineid="60e16ee3-f750-e211-9d16-005056af1ab2" name="Мастерьярви" />
+  <request is_delete="0" lineid="f272893b-f850-e211-9d16-005056af1ab2" name="Матросово" />
+  <request is_delete="0" lineid="3b00eb27-f450-e211-9d16-005056af1ab2" name="Мга" />
+  <request is_delete="0" lineid="c4569b60-3e40-e211-bc8a-005056af1ab2" name="Мельничный Ручей" />
+  <request is_delete="0" lineid="b7019f1e-3c40-e211-bc8a-005056af1ab2" name="Металлострой" />
+  <request is_delete="0" lineid="9233a935-f150-e211-9d16-005056af1ab2" name="Михайловка" />
+  <request is_delete="0" lineid="23fca3b2-f450-e211-9d16-005056af1ab2" name="Михайловская" />
+  <request is_delete="0" lineid="6d81d724-3c40-e211-bc8a-005056af1ab2" name="Можайская" />
+  <request is_delete="0" lineid="6e81d724-3c40-e211-bc8a-005056af1ab2" name="Молодёжное" />
+  <request is_delete="0" lineid="0f9c7794-ee50-e211-9d16-005056af1ab2" name="Молосковицы" />
+  <request is_delete="0" lineid="4633f82a-3c40-e211-bc8a-005056af1ab2" name="Московский вокзал" />
+  <request is_delete="0" lineid="4733f82a-3c40-e211-bc8a-005056af1ab2" name="Мурино" />
+  <request is_delete="0" lineid="157db48b-ed50-e211-9d16-005056af1ab2" name="Мшинская" />
+  <request is_delete="0" lineid="7f1bef67-3e40-e211-bc8a-005056af1ab2" name="Мюллюпельто" />
+  <request is_delete="0" lineid="34bb7531-3c40-e211-bc8a-005056af1ab2" name="Навалочная" />
+  <request is_delete="0" lineid="8462ebde-f450-e211-9d16-005056af1ab2" name="Назия" />
+  <request is_delete="0" lineid="08f9f754-f450-e211-9d16-005056af1ab2" name="Невдубстрой" />
+  <request is_delete="0" lineid="801bef67-3e40-e211-bc8a-005056af1ab2" name="Невская Дубровка" />
+  <request is_delete="0" lineid="087505f3-fd50-e211-9d16-005056af1ab2" name="Нива" />
+  <request is_delete="0" lineid="bae80384-ed50-e211-9d16-005056af1ab2" name="Низовская" />
+  <request is_delete="0" lineid="a15faf51-fd50-e211-9d16-005056af1ab2" name="Никифоровское" />
+  <request is_delete="0" lineid="35bb7531-3c40-e211-bc8a-005056af1ab2" name="Новая Деревня" />
+  <request is_delete="0" lineid="5744efe6-f150-e211-9d16-005056af1ab2" name="Новинка" />
+  <request is_delete="0" lineid="84c4160d-ed50-e211-9d16-005056af1ab2" name="Новое Мозино" />
+  <request is_delete="0" lineid="1416e616-f050-e211-9d16-005056af1ab2" name="Новолисино" />
+  <request is_delete="0" lineid="97b28771-3e40-e211-bc8a-005056af1ab2" name="Новый Быт" />
+  <request is_delete="0" lineid="4475db37-3c40-e211-bc8a-005056af1ab2" name="Новый Петергоф" />
+  <request is_delete="0" lineid="98b28771-3e40-e211-bc8a-005056af1ab2" name="Нурма" />
+  <request is_delete="0" lineid="4575db37-3c40-e211-bc8a-005056af1ab2" name="Обухово" />
+  <request is_delete="0" lineid="76af2e8c-ee50-e211-9d16-005056af1ab2" name="Овинцово" />
+  <request is_delete="0" lineid="59564355-f050-e211-9d16-005056af1ab2" name="Огорелье" />
+  <request is_delete="0" lineid="5e56163e-3c40-e211-bc8a-005056af1ab2" name="Озерки" />
+  <request is_delete="0" lineid="5f56163e-3c40-e211-bc8a-005056af1ab2" name="Ольгино" />
+  <request is_delete="0" lineid="4d2c094a-3c40-e211-bc8a-005056af1ab2" name="Ораниенбаум 1" />
+  <request is_delete="0" lineid="4f023150-3c40-e211-bc8a-005056af1ab2" name="Ораниенбаум 2" />
+  <request is_delete="0" lineid="ed77745d-f350-e211-9d16-005056af1ab2" name="Оредеж" />
+  <request is_delete="0" lineid="bdcafc78-3e40-e211-bc8a-005056af1ab2" name="Орехово" />
+  <request is_delete="0" lineid="becafc78-3e40-e211-bc8a-005056af1ab2" name="Осельки" />
+  <request is_delete="0" lineid="cabc6c1a-fd50-e211-9d16-005056af1ab2" name="Осиновка" />
+  <request is_delete="0" lineid="7325e480-3e40-e211-bc8a-005056af1ab2" name="Отрадное" />
+  <request is_delete="0" lineid="7fc3476f-3d8d-e211-8760-0050568db126" name="Оять" />
+  <request is_delete="0" lineid="0bb642c2-fd50-e211-9d16-005056af1ab2" name="Ояярви" />
+  <request is_delete="0" lineid="50023150-3c40-e211-bc8a-005056af1ab2" name="Павловск" />
+  <request is_delete="0" lineid="356f4e35-fd50-e211-9d16-005056af1ab2" name="Пальцево" />
+  <request is_delete="0" lineid="1b58c656-3c40-e211-bc8a-005056af1ab2" name="Парголово" />
+  <request is_delete="0" lineid="1c58c656-3c40-e211-bc8a-005056af1ab2" name="Паровозный Музей" />
+  <request is_delete="0" lineid="10b575eb-ed50-e211-9d16-005056af1ab2" name="Партизанская" />
+  <request is_delete="0" lineid="04d2caa8-fbc8-e211-8eff-0050568db126" name="Паша" />
+  <request is_delete="0" lineid="837eaf1c-f450-e211-9d16-005056af1ab2" name="Пелла" />
+  <request is_delete="0" lineid="7425e480-3e40-e211-bc8a-005056af1ab2" name="Пери" />
+  <request is_delete="0" lineid="f9826424-fd50-e211-9d16-005056af1ab2" name="Перово" />
+  <request is_delete="0" lineid="a9fd4e1d-f750-e211-9d16-005056af1ab2" name="Песочная" />
+  <request is_delete="0" lineid="f969a588-3e40-e211-bc8a-005056af1ab2" name="Петрокрепость" />
+  <request is_delete="0" lineid="fa69a588-3e40-e211-bc8a-005056af1ab2" name="Петяярви" />
+  <request is_delete="0" lineid="98313644-fd50-e211-9d16-005056af1ab2" name="Пионерлагерь" />
+  <request is_delete="0" lineid="f2d2a2a7-fa50-e211-9d16-005056af1ab2" name="Пискаревка" />
+  <request is_delete="0" lineid="5436335d-3c40-e211-bc8a-005056af1ab2" name="Пискарёвка" />
+  <request is_delete="0" lineid="ddca4d8f-3e40-e211-bc8a-005056af1ab2" name="Пихтовое" />
+  <request is_delete="0" lineid="7f9b3cf6-f650-e211-9d16-005056af1ab2" name="пл. Александровская" />
+  <request is_delete="0" lineid="111e8931-f550-e211-9d16-005056af1ab2" name="Плитняки" />
+  <request is_delete="0" lineid="d6ed2fa9-f550-e211-9d16-005056af1ab2" name="Погостье" />
+  <request is_delete="0" lineid="ac8b1d84-a181-e211-8530-0050568db126" name="Подпорожье" />
+  <request is_delete="0" lineid="4538cceb-f450-e211-9d16-005056af1ab2" name="Поляны" />
+  <request is_delete="0" lineid="deca4d8f-3e40-e211-bc8a-005056af1ab2" name="Померанье" />
+  <request is_delete="0" lineid="5536335d-3c40-e211-bc8a-005056af1ab2" name="Понтонная" />
+  <request is_delete="0" lineid="7a926f96-3e40-e211-bc8a-005056af1ab2" name="Поповка" />
+  <request is_delete="0" lineid="f172893b-f850-e211-9d16-005056af1ab2" name="Попово" />
+  <request is_delete="0" lineid="94c084bc-f550-e211-9d16-005056af1ab2" name="Посадниково" />
+  <request is_delete="0" lineid="120bfb93-f050-e211-9d16-005056af1ab2" name="Поселок" />
+  <request is_delete="0" lineid="b72483f3-f350-e211-9d16-005056af1ab2" name="Пост 5 км" />
+  <request is_delete="0" lineid="7b926f96-3e40-e211-bc8a-005056af1ab2" name="Пост 63 км" />
+  <request is_delete="0" lineid="a9dc1b64-3c40-e211-bc8a-005056af1ab2" name="Пост Ковалёво" />
+  <request is_delete="0" lineid="aadc1b64-3c40-e211-bc8a-005056af1ab2" name="Предпортовая" />
+  <request is_delete="0" lineid="d3dd5432-f850-e211-9d16-005056af1ab2" name="Прибылово" />
+  <request is_delete="0" lineid="b02e764d-ed50-e211-9d16-005056af1ab2" name="Прибытково" />
+  <request is_delete="0" lineid="0f1112d6-f750-e211-9d16-005056af1ab2" name="Приветненское" />
+  <request is_delete="0" lineid="5c788660-fd50-e211-9d16-005056af1ab2" name="Пригородная" />
+  <request is_delete="0" lineid="51fe9718-f850-e211-9d16-005056af1ab2" name="Приморск" />
+  <request is_delete="0" lineid="2209199e-3e40-e211-bc8a-005056af1ab2" name="Приозерск" />
+  <request is_delete="0" lineid="2309199e-3e40-e211-bc8a-005056af1ab2" name="Проба" />
+  <request is_delete="0" lineid="d4d64a6a-3c40-e211-bc8a-005056af1ab2" name="Проспект Славы" />
+  <request is_delete="0" lineid="939f298c-fd50-e211-9d16-005056af1ab2" name="Пруды" />
+  <request is_delete="0" lineid="72877320-ee50-e211-9d16-005056af1ab2" name="Пудость" />
+  <request is_delete="0" lineid="0cb642c2-fd50-e211-9d16-005056af1ab2" name="Пукинниеми" />
+  <request is_delete="0" lineid="b274afa5-3e40-e211-bc8a-005056af1ab2" name="Пупышево" />
+  <request is_delete="0" lineid="96c084bc-f550-e211-9d16-005056af1ab2" name="Путепровод" />
+  <request is_delete="0" lineid="b90fbbd6-f550-e211-9d16-005056af1ab2" name="Пчевжа" />
+  <request is_delete="0" lineid="b374afa5-3e40-e211-bc8a-005056af1ab2" name="Радофинниково" />
+  <request is_delete="0" lineid="d34709ac-3e40-e211-bc8a-005056af1ab2" name="Радченко" />
+  <request is_delete="0" lineid="d5d64a6a-3c40-e211-bc8a-005056af1ab2" name="Раздельный Пост" />
+  <request is_delete="0" lineid="ac631a72-3c40-e211-bc8a-005056af1ab2" name="Разлив" />
+  <request is_delete="0" lineid="d44709ac-3e40-e211-bc8a-005056af1ab2" name="Рахья" />
+  <request is_delete="0" lineid="ad631a72-3c40-e211-bc8a-005056af1ab2" name="Репино" />
+  <request is_delete="0" lineid="78b9af78-3c40-e211-bc8a-005056af1ab2" name="Ржевка" />
+  <request is_delete="0" lineid="bfed60fb-ed50-e211-9d16-005056af1ab2" name="Рзд. А.Петровой" />
+  <request is_delete="0" lineid="5a564355-f050-e211-9d16-005056af1ab2" name="Рогавка" />
+  <request is_delete="0" lineid="cdedfc52-ee50-e211-9d16-005056af1ab2" name="Роговицы" />
+  <request is_delete="0" lineid="dfa767b4-3e40-e211-bc8a-005056af1ab2" name="Романовка" />
+  <request is_delete="0" lineid="bbe80384-ed50-e211-9d16-005056af1ab2" name="Росинка" />
+  <request is_delete="0" lineid="79b9af78-3c40-e211-bc8a-005056af1ab2" name="Ручьи" />
+  <request is_delete="0" lineid="7ab9af78-3c40-e211-bc8a-005056af1ab2" name="Рыбацкое" />
+  <request is_delete="0" lineid="e0a767b4-3e40-e211-bc8a-005056af1ab2" name="Рябово" />
+  <request is_delete="0" lineid="6a94a5bf-3e40-e211-bc8a-005056af1ab2" name="Саблино" />
+  <request is_delete="0" lineid="6b94a5bf-3e40-e211-bc8a-005056af1ab2" name="Сады" />
+  <request is_delete="0" lineid="c28e5c9c-ee50-e211-9d16-005056af1ab2" name="Сала" />
+  <request is_delete="0" lineid="03438c81-3c40-e211-bc8a-005056af1ab2" name="Сапёрная" />
+  <request is_delete="0" lineid="17d4e7af-fd50-e211-9d16-005056af1ab2" name="Светогорск" />
+  <request is_delete="0" lineid="86e47c28-dd66-e211-be18-0050568db126" name="Свирь" />
+  <request is_delete="0" lineid="a23abeaa-f050-e211-9d16-005056af1ab2" name="Семрино" />
+  <request is_delete="0" lineid="5e4d44e2-ee50-e211-9d16-005056af1ab2" name="Сергиево (Володарская)" />
+  <request is_delete="0" lineid="04438c81-3c40-e211-bc8a-005056af1ab2" name="Сестрорецк" />
+  <request is_delete="0" lineid="0e3f675e-ed50-e211-9d16-005056af1ab2" name="Сиверская" />
+  <request is_delete="0" lineid="8a42aec7-3e40-e211-bc8a-005056af1ab2" name="Синёво" />
+  <request is_delete="0" lineid="5e53e187-3c40-e211-bc8a-005056af1ab2" name="Скачки" />
+  <request is_delete="0" lineid="5f53e187-3c40-e211-bc8a-005056af1ab2" name="Славянка" />
+  <request is_delete="0" lineid="3550df9c-3c7f-e211-926a-0050568db126" name="Сланцы" />
+  <request is_delete="0" lineid="91465b87-f150-e211-9d16-005056af1ab2" name="Слудицы" />
+  <request is_delete="0" lineid="d4dd5432-f850-e211-9d16-005056af1ab2" name="Советский" />
+  <request is_delete="0" lineid="bae70846-f850-e211-9d16-005056af1ab2" name="Соколинское" />
+  <request is_delete="0" lineid="8b42aec7-3e40-e211-bc8a-005056af1ab2" name="Соколов Ручей" />
+  <request is_delete="0" lineid="37b91e44-f750-e211-9d16-005056af1ab2" name="Солнечное" />
+  <request is_delete="0" lineid="07fdeb88-f550-e211-9d16-005056af1ab2" name="Сологубовка" />
+  <request is_delete="0" lineid="529a390b-fe50-e211-9d16-005056af1ab2" name="Сортавала" />
+  <request is_delete="0" lineid="b963368e-3c40-e211-bc8a-005056af1ab2" name="Сортировочная" />
+  <request is_delete="0" lineid="ba63368e-3c40-e211-bc8a-005056af1ab2" name="Сосновая Поляна" />
+  <request is_delete="0" lineid="569843ce-3e40-e211-bc8a-005056af1ab2" name="Сосново" />
+  <request is_delete="0" lineid="5fca7a94-3c40-e211-bc8a-005056af1ab2" name="Старая Деревня" />
+  <request is_delete="0" lineid="0b8c7c79-f550-e211-9d16-005056af1ab2" name="Старая Малукса" />
+  <request is_delete="0" lineid="617deb05-ed50-e211-9d16-005056af1ab2" name="Старое Мозино" />
+  <request is_delete="0" lineid="60ca7a94-3c40-e211-bc8a-005056af1ab2" name="Старый Петергоф" />
+  <request is_delete="0" lineid="164ab39a-3c40-e211-bc8a-005056af1ab2" name="Стрельна" />
+  <request is_delete="0" lineid="9a762d6f-ed50-e211-9d16-005056af1ab2" name="Строганово" />
+  <request is_delete="0" lineid="af2e764d-ed50-e211-9d16-005056af1ab2" name="Суйда" />
+  <request is_delete="0" lineid="6c0ae92e-f150-e211-9d16-005056af1ab2" name="Сусанино" />
+  <request is_delete="0" lineid="579843ce-3e40-e211-bc8a-005056af1ab2" name="Суходолье" />
+  <request is_delete="0" lineid="73877320-ee50-e211-9d16-005056af1ab2" name="Тайцы" />
+  <request is_delete="0" lineid="346f4e35-fd50-e211-9d16-005056af1ab2" name="Таммисуо" />
+  <request is_delete="0" lineid="813a0006-f850-e211-9d16-005056af1ab2" name="Тарасовское" />
+  <request is_delete="0" lineid="97345951-f350-e211-9d16-005056af1ab2" name="Тарковичи" />
+  <request is_delete="0" lineid="174ab39a-3c40-e211-bc8a-005056af1ab2" name="Тарховка" />
+  <request is_delete="0" lineid="ea7eb91b-ed50-e211-9d16-005056af1ab2" name="Татьянино" />
+  <request is_delete="0" lineid="71501a01-fb50-e211-9d16-005056af1ab2" name="Теплобетонная" />
+  <request is_delete="0" lineid="c18e5c9c-ee50-e211-9d16-005056af1ab2" name="Тикопись" />
+  <request is_delete="0" lineid="648373ed-3e40-e211-bc8a-005056af1ab2" name="Тихвин" />
+  <request is_delete="0" lineid="658373ed-3e40-e211-bc8a-005056af1ab2" name="Токсово" />
+  <request is_delete="0" lineid="0fb575eb-ed50-e211-9d16-005056af1ab2" name="Толмачево" />
+  <request is_delete="0" lineid="e7d7cd7d-f650-e211-9d16-005056af1ab2" name="Торфяное" />
+  <request is_delete="0" lineid="26d2782a-f650-e211-9d16-005056af1ab2" name="Тосно" />
+  <request is_delete="0" lineid="25d2782a-f650-e211-9d16-005056af1ab2" name="Тосно 2" />
+  <request is_delete="0" lineid="30d908f4-3e40-e211-bc8a-005056af1ab2" name="Трубниково" />
+  <request is_delete="0" lineid="30302c03-fe50-e211-9d16-005056af1ab2" name="Туокслахти" />
+  <request is_delete="0" lineid="7f7fe582-f550-e211-9d16-005056af1ab2" name="Турышкино" />
+  <request is_delete="0" lineid="184ab39a-3c40-e211-bc8a-005056af1ab2" name="Удельная" />
+  <request is_delete="0" lineid="53c037a3-3c40-e211-bc8a-005056af1ab2" name="Ульянка" />
+  <request is_delete="0" lineid="54c037a3-3c40-e211-bc8a-005056af1ab2" name="Университет" />
+  <request is_delete="0" lineid="31d908f4-3e40-e211-bc8a-005056af1ab2" name="Ушаки" />
+  <request is_delete="0" lineid="b00543a9-3c40-e211-bc8a-005056af1ab2" name="Ушково" />
+  <request is_delete="0" lineid="b90543a9-3c40-e211-bc8a-005056af1ab2" name="Фарфоровская" />
+  <request is_delete="0" lineid="abe94baf-3c40-e211-bc8a-005056af1ab2" name="Финляндский вокзал" />
+  <request is_delete="0" lineid="a05faf51-fd50-e211-9d16-005056af1ab2" name="Ханнила" />
+  <request is_delete="0" lineid="9394aaca-fd50-e211-9d16-005056af1ab2" name="Хийтола" />
+  <request is_delete="0" lineid="077505f3-fd50-e211-9d16-005056af1ab2" name="Хухоямяки" />
+  <request is_delete="0" lineid="47160546-ef50-e211-9d16-005056af1ab2" name="Чайка" />
+  <request is_delete="0" lineid="5c7a6bee-f150-e211-9d16-005056af1ab2" name="Чаща" />
+  <request is_delete="0" lineid="ab6e42fb-3e40-e211-bc8a-005056af1ab2" name="Чёрная Речка" />
+  <request is_delete="0" lineid="e8d7cd7d-f650-e211-9d16-005056af1ab2" name="Чудово 1" />
+  <request is_delete="0" lineid="ac6e42fb-3e40-e211-bc8a-005056af1ab2" name="Шапки" />
+  <request is_delete="0" lineid="339b057c-f750-e211-9d16-005056af1ab2" name="Шевелево" />
+  <request is_delete="0" lineid="63a38bd4-ec50-e211-9d16-005056af1ab2" name="Шоссейная" />
+  <request is_delete="0" lineid="ace94baf-3c40-e211-bc8a-005056af1ab2" name="Шувалово" />
+  <request is_delete="0" lineid="fcd2cbb5-3c40-e211-bc8a-005056af1ab2" name="Шушары" />
+  <request is_delete="0" lineid="540a3d01-3f40-e211-bc8a-005056af1ab2" name="Щеглово" />
+  <request is_delete="0" lineid="fdd2cbb5-3c40-e211-bc8a-005056af1ab2" name="Электродепо" />
+  <request is_delete="0" lineid="28b45fd4-fd50-e211-9d16-005056af1ab2" name="Элисенваара" />
+  <request is_delete="0" lineid="4d394ce3-fd50-e211-9d16-005056af1ab2" name="Яккима" />
+  <request is_delete="0" lineid="72f4b1ee-f750-e211-9d16-005056af1ab2" name="Яппиля" />
+  <request is_delete="0" lineid="109c7794-ee50-e211-9d16-005056af1ab2" name="Ястребино" />
+  <request is_delete="0" lineid="ffd2cbb5-3c40-e211-bc8a-005056af1ab2" name="Яхтенная" />
+</data>

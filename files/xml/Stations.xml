@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <request is_delete="0" stationid="0c08ec41-1c2b-e211-bc8a-005056af1ab2" name="Автово" />
+  <request is_delete="0" stationid="3f03307e-ac05-e211-b262-000c29e0836a" name="Адмиралтейская" />
+  <request is_delete="0" stationid="8e72f2a0-df2b-e211-bc8a-005056af1ab2" name="Академическая" />
+  <request is_delete="0" stationid="3a47600f-e02b-e211-bc8a-005056af1ab2" name="Балтийская" />
+  <request is_delete="0" stationid="9cb3f33e-f55e-e211-bbfa-005056af1ab2" name="Бухарестская" />
+  <request is_delete="0" stationid="66d1d377-ac05-e211-b262-000c29e0836a" name="Василеостровская" />
+  <request is_delete="0" stationid="68462fef-df2b-e211-bc8a-005056af1ab2" name="Владимирская" />
+  <request is_delete="0" stationid="ec969ec7-cf2b-e211-bc8a-005056af1ab2" name="Волковская" />
+  <request is_delete="0" stationid="ad65fdcb-df2b-e211-bc8a-005056af1ab2" name="Выборгская" />
+  <request is_delete="0" stationid="06677583-e02b-e211-bc8a-005056af1ab2" name="Горьковская" />
+  <request is_delete="0" stationid="68637f1d-e12b-e211-bc8a-005056af1ab2" name="Гостиный двор" />
+  <request is_delete="0" stationid="3487ee98-df2b-e211-bc8a-005056af1ab2" name="Гражданский проспект" />
+  <request is_delete="0" stationid="80283488-df2b-e211-bc8a-005056af1ab2" name="Девяткино" />
+  <request is_delete="0" stationid="826aa974-e12b-e211-bc8a-005056af1ab2" name="Достоевская" />
+  <request is_delete="0" stationid="ba0b79e6-03a1-e211-a708-0050568db126" name="дыбенко" />
+  <request is_delete="0" stationid="34fa433e-e12b-e211-bc8a-005056af1ab2" name="Елизаровская" />
+  <request is_delete="0" stationid="ad824dfa-e02b-e211-bc8a-005056af1ab2" name="Звёздная" />
+  <request is_delete="0" stationid="645c48e0-e12b-e211-bc8a-005056af1ab2" name="Звенигородская" />
+  <request is_delete="0" stationid="63201120-e02b-e211-bc8a-005056af1ab2" name="Кировский завод" />
+  <request is_delete="0" stationid="09b97bb1-e12b-e211-bc8a-005056af1ab2" name="Комендантский проспект" />
+  <request is_delete="0" stationid="8539c9bb-e12b-e211-bc8a-005056af1ab2" name="Крестовский остров" />
+  <request is_delete="0" stationid="d8423f05-e12b-e211-bc8a-005056af1ab2" name="Купчино" />
+  <request is_delete="0" stationid="c2180393-e12b-e211-bc8a-005056af1ab2" name="Ладожская" />
+  <request is_delete="0" stationid="5bd4f397-d02b-e211-bc8a-005056af1ab2" name="Ленинский проспект" />
+  <request is_delete="0" stationid="4e35dec2-df2b-e211-bc8a-005056af1ab2" name="Лесная" />
+  <request is_delete="0" stationid="e829867b-e12b-e211-bc8a-005056af1ab2" name="Лиговский проспект" />
+  <request is_delete="0" stationid="615eb345-722a-e211-a323-005056af1ab2" name="Ломоносовская" />
+  <request is_delete="0" stationid="5773af24-e12b-e211-bc8a-005056af1ab2" name="Маяковская" />
+  <request is_delete="0" stationid="e32ce52a-f55e-e211-bbfa-005056af1ab2" name="Международная" />
+  <request is_delete="0" stationid="4c42c9ef-e02b-e211-bc8a-005056af1ab2" name="Московская" />
+  <request is_delete="0" stationid="0be398c9-e02b-e211-bc8a-005056af1ab2" name="Московские ворота" />
+  <request is_delete="0" stationid="0a19ca84-ac05-e211-b262-000c29e0836a" name="Нарвская" />
+  <request is_delete="0" stationid="3e03307e-ac05-e211-b262-000c29e0836a" name="Невский проспект" />
+  <request is_delete="0" stationid="a1ff498b-ac05-e211-b262-000c29e0836a" name="Новочеркасская" />
+  <request is_delete="0" stationid="650d1fe8-e12b-e211-bc8a-005056af1ab2" name="Обводный канал" />
+  <request is_delete="0" stationid="b00c5536-232b-e211-bc8a-005056af1ab2" name="Обухово" />
+  <request is_delete="0" stationid="a0a0a65d-e02b-e211-bc8a-005056af1ab2" name="Озерки" />
+  <request is_delete="0" stationid="8060aedf-e02b-e211-bc8a-005056af1ab2" name="Парк Победы" />
+  <request is_delete="0" stationid="c887514c-e02b-e211-bc8a-005056af1ab2" name="Парнас" />
+  <request is_delete="0" stationid="48f51d7d-e02b-e211-bc8a-005056af1ab2" name="Петроградская" />
+  <request is_delete="0" stationid="a0ff498b-ac05-e211-b262-000c29e0836a" name="Пионерская" />
+  <request is_delete="0" stationid="76258b35-e12b-e211-bc8a-005056af1ab2" name="Площадь Александра Невского 1" />
+  <request is_delete="0" stationid="d2f49a81-e12b-e211-bc8a-005056af1ab2" name="Площадь Александра Невского 2" />
+  <request is_delete="0" stationid="febf54ba-242b-e211-bc8a-005056af1ab2" name="Площадь Восстания" />
+  <request is_delete="0" stationid="68371b5d-1f2b-e211-bc8a-005056af1ab2" name="Площадь Ленина" />
+  <request is_delete="0" stationid="f1b1c2b8-df2b-e211-bc8a-005056af1ab2" name="Площадь Мужества" />
+  <request is_delete="0" stationid="be77ffac-df2b-e211-bc8a-005056af1ab2" name="Политехническая" />
+  <request is_delete="0" stationid="ca4de810-e12b-e211-bc8a-005056af1ab2" name="Приморская" />
+  <request is_delete="0" stationid="bf0fa650-e12b-e211-bc8a-005056af1ab2" name="Пролетарская" />
+  <request is_delete="0" stationid="98f8ce9b-e12b-e211-bc8a-005056af1ab2" name="Проспект Большевиков" />
+  <request is_delete="0" stationid="cda4086f-f918-e211-a323-005056af1ab2" name="Проспект Ветеранов" />
+  <request is_delete="0" stationid="14f27856-e02b-e211-bc8a-005056af1ab2" name="Проспект Просвещения" />
+  <request is_delete="0" stationid="017a0cfd-df2b-e211-bc8a-005056af1ab2" name="Пушкинская" />
+  <request is_delete="0" stationid="860f0762-e12b-e211-bc8a-005056af1ab2" name="Рыбацкое" />
+  <request is_delete="0" stationid="2791d7f9-5f2a-e211-a323-005056af1ab2" name="Садовая" />
+  <request is_delete="0" stationid="6acb9699-e02b-e211-bc8a-005056af1ab2" name="Сенная площадь" />
+  <request is_delete="0" stationid="d301e16c-e12b-e211-bc8a-005056af1ab2" name="Спасская" />
+  <request is_delete="0" stationid="135bbdc6-e12b-e211-bc8a-005056af1ab2" name="Спортивная" />
+  <request is_delete="0" stationid="0ab97bb1-e12b-e211-bc8a-005056af1ab2" name="Старая Деревня" />
+  <request is_delete="0" stationid="c51b9307-e02b-e211-bc8a-005056af1ab2" name="Технологический институт 1" />
+  <request is_delete="0" stationid="0b05cbb1-e02b-e211-bc8a-005056af1ab2" name="Технологический институт 2" />
+  <request is_delete="0" stationid="2228ff64-e02b-e211-bc8a-005056af1ab2" name="Удельная" />
+  <request is_delete="0" stationid="c9c78864-722a-e211-a323-005056af1ab2" name="Улица Дыбенко" />
+  <request is_delete="0" stationid="2c64aac1-e02b-e211-bc8a-005056af1ab2" name="Фрунзенская" />
+  <request is_delete="0" stationid="46bc9474-e02b-e211-bc8a-005056af1ab2" name="Чёрная речка" />
+  <request is_delete="0" stationid="64d41cde-df2b-e211-bc8a-005056af1ab2" name="Чернышевская" />
+  <request is_delete="0" stationid="8639c9bb-e12b-e211-bc8a-005056af1ab2" name="Чкаловская" />
+  <request is_delete="0" stationid="cc4f69d4-e02b-e211-bc8a-005056af1ab2" name="Электросила" />
+</data>

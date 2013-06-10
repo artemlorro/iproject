@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <request objectid="3-11496" cnt_rooms_total="3" cnt_to_rente="1" price="10000" address="198096, Российская Федерация, г Санкт-Петербург, пр-кт Стачек, д. 67" s_kitchen="20" floor="2" cnt_floor="5" has_phone="0" has_balcony="0" adv_text="плюс КУ, без хозяев, для одной или пары, только РФ" has_furniture="1" has_machine="0" has_freezer="1" rent_type="0" is_delete="0" is_active="0" type="1" has_lift="0" districtid="13341969-911e-e211-a323-005056af1ab2">
+    <metro>
+      <station stationid="0c08ec41-1c2b-e211-bc8a-005056af1ab2">
+        <time type="0" value="10" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="3-11497" cnt_rooms_total="5" cnt_to_rente="1" price="11000" address="191036, Российская Федерация, г Санкт-Петербург, ул 4-я Советская, д. 24" s_total="15" s_live="15" s_kitchen="20" floor="2" cnt_floor="5" has_phone="0" has_balcony="0" adv_text="Ольга: 932-18-25; + Свет, хорошее состояние, собственник в квартире не проживает, мебель 80-90 гг, Проживает 6 соседей. Сдается для 1 человека." has_furniture="1" has_machine="1" has_freezer="1" rent_type="0" is_delete="0" is_active="0" type="1" has_lift="0" districtid="9072bbdf-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="febf54ba-242b-e211-bc8a-005056af1ab2">
+        <time type="0" value="10" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="3-11503" cnt_rooms_total="2" price="33000" address="192071, Российская Федерация, г Санкт-Петербург, ул Турку, д. 11, корп. 2, кв. 509" s_total="52" s_live="32" s_kitchen="10" floor="17" cnt_floor="17" has_phone="1" has_balcony="0" adv_text="+КУ, евроремонт, вся необходимая мебель и бытовая техника" has_furniture="1" has_machine="1" has_freezer="1" can_children="0" can_pets="0" rent_type="0" is_delete="0" is_active="0" type="0" has_lift="1" districtid="d11550d6-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="e32ce52a-f55e-e211-bbfa-005056af1ab2">
+        <time type="0" value="5" />
+      </station>
+    </metro>
+    <images>
+      <img filename="3-11503-1.jpg" />
+      <img filename="3-11503-2.jpg" />
+      <img filename="3-11503-3.jpg" />
+      <img filename="3-11503-4.jpg" />
+      <img filename="3-11503-5.jpg" />
+      <img filename="3-11503-6.jpg" />
+      <img filename="3-11503-7.jpg" />
+      <img filename="3-11503-8.jpg" />
+      <img filename="3-11503-9.jpg" />
+      <img filename="3-11503-10.jpg" />
+    </images>
+  </request>
+  <request objectid="3-11504" cnt_rooms_total="1" cnt_to_rente="3" price="10000" address="195274, Российская Федерация, г Санкт-Петербург, пр-кт Культуры, д. 11" s_live="14" s_kitchen="9" floor="3" cnt_floor="9" has_phone="0" has_balcony="0" adv_text="Хорошее состояние, стеклопакеты, , без хозяев, для 1 человека, без животных." has_furniture="1" has_machine="1" has_freezer="1" rent_type="0" is_delete="0" is_active="0" type="1" has_lift="1" districtid="c0e68561-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="3487ee98-df2b-e211-bc8a-005056af1ab2">
+        <time type="1" value="10" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="3-11506" cnt_rooms_total="2" price="25000" address="Российская Федерация, г Санкт-Петербург, пр-кт Просвещения, д. 99" s_live="37" s_kitchen="13" floor="9" cnt_floor="24" has_phone="0" has_balcony="0" adv_text="Хорошее состояние, новый дом, ПУСТАЯ, КУ включены." has_furniture="0" has_machine="0" has_freezer="0" rent_type="0" is_delete="0" is_active="0" type="0" has_lift="1" districtid="c0e68561-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="3487ee98-df2b-e211-bc8a-005056af1ab2">
+        <time type="0" value="10" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="3-11507" cnt_rooms_total="1" price="30000" address="195220, Российская Федерация, г Санкт-Петербург, ул Гжатская, д. 22" s_total="40" s_live="18" s_kitchen="10" floor="10" cnt_floor="17" has_phone="1" has_balcony="0" adv_text="евроремонт, минимум мебели" has_furniture="1" has_machine="1" has_freezer="1" can_children="0" can_pets="0" rent_type="0" is_delete="0" is_active="0" type="0" has_lift="1" districtid="c0e68561-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="8e72f2a0-df2b-e211-bc8a-005056af1ab2">
+        <time type="0" value="5" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="3-11508" cnt_rooms_total="1" price="20000" address="193315, Российская Федерация, г Санкт-Петербург, ул Народная, д. 53" s_total="35" s_live="15" s_kitchen="10" floor="10" cnt_floor="14" has_phone="1" has_balcony="0" adv_text="+КУ, ремонт от строителей, пустая" has_furniture="0" has_machine="0" has_freezer="0" can_pets="0" rent_type="0" is_delete="0" is_active="0" type="0" has_lift="1" districtid="df3b6825-722a-e211-a323-005056af1ab2">
+    <metro>
+      <station stationid="615eb345-722a-e211-a323-005056af1ab2">
+        <time type="1" value="10" />
+      </station>
+    </metro>
+    <images>
+      <img filename="3-11508-1.jpg" />
+      <img filename="3-11508-2.jpg" />
+      <img filename="3-11508-3.jpg" />
+      <img filename="3-11508-4.jpg" />
+    </images>
+  </request>
+  <request objectid="3-11509" cnt_rooms_total="2" price="24000" address="Российская Федерация, г Санкт-Петербург, ш Пулковское, д. 5, корп. 4" s_live="35" s_kitchen="9" floor="6" cnt_floor="9" has_phone="1" has_furniture="1" has_machine="1" has_freezer="1" rent_type="0" is_delete="0" is_active="0" type="0" has_lift="1" districtid="f4d35ea4-e42b-e211-bc8a-005056af1ab2">
+    <metro>
+      <station stationid="4c42c9ef-e02b-e211-bc8a-005056af1ab2">
+        <time type="1" value="3" />
+      </station>
+    </metro>
+    <images />
+  </request>
+  <request objectid="3-11510" address="Российская Федерация, г Санкт-Петербург, ш Пулковское, д. 5, корп. 4, кв. 25" has_phone="1" has_furniture="0" has_machine="0" has_freezer="0" rent_type="0" is_delete="0" is_active="0" type="0" has_lift="0" districtid="">
+    <metro />
+    <images />
+  </request>
+  <request objectid="3-11511" cnt_rooms_total="1" price="22000" address="Российская Федерация, г Санкт-Петербург, ул Коллонтай, д. 5, корп. 1" s_total="40" s_live="16" s_kitchen="10" floor="13" cnt_floor="17" has_phone="0" has_balcony="0" adv_text="Евроремонт, застекленная лоджия, спальное место в счет аренды, сдается впервые, можно для семьи с ребенком." has_furniture="1" has_machine="1" has_freezer="1" can_children="0" rent_type="0" is_delete="0" is_active="0" type="0" has_lift="1" districtid="df3b6825-722a-e211-a323-005056af1ab2">
+    <metro>
+      <station stationid="98f8ce9b-e12b-e211-bc8a-005056af1ab2">
+        <time type="0" value="15" />
+      </station>
+    </metro>
+    <images />
+  </request>
+</data>

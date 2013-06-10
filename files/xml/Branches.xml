@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <request is_delete="0" branchid="100000000" name="Вторичная недвижимость" />
+  <request is_delete="0" branchid="100000001" name="Новое строительство" />
+  <request is_delete="0" branchid="100000002" name="Загородная недвижимость" />
+  <request is_delete="0" branchid="100000003" name="Аренда жилой недвижимости" />
+  <request is_delete="0" branchid="100000004" name="Коммерческая недвижимость (Купля/Продажа)" />
+  <request is_delete="0" branchid="100000005" name="Коммерческая недвижимость (Аренда)" />
+  <request is_delete="0" branchid="100000006" name="Зарубежная недвижимость" />
+  <request is_delete="0" branchid="100000007" name="Ипотека" />
+</data>

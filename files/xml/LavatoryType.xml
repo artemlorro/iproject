@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <request is_delete="0" lavatorytypeid="100000017" name="2с/уз," />
+  <request is_delete="0" lavatorytypeid="100000018" name="3с/уз," />
+  <request is_delete="0" lavatorytypeid="100000019" name="совмещен," />
+  <request is_delete="0" lavatorytypeid="100000000" name="2с/уз." />
+  <request is_delete="0" lavatorytypeid="100000001" name="ван.н/кухн" />
+  <request is_delete="0" lavatorytypeid="100000002" name="в доме" />
+  <request is_delete="0" lavatorytypeid="100000003" name="душ" />
+  <request is_delete="0" lavatorytypeid="100000004" name="евростанд." />
+  <request is_delete="0" lavatorytypeid="100000005" name="нет ванны" />
+  <request is_delete="0" lavatorytypeid="100000006" name="раздельный" />
+  <request is_delete="0" lavatorytypeid="100000007" name="совмещен." />
+  <request is_delete="0" lavatorytypeid="100000008" name="на улице" />
+  <request is_delete="0" lavatorytypeid="100000009" name="Hет данных" />
+  <request is_delete="0" lavatorytypeid="100000010" name="3с/уз." />
+  <request is_delete="0" lavatorytypeid="100000011" name="Сауна" />
+  <request is_delete="0" lavatorytypeid="100000012" name="Баня" />
+  <request is_delete="0" lavatorytypeid="100000013" name="Бассейн" />
+  <request is_delete="0" lavatorytypeid="100000014" name="4с/уз." />
+  <request is_delete="0" lavatorytypeid="100000015" name="Биотуалет" />
+  <request is_delete="0" lavatorytypeid="100000016" name="более 2-х СУ" />
+</data>

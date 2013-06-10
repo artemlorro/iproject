@@ -27,8 +27,15 @@ CREATE TABLE `agent` (
   `cid` varchar(128) NOT NULL,
   `email` varchar(128) NOT NULL,
   `password` varchar(128) NOT NULL,
+  `name` varchar(128) NOT NULL DEFAULT '',
+  `last_name` varchar(128) NOT NULL DEFAULT '',
+  `middle_name` varchar(128) NOT NULL DEFAULT '',
+  `about` text NOT NULL,
+  `show_site` tinyint(1) NOT NULL DEFAULT '0',
+  `photo` text NOT NULL,
+  `roles` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +44,38 @@ CREATE TABLE `agent` (
 
 LOCK TABLES `agent` WRITE;
 /*!40000 ALTER TABLE `agent` DISABLE KEYS */;
+INSERT INTO `agent` VALUES (1,'32','qwe@qwe.ru','123123','Иван','Иванов','Иваныч','<p>\n	Отделение было открыто в 1999 году в историческом центре города и непосредственной близости от Невского проспекта. Офис на Пушкинской улице по праву считается одним из лучших в компании. Здесь представлены отделы по работе с жилой недвижимостью, осуществляющие деятельность под профессиональным руководством заслуженных менеджеров агентства, два отдела аренды, отдел по работе с новостройками. Кроме того, в офисе трудятся высококвалифицированные специалисты по элитной недвижимости. Квалификация наших сотрудников позволяет проводить сделки с ипотечным кредитованием, в том числе с военной ипотекой. Близость к динамичному центру города повлияла как на сам офис, так и на стиль работы сотрудников. В нашем отделении время никогда не стоит на месте. Специалисты осваивают новые направления деятельности компании и регулярно повышают свою квалификацию. Однопроцессорные серверы, предназначенные для широкого спектра задач. Оптимальны для работы в небольших офисах или для отдельных задач в крупных информационных системах ,например как</p>\n',1,'136818449882.png',''),(2,'44','erast@neerast.net','123123','Эрнест','Аракул','Петрович','<p style=\"color: red\">test</p>\r\n',1,'','');
 /*!40000 ALTER TABLE `agent` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `agent_info`
+--
+
+DROP TABLE IF EXISTS `agent_info`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `agent_info` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `agent_id` int(11) NOT NULL DEFAULT '0',
+  `office_id` int(11) NOT NULL DEFAULT '0',
+  `branch_id` int(11) NOT NULL DEFAULT '0',
+  `position_id` int(11) NOT NULL DEFAULT '0',
+  `parent_id` int(11) NOT NULL DEFAULT '0',
+  `phone` varchar(128) NOT NULL,
+  `email` varchar(128) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `agent_info`
+--
+
+LOCK TABLES `agent_info` WRITE;
+/*!40000 ALTER TABLE `agent_info` DISABLE KEYS */;
+INSERT INTO `agent_info` VALUES (1,1,1,2,1,0,'123123123','qwe@m.ru'),(2,1,1,5,2,0,'123','123');
+/*!40000 ALTER TABLE `agent_info` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -350,7 +388,7 @@ CREATE TABLE `news` (
   `preview` text,
   `onoff` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -585,14 +623,14 @@ CREATE TABLE `obj_secondary` (
   `has_phone` tinyint(1) NOT NULL DEFAULT '0',
   `has_balcony` tinyint(1) NOT NULL DEFAULT '0',
   `has_lift` tinyint(1) NOT NULL DEFAULT '0',
-  `bathroom` varchar(256) NOT NULL DEFAULT '',
   `adv_text` varchar(256) NOT NULL DEFAULT '',
   `images` text NOT NULL,
   `district_id` int(11) NOT NULL DEFAULT '0',
   `itaka_only` tinyint(1) NOT NULL DEFAULT '0',
   `lavatory_type_id` int(11) NOT NULL DEFAULT '0',
+  `metro` varchar(256) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -601,6 +639,7 @@ CREATE TABLE `obj_secondary` (
 
 LOCK TABLES `obj_secondary` WRITE;
 /*!40000 ALTER TABLE `obj_secondary` DISABLE KEYS */;
+INSERT INTO `obj_secondary` VALUES (1,'123',0,1,0,3,0,5.43e+06,'Проспект просвещения, дом 17, корп. 2','Шувалово',56.3,43.4,12.4,2.4,1,4,12,1,1,1,'Строка рекламы какой-то','136816981528.jpg;136816982137.jpg;136816982336.jpg;136816982693.jpg',1,1,1,'1,14,2; 2,15,3');
 /*!40000 ALTER TABLE `obj_secondary` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -624,6 +663,58 @@ CREATE TABLE `obj_secondary_metro` (
 LOCK TABLES `obj_secondary_metro` WRITE;
 /*!40000 ALTER TABLE `obj_secondary_metro` DISABLE KEYS */;
 /*!40000 ALTER TABLE `obj_secondary_metro` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `office`
+--
+
+DROP TABLE IF EXISTS `office`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `office` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `cid` varchar(128) NOT NULL,
+  `name` varchar(128) NOT NULL DEFAULT '',
+  `phone` varchar(128) NOT NULL DEFAULT '',
+  `email` varchar(128) NOT NULL DEFAULT '',
+  `photos` varchar(128) NOT NULL DEFAULT '',
+  `info` varchar(128) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `office`
+--
+
+LOCK TABLES `office` WRITE;
+/*!40000 ALTER TABLE `office` DISABLE KEYS */;
+INSERT INTO `office` VALUES (1,'12','Коломяжкский, 17','(812) 327-98-00','itaka-center@itaka.spb.ru','136818434055.jpg','');
+/*!40000 ALTER TABLE `office` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `offices_branches`
+--
+
+DROP TABLE IF EXISTS `offices_branches`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `offices_branches` (
+  `office_id` int(11) NOT NULL DEFAULT '0',
+  `branch_id` int(11) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `offices_branches`
+--
+
+LOCK TABLES `offices_branches` WRITE;
+/*!40000 ALTER TABLE `offices_branches` DISABLE KEYS */;
+INSERT INTO `offices_branches` VALUES (1,3),(1,2),(1,7);
+/*!40000 ALTER TABLE `offices_branches` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -679,6 +770,31 @@ INSERT INTO `pay_type` VALUES (1,'t1','Безнал');
 UNLOCK TABLES;
 
 --
+-- Table structure for table `position`
+--
+
+DROP TABLE IF EXISTS `position`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `position` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `cid` varchar(128) NOT NULL,
+  `name` varchar(128) NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `position`
+--
+
+LOCK TABLES `position` WRITE;
+/*!40000 ALTER TABLE `position` DISABLE KEYS */;
+INSERT INTO `position` VALUES (1,'12','Директор'),(2,'34','Продажник');
+/*!40000 ALTER TABLE `position` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `top_menu`
 --
 
@@ -702,7 +818,7 @@ CREATE TABLE `top_menu` (
 
 LOCK TABLES `top_menu` WRITE;
 /*!40000 ALTER TABLE `top_menu` DISABLE KEYS */;
-INSERT INTO `top_menu` VALUES (1,0,'Новостройки','',1,0),(2,1,'Вторичный рынок','',1,0),(3,2,'Аренда','',1,0),(4,3,'Элитная','',1,0),(5,4,'Коммерческая','',1,0),(6,5,'Коттеджи','',1,0),(7,6,'Загородная','',1,0),(8,7,'Ипотека','',1,0),(9,8,'Другие услуги','',1,0),(10,1,'Другое 1','',1,9);
+INSERT INTO `top_menu` VALUES (1,0,'Новостройки','',1,0),(2,1,'Вторичный рынок','/secondary',1,0),(3,2,'Аренда','',1,0),(4,3,'Элитная','',1,0),(5,4,'Коммерческая','',1,0),(6,5,'Коттеджи','',1,0),(7,6,'Загородная','',1,0),(8,7,'Ипотека','',1,0),(9,8,'Другие услуги','',1,0),(10,1,'Другое 1','',1,9);
 /*!40000 ALTER TABLE `top_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -715,4 +831,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-05-07 15:08:52
+-- Dump completed on 2013-05-31  9:05:48

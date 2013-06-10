@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <request is_delete="0" groundstatusid="100000000" name="ДНП - дачное некоммерческое партнерство" />
+  <request is_delete="0" groundstatusid="100000001" name="ИЖС – индивидуальное жилищное строительство" />
+  <request is_delete="0" groundstatusid="100000002" name="САД – садоводство" />
+  <request is_delete="0" groundstatusid="100000003" name="СНТ – садоводческое некоммерческое товарищество" />
+  <request is_delete="0" groundstatusid="100000004" name="ЛПХ – личное подсобное хозяйство" />
+  <request is_delete="0" groundstatusid="100000005" name="ФЕР – фермерское хозяйство" />
+  <request is_delete="0" groundstatusid="100000006" name="СНП – садоводческое некоммерческое партнерство" />
+  <request is_delete="0" groundstatusid="100000007" name="ЗНП - земли населенных пунктов" />
+  <request is_delete="0" groundstatusid="100000009" name="ЗП – земли промышленные" />
+  <request is_delete="0" groundstatusid="100000008" name="СХН - земли С/Х назначения" />
+  <request is_delete="0" groundstatusid="100000010" name="ЗО – земли особоохраняемые" />
+  <request is_delete="0" groundstatusid="100000011" name="ЗЛФ – земли лесного фонда" />
+  <request is_delete="0" groundstatusid="100000012" name="ЗВФ – земли водного фонда" />
+  <request is_delete="0" groundstatusid="100000013" name="ЗДА – земля в долгосрочной аренде" />
+  <request is_delete="0" groundstatusid="100000014" name="РЗ - рекреационная зона" />
+</data>

@@ -41,7 +41,7 @@ class ObjSecondary extends CActiveRecord
 		'qty_to_sale' => array('type' => 'text', 'name' => 'Количество комнат на продажу', 'skiplist' => true),
 		'price' => array('type' => 'text', 'name' => 'Цена'),
 		'address' => array('type' => 'text', 'name' => 'Адрес'),
-		'metro' =>  array('type' => 'text', 'name' => 'Ближайшие станции метро (формат: metro_id1,min1,min2; metro_id2,min1,min2)', 'skiplist' => true),
+//		'metro' =>  array('type' => 'text', 'name' => 'Ближайшие станции метро (формат: metro_id1,min1,min2; metro_id2,min1,min2)', 'skiplist' => true),
 		'train_station' => array('type' => 'text', 'name' => 'Название ближайшей станции Электрички', 'skiplist' => true),
 		's_total' => array('type' => 'text', 'name' => 'Общая площадь Объекта', 'skiplist' => true),
 		's_live' => array('type' => 'text', 'name' => 'Жилая площадь Объекта', 'skiplist' => true),
@@ -192,17 +192,18 @@ class ObjSecondary extends CActiveRecord
 		return $this->type;
 	}
 
+	// выбирать из таблицы obj_secondary_metro
 	public function getMetro()
 	{
 		$result = array();
-		if ($this->metro) foreach(explode(';', $this->metro) as $i) {
-			list ($metro_id, $min_auto, $min_people) = explode(',', $i);
-			$a = new strClass();
-			$a->metro = MetroStation::model()->findByPk(trim($metro_id));
-			$a->min_auto = trim($min_auto);
-			$a->min_people = trim($min_people);
-			$result[] = $a;
-		}
+//		if ($this->metro) foreach(explode(';', $this->metro) as $i) {
+//			list ($metro_id, $min_auto, $min_people) = explode(',', $i);
+//			$a = new strClass();
+//			$a->metro = MetroStation::model()->findByPk(trim($metro_id));
+//			$a->min_auto = trim($min_auto);
+//			$a->min_people = trim($min_people);
+//			$result[] = $a;
+//		}
 		return $result;
 	}
 

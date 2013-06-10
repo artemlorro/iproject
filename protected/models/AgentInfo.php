@@ -16,7 +16,7 @@ class AgentInfo extends CActiveRecord
 	const ROLE_CREATE_NEWS = 2;
 
 	public $searchFields = array();
-	public $tableName = 'Агенты';
+	public $tableName = 'Агенты по должностям';
 	public $fields = array(
 		'agent_id' => array('type' => 'text', 'name' => 'AgentID'),
 		'office_id' => array('type' => 'select', 'name' => 'Офис', 'modelClass' => 'Office', 'skiplist' => true),

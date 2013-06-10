@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<data>
+  <request is_delete="0" buildtypeid="10db1baa-5518-e211-a323-005056af1ab2" name="109 серия" />
+  <request is_delete="0" buildtypeid="d0da1baa-5518-e211-a323-005056af1ab2" name="12.31" />
+  <request is_delete="0" buildtypeid="c6da1baa-5518-e211-a323-005056af1ab2" name="121 серия" />
+  <request is_delete="0" buildtypeid="c8da1baa-5518-e211-a323-005056af1ab2" name="137 серия" />
+  <request is_delete="0" buildtypeid="cada1baa-5518-e211-a323-005056af1ab2" name="504 серия" />
+  <request is_delete="0" buildtypeid="ccda1baa-5518-e211-a323-005056af1ab2" name="504д серия" />
+  <request is_delete="0" buildtypeid="12db1baa-5518-e211-a323-005056af1ab2" name="600.11" />
+  <request is_delete="0" buildtypeid="ceda1baa-5518-e211-a323-005056af1ab2" name="606 серия" />
+  <request is_delete="0" buildtypeid="36db1baa-5518-e211-a323-005056af1ab2" name="Velox" />
+  <request is_delete="0" buildtypeid="d4da1baa-5518-e211-a323-005056af1ab2" name="блочный" />
+  <request is_delete="0" buildtypeid="3adb1baa-5518-e211-a323-005056af1ab2" name="бревно/кирпич" />
+  <request is_delete="0" buildtypeid="d2da1baa-5518-e211-a323-005056af1ab2" name="брежневский" />
+  <request is_delete="0" buildtypeid="2edb1baa-5518-e211-a323-005056af1ab2" name="Бутовый" />
+  <request is_delete="0" buildtypeid="20db1baa-5518-e211-a323-005056af1ab2" name="газобет железобет" />
+  <request is_delete="0" buildtypeid="28db1baa-5518-e211-a323-005056af1ab2" name="Газобетонные блоки" />
+  <request is_delete="0" buildtypeid="dada1baa-5518-e211-a323-005056af1ab2" name="деревянный" />
+  <request is_delete="0" buildtypeid="18db1baa-5518-e211-a323-005056af1ab2" name="железобет крупнопан" />
+  <request is_delete="0" buildtypeid="24db1baa-5518-e211-a323-005056af1ab2" name="Железобетон" />
+  <request is_delete="0" buildtypeid="22db1baa-5518-e211-a323-005056af1ab2" name="Железопанельный" />
+  <request is_delete="0" buildtypeid="dcda1baa-5518-e211-a323-005056af1ab2" name="индивид.проект" />
+  <request is_delete="0" buildtypeid="e4da1baa-5518-e211-a323-005056af1ab2" name="калибр.бревно" />
+  <request is_delete="0" buildtypeid="deda1baa-5518-e211-a323-005056af1ab2" name="каменный" />
+  <request is_delete="0" buildtypeid="e0da1baa-5518-e211-a323-005056af1ab2" name="карк.-засыпной" />
+  <request is_delete="0" buildtypeid="1edb1baa-5518-e211-a323-005056af1ab2" name="керамзитобет пан" />
+  <request is_delete="0" buildtypeid="e2da1baa-5518-e211-a323-005056af1ab2" name="керамзитобетон" />
+  <request is_delete="0" buildtypeid="26db1baa-5518-e211-a323-005056af1ab2" name="Кирпич, шлакобетон" />
+  <request is_delete="0" buildtypeid="ecda1baa-5518-e211-a323-005056af1ab2" name="кирпичный" />
+  <request is_delete="0" buildtypeid="e6da1baa-5518-e211-a323-005056af1ab2" name="комбинат" />
+  <request is_delete="0" buildtypeid="eada1baa-5518-e211-a323-005056af1ab2" name="корабль" />
+  <request is_delete="0" buildtypeid="eeda1baa-5518-e211-a323-005056af1ab2" name="коттедж" />
+  <request is_delete="0" buildtypeid="e8da1baa-5518-e211-a323-005056af1ab2" name="крупно-панел" />
+  <request is_delete="0" buildtypeid="1adb1baa-5518-e211-a323-005056af1ab2" name="крупнопанельный" />
+  <request is_delete="0" buildtypeid="f2da1baa-5518-e211-a323-005056af1ab2" name="монолит" />
+  <request is_delete="0" buildtypeid="30db1baa-5518-e211-a323-005056af1ab2" name="монолит ж/б" />
+  <request is_delete="0" buildtypeid="f0da1baa-5518-e211-a323-005056af1ab2" name="монолит-кирпич" />
+  <request is_delete="0" buildtypeid="f4da1baa-5518-e211-a323-005056af1ab2" name="монолит-панель" />
+  <request is_delete="0" buildtypeid="14db1baa-5518-e211-a323-005056af1ab2" name="недострой" />
+  <request is_delete="0" buildtypeid="f6da1baa-5518-e211-a323-005056af1ab2" name="нем.коттедж" />
+  <request is_delete="0" buildtypeid="32db1baa-5518-e211-a323-005056af1ab2" name="новый дом" />
+  <request is_delete="0" buildtypeid="fada1baa-5518-e211-a323-005056af1ab2" name="панельный" />
+  <request is_delete="0" buildtypeid="f8da1baa-5518-e211-a323-005056af1ab2" name="пенобетон" />
+  <request is_delete="0" buildtypeid="2cdb1baa-5518-e211-a323-005056af1ab2" name="Реконструкция" />
+  <request is_delete="0" buildtypeid="d8da1baa-5518-e211-a323-005056af1ab2" name="рубл.(брев.)" />
+  <request is_delete="0" buildtypeid="d6da1baa-5518-e211-a323-005056af1ab2" name="рубленый(брус)" />
+  <request is_delete="0" buildtypeid="1cdb1baa-5518-e211-a323-005056af1ab2" name="сборный железобет" />
+  <request is_delete="0" buildtypeid="38db1baa-5518-e211-a323-005056af1ab2" name="Современные техн" />
+  <request is_delete="0" buildtypeid="feda1baa-5518-e211-a323-005056af1ab2" name="сруб" />
+  <request is_delete="0" buildtypeid="fcda1baa-5518-e211-a323-005056af1ab2" name="ст.ф.с к/р" />
+  <request is_delete="0" buildtypeid="00db1baa-5518-e211-a323-005056af1ab2" name="сталинский" />
+  <request is_delete="0" buildtypeid="02db1baa-5518-e211-a323-005056af1ab2" name="старый фонд" />
+  <request is_delete="0" buildtypeid="04db1baa-5518-e211-a323-005056af1ab2" name="сф с мет перекр" />
+  <request is_delete="0" buildtypeid="34db1baa-5518-e211-a323-005056af1ab2" name="таун-хауз" />
+  <request is_delete="0" buildtypeid="16db1baa-5518-e211-a323-005056af1ab2" name="финский дом" />
+  <request is_delete="0" buildtypeid="06db1baa-5518-e211-a323-005056af1ab2" name="хрущевка" />
+  <request is_delete="0" buildtypeid="08db1baa-5518-e211-a323-005056af1ab2" name="чешск.проект" />
+  <request is_delete="0" buildtypeid="2adb1baa-5518-e211-a323-005056af1ab2" name="Шлакобетон" />
+  <request is_delete="0" buildtypeid="0adb1baa-5518-e211-a323-005056af1ab2" name="шлакоблочный" />
+  <request is_delete="0" buildtypeid="0cdb1baa-5518-e211-a323-005056af1ab2" name="щитовой" />
+</data>
